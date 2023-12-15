@@ -1,9 +1,14 @@
 import { bytesToHex } from "@noble/hashes/utils"
 import { createSr25519Derive } from "@polkadot-labs/hdkd"
-import { sr25519, DEV_PHRASE } from "@polkadot-labs/hdkd-helpers"
-import { mnemonicToMiniSecret } from "@polkadot/util-crypto"
+import {
+  sr25519,
+  DEV_PHRASE,
+  entropyToMiniSecret,
+  mnemonicToEntropy,
+} from "@polkadot-labs/hdkd-helpers"
 
-const miniSecret = mnemonicToMiniSecret(DEV_PHRASE)
+const entropy = mnemonicToEntropy(DEV_PHRASE)
+const miniSecret = entropyToMiniSecret(entropy)
 const derive = createSr25519Derive(miniSecret)
 
 const keypair = derive("//Alice")
