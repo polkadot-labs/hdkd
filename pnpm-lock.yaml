@@ -42,12 +42,6 @@ importers:
         specifier: ^1.4.2
         version: 1.4.2
     devDependencies:
-      esbuild:
-        specifier: ^0.19.9
-        version: 0.19.9
-      esbuild-plugin-wasm:
-        specifier: ^1.1.0
-        version: 1.1.0
       tsup:
         specifier: ^8.0.1
         version: 8.0.1(typescript@5.3.2)
@@ -1263,11 +1257,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       path-type: 4.0.0
-    dev: true
-
-  /esbuild-plugin-wasm@1.1.0:
-    resolution: {integrity: sha512-0bQ6+1tUbySSnxzn5jnXHMDvYnT0cN/Wd4Syk8g/sqAIJUg7buTIi22svS3Qz6ssx895NT+TgLPb33xi1OkZig==}
-    engines: {node: '>=0.10.0'}
     dev: true
 
   /esbuild@0.18.20:
