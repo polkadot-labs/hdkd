@@ -2,24 +2,28 @@
   "name": "@polkadot-labs/schnorrkel-wasm",
   "version": "0.0.2",
   "description": "",
+  "types": "./dist/nodejs/schnorrkel.d.ts",
   "files": [
-    "./dist/schnorrkel_bg.wasm",
-    "./dist/schnorrkel.js",
-    "./dist/schnorrkel_bg.js",
-    "./dist/schnorrkel.d.ts"
+    "./dist/bundler/schnorrkel_bg.wasm",
+    "./dist/bundler/schnorrkel.js",
+    "./dist/bundler/schnorrkel_bg.js",
+    "./dist/bundler/schnorrkel.d.ts",
+    "./dist/nodejs/schnorrkel_bg.wasm",
+    "./dist/nodejs/schnorrkel.js",
+    "./dist/nodejs/schnorrkel.d.ts"
   ],
   "exports": {
     ".": {
-      "import": "./dist/schnorrkel.js",
-      "require": "./dist/schnorrkel.js",
-      "default": "./dist/schnorrkel.js"
+      "types": "./dist/bundler/schnorrkel.d.ts",
+      "browser": "./dist/bundler/schnorrkel.js",
+      "module": "./dist/bundler/schnorrkel.js",
+      "default": "./dist/nodejs/schnorrkel.js"
     }
   },
-  "sideEffects": [
-    "./dist/schnorrkel.js"
-  ],
   "scripts": {
-    "build": "cd rust && wasm-pack build --release -t bundler --out-dir ../dist"
+    "build": "pnpm build:nodejs && pnpm build:bundler",
+    "build:nodejs": "cd rust && wasm-pack build --release -t nodejs --out-dir ../dist/nodejs && node patch.mjs",
+    "build:bundler": "cd rust && wasm-pack build --release -t bundler --out-dir ../dist/bundler"
   },
   "keywords": [],
   "author": "kratico (https://github.com/kratico)",
