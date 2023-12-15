@@ -1,0 +1,35 @@
+{
+  "name": "@polkadot-labs/hdkd",
+  "version": "0.0.2",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --noEmit && tsup-node src/index.ts --clean --sourcemap --format esm --platform node --target esnext --dts"
+  },
+  "keywords": [],
+  "author": "kratico (https://github.com/kratico)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/polkadot-labs/hdkd.git"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2",
+    "vite-plugin-wasm": "^3.2.2"
+  },
+  "dependencies": {
+    "@polkadot-labs/hdkd-helpers": "workspace:*",
+    "@polkadot-labs/schnorrkel-wasm": "workspace:*"
+  }
+}

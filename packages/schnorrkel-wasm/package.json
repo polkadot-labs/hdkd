@@ -1,0 +1,31 @@
+{
+  "name": "@polkadot-labs/schnorrkel-wasm",
+  "version": "0.0.2",
+  "description": "",
+  "files": [
+    "./dist/schnorrkel_bg.wasm",
+    "./dist/schnorrkel.js",
+    "./dist/schnorrkel_bg.js",
+    "./dist/schnorrkel.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/schnorrkel.js",
+      "require": "./dist/schnorrkel.js",
+      "default": "./dist/schnorrkel.js"
+    }
+  },
+  "sideEffects": [
+    "./dist/schnorrkel.js"
+  ],
+  "scripts": {
+    "build": "cd rust && wasm-pack build --release -t bundler --out-dir ../dist"
+  },
+  "keywords": [],
+  "author": "kratico (https://github.com/kratico)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/polkadot-labs/hdkd.git"
+  },
+  "license": "MIT"
+}

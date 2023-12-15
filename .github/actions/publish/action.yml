@@ -1,0 +1,33 @@
+name: Publish
+description: Publish to NPM
+inputs:
+  token:
+    description: NPM Token
+    required: true
+runs:
+  using: composite
+  steps:
+    - run: pnpm pack && mv *.tgz package.tgz
+      shell: bash
+      working-directory: ./packages/hdkd
+    - uses: JS-DevTools/npm-publish@v3
+      with:
+        token: ${{ inputs.token }}
+        package: ./packages/hdkd/package.tgz
+        access: public
+    - run: pnpm pack && mv *.tgz package.tgz
+      shell: bash
+      working-directory: ./packages/hdkd-helpers
+    - uses: JS-DevTools/npm-publish@v3
+      with:
+        token: ${{ inputs.token }}
+        package: ./packages/hdkd-helpers/package.tgz
+        access: public
+    - run: pnpm pack && mv *.tgz package.tgz
+      shell: bash
+      working-directory: ./packages/schnorrkel-wasm
+    - uses: JS-DevTools/npm-publish@v3
+      with:
+        token: ${{ inputs.token }}
+        package: ./packages/schnorrkel-wasm/package.tgz
+        access: public
