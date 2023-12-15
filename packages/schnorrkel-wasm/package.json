@@ -4,26 +4,21 @@
   "description": "",
   "types": "./dist/nodejs/schnorrkel.d.ts",
   "files": [
-    "./dist/bundler/schnorrkel_bg.wasm",
-    "./dist/bundler/schnorrkel.js",
-    "./dist/bundler/schnorrkel_bg.js",
-    "./dist/bundler/schnorrkel.d.ts",
     "./dist/nodejs/schnorrkel_bg.wasm",
+    "./dist/nodejs/schnorrkel.mjs",
     "./dist/nodejs/schnorrkel.js",
     "./dist/nodejs/schnorrkel.d.ts"
   ],
   "exports": {
     ".": {
-      "types": "./dist/bundler/schnorrkel.d.ts",
-      "browser": "./dist/bundler/schnorrkel.js",
-      "module": "./dist/bundler/schnorrkel.js",
+      "types": "./dist/nodejs/schnorrkel.d.ts",
+      "import": "./dist/nodejs/schnorrkel.mjs",
+      "require": "./dist/nodejs/schnorrkel.js",
       "default": "./dist/nodejs/schnorrkel.js"
     }
   },
   "scripts": {
-    "build": "pnpm build:nodejs && pnpm build:bundler",
-    "build:nodejs": "cd rust && wasm-pack build --release -t nodejs --out-dir ../dist/nodejs && node patch.mjs",
-    "build:bundler": "cd rust && wasm-pack build --release -t bundler --out-dir ../dist/bundler"
+    "build": "cd rust && wasm-pack build --release -t nodejs --out-dir ../dist/nodejs && cd .. && node scripts/patch.mjs"
   },
   "keywords": [],
   "author": "kratico (https://github.com/kratico)",

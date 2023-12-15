@@ -6,12 +6,12 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.js",
+      "require": "./dist/index.cjs",
       "default": "./dist/index.js"
     }
   },
   "scripts": {
-    "build": "tsc --noEmit && tsup-node src/index.ts --clean --sourcemap --format esm --platform node --target esnext --dts",
+    "build": "tsc --noEmit && tsup-node src/index.ts --clean --sourcemap --format esm,cjs --platform node --target esnext --dts",
     "test": "vitest"
   },
   "keywords": [],
