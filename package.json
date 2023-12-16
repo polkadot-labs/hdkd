@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^3.1.0",
+    "prettier": "^3.1.1",
     "vitest": "^1.0.4"
   },
   "prettier": {
