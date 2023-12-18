@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "description": "",
   "type": "module",
+  "main": "./dist/index.cjs",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -11,7 +12,9 @@
     }
   },
   "scripts": {
-    "build": "tsc --noEmit && tsup-node src/index.ts --clean --sourcemap --format esm,cjs --platform node --target esnext --dts"
+    "build": "tsc --noEmit && tsup-node src/index.ts --clean --sourcemap --format esm,cjs --platform node --target esnext --dts",
+    "test": "vitest",
+    "generate-subkey-test-cases": "node scripts/generate-subkey-test-cases.js > test/data.json"
   },
   "keywords": [],
   "author": "kratico (https://github.com/kratico)",
@@ -24,6 +27,8 @@
     "dist"
   ],
   "devDependencies": {
+    "@noble/curves": "^1.3.0",
+    "execa": "^8.0.1",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
     "vite-plugin-wasm": "^3.3.0"

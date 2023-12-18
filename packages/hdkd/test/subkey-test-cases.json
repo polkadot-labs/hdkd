@@ -1,0 +1,236 @@
+[
+  {
+    "input": {
+      "scheme": "ecdsa",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme ecdsa bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice",
+      "output": {
+        "accountId": "0x01e552298e47454041ea31273b4b630c64c104e4514aa3643490b8aaca9cf8ed",
+        "networkId": "substrate",
+        "publicKey": "0x020a1091341fe5664bfa1782d5e04779689068c916b04cb365ec3153755684d9a1",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice",
+        "secretSeed": "0xcb6df9de1efca7a3998a8ead4e02159d5fa99c3e0d4fd6432667390bb4726854",
+        "ss58Address": "5C7C2Z5sWbytvHpuLTvzKunnnRwQxft1jiqrLD5rhucQ5S9X",
+        "ss58PublicKey": "KW39r9CJjAVzmkf9zQ4YDb2hqfAVGdRqn53eRqyruqpxAP5YL"
+      }
+    }
+  },
+  {
+    "input": {
+      "scheme": "ecdsa",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice//0"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme ecdsa bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice//0",
+      "output": {
+        "accountId": "0x8ee6013e34036d385382f22e321e397f5a8f1196867222e95854c4cfb870bdc8",
+        "networkId": "substrate",
+        "publicKey": "0x03ca2e6606a5c42b9671765ff60aaa98c3033ab0fb155f08afa884343def0857f0",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice//0",
+        "secretSeed": "0xe13a340c3fd262fffa4ec5d3e298932a4b6af4270e9a2619babb66950d6c8b66",
+        "ss58Address": "5FJ4ywPdLWSNMXWtjhxWN5d1P4RfCww1ZD3Sdehx1FtKXk2A",
+        "ss58PublicKey": "KWDHQTQxYunooLP5yoBaPzA5fQPH5zq9rnKjzkm5s1pGVgcHB"
+      }
+    }
+  },
+  {
+    "input": {
+      "scheme": "ecdsa",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice///password"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme ecdsa bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice///password",
+      "output": {
+        "accountId": "0xe10b84d5ae68a2c84b59dbf299fcccaf228f6fd42c0d1890dd9600104f28e2e1",
+        "networkId": "substrate",
+        "publicKey": "0x02fa78ba5b4ae2b0086a1c10363978990df68915635890c88d94e136dfb36241f9",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice///password",
+        "secretSeed": "0x8eb642b55262c5481d9fb8ba2ad5aa83ead821b774e80a5f5abf56952a9e514c",
+        "ss58Address": "5H9n42gv6uxu6zVgdkSJaGjHgJYmHXT5Ji6MmLfnp8uR7UrK",
+        "ss58PublicKey": "KW8b4aQ5wj8bazqFoqH3xYEmFUMDucMcUbcm3tBsnsdZ7Umg6"
+      }
+    }
+  },
+  {
+    "input": {
+      "scheme": "ed25519",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme ed25519 bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice",
+      "output": {
+        "accountId": "0x88dc3417d5058ec4b4503e0c12ea1a0a89be200fe98922423d4334014fa6b0ee",
+        "networkId": "substrate",
+        "publicKey": "0x88dc3417d5058ec4b4503e0c12ea1a0a89be200fe98922423d4334014fa6b0ee",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice",
+        "secretSeed": "0xabf8e5bdbe30c65656c0a3cbd181ff8a56294a69dfedd27982aace4a76909115",
+        "ss58Address": "5FA9nQDVg267DEd8m1ZypXLBnvN7SFxYwV7ndqSYGiN9TTpu",
+        "ss58PublicKey": "5FA9nQDVg267DEd8m1ZypXLBnvN7SFxYwV7ndqSYGiN9TTpu"
+      }
+    }
+  },
+  {
+    "input": {
+      "scheme": "ed25519",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice//0"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme ed25519 bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice//0",
+      "output": {
+        "accountId": "0xde6c1b2cf7076546c493ada471947fbab1f100a31c680ac82ea78c46e33dd3e4",
+        "networkId": "substrate",
+        "publicKey": "0xde6c1b2cf7076546c493ada471947fbab1f100a31c680ac82ea78c46e33dd3e4",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice//0",
+        "secretSeed": "0xc389de380858a8bcfadc4fbb7f93d840fc113c3ca0757f603763579580445427",
+        "ss58Address": "5H6LbriCn9FyeSaHMeJJYmDNuJ42qMBcc6MUDjQ2Tyzce9Np",
+        "ss58PublicKey": "5H6LbriCn9FyeSaHMeJJYmDNuJ42qMBcc6MUDjQ2Tyzce9Np"
+      }
+    }
+  },
+  {
+    "input": {
+      "scheme": "ed25519",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice///password"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme ed25519 bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice///password",
+      "output": {
+        "accountId": "0x2818a78aba524c30f6054d7bf23dd78bc2d20c4111d00f6ba56a060e97e0d8d4",
+        "networkId": "substrate",
+        "publicKey": "0x2818a78aba524c30f6054d7bf23dd78bc2d20c4111d00f6ba56a060e97e0d8d4",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice///password",
+        "secretSeed": "0xbc02229bec62a1a7b627b978c9ff978954c7db5496235110f01148b07b2f929d",
+        "ss58Address": "5CyH6YipquG9NzieEHAiVkvycghVdNiNxxYgQCBbzVyKMc1v",
+        "ss58PublicKey": "5CyH6YipquG9NzieEHAiVkvycghVdNiNxxYgQCBbzVyKMc1v"
+      }
+    }
+  },
+  {
+    "input": {
+      "scheme": "sr25519",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme sr25519 bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice",
+      "output": {
+        "accountId": "0xd43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d",
+        "networkId": "substrate",
+        "publicKey": "0xd43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice",
+        "secretSeed": "0xe5be9a5092b81bca64be81d212e7f2f9eba183bb7a90954f7b76361f6edb5c0a",
+        "ss58Address": "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY",
+        "ss58PublicKey": "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY"
+      }
+    }
+  },
+  {
+    "input": {
+      "scheme": "sr25519",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice//0"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme sr25519 bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice//0",
+      "output": {
+        "accountId": "0x4435d0e6e507975038a9fe8f6002b6a8aa6a2740de8b2e5ea193654d204ada09",
+        "networkId": "substrate",
+        "publicKey": "0x4435d0e6e507975038a9fe8f6002b6a8aa6a2740de8b2e5ea193654d204ada09",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice//0",
+        "secretSeed": "0x20315f8a4c88d387ce829c2d4a823e5fdb34d84232c98ba0f555a52cda644770",
+        "ss58Address": "5Dc96kiTPTfZHmq6yTFSqejJzfUNfQQjneNesRWf9MDppJsd",
+        "ss58PublicKey": "5Dc96kiTPTfZHmq6yTFSqejJzfUNfQQjneNesRWf9MDppJsd"
+      }
+    }
+  },
+  {
+    "input": {
+      "scheme": "sr25519",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice///password"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme sr25519 bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice///password",
+      "output": {
+        "accountId": "0x32fc18294f88e02ec071e59bb3996aa21f4519d92593dc6e01fda2921d459b23",
+        "networkId": "substrate",
+        "publicKey": "0x32fc18294f88e02ec071e59bb3996aa21f4519d92593dc6e01fda2921d459b23",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice///password",
+        "secretSeed": "0x64a7f99a979642f45c6cfd921b39ce7d5a890199f0263a9316a0119783768d59",
+        "ss58Address": "5DDZ925gBq5PjNFM8yKTKWVoq1mf9veLGFHvpC6sHWXk6Wpe",
+        "ss58PublicKey": "5DDZ925gBq5PjNFM8yKTKWVoq1mf9veLGFHvpC6sHWXk6Wpe"
+      }
+    }
+  },
+  {
+    "input": {
+      "scheme": "sr25519",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice/0"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme sr25519 bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice/0",
+      "output": {
+        "accountId": "0x9057db4878163172ea51d570612043a98971737bf608b544991130ac110b0801",
+        "networkId": "substrate",
+        "publicKey": "0x9057db4878163172ea51d570612043a98971737bf608b544991130ac110b0801",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice/0",
+        "secretSeed": "n/a",
+        "ss58Address": "5FKxrLQM24ZhLxcaQfJR3uMxMZh5gU6E4CP3yghPJLzCDnHN",
+        "ss58PublicKey": "5FKxrLQM24ZhLxcaQfJR3uMxMZh5gU6E4CP3yghPJLzCDnHN"
+      }
+    }
+  },
+  {
+    "input": {
+      "scheme": "sr25519",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice/foo"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme sr25519 bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice/foo",
+      "output": {
+        "accountId": "0xf2d22c92a77441efe17f5f4e5e9fc535df36943a88f81ab941cbecfe1b55367f",
+        "networkId": "substrate",
+        "publicKey": "0xf2d22c92a77441efe17f5f4e5e9fc535df36943a88f81ab941cbecfe1b55367f",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice/foo",
+        "secretSeed": "n/a",
+        "ss58Address": "5HZ5szcUx9cL6xa1xDwRsQnSHt39YiyLNW7vjagw19bY4NkB",
+        "ss58PublicKey": "5HZ5szcUx9cL6xa1xDwRsQnSHt39YiyLNW7vjagw19bY4NkB"
+      }
+    }
+  },
+  {
+    "input": {
+      "scheme": "sr25519",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice/foo/bar"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme sr25519 bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice/foo/bar",
+      "output": {
+        "accountId": "0xb28e8bc20b1cffbd995dbdd4ff3c1ab902db5807c7f01c0f07bdb65ff4239d64",
+        "networkId": "substrate",
+        "publicKey": "0xb28e8bc20b1cffbd995dbdd4ff3c1ab902db5807c7f01c0f07bdb65ff4239d64",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice/foo/bar",
+        "secretSeed": "n/a",
+        "ss58Address": "5G6pj3Fa8CuUbGrRFAdgmxqTtH4FggtDDuBzXgPmdLcLKoB4",
+        "ss58PublicKey": "5G6pj3Fa8CuUbGrRFAdgmxqTtH4FggtDDuBzXgPmdLcLKoB4"
+      }
+    }
+  },
+  {
+    "input": {
+      "scheme": "sr25519",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice/foo//bar"
+    },
+    "subkey": {
+      "command": "subkey inspect --output-type json --scheme sr25519 bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice/foo//bar",
+      "output": {
+        "accountId": "0x964be39cf833c7575b3bd2c903c25e7da40db799457f58f04f0d050bfdd44568",
+        "networkId": "substrate",
+        "publicKey": "0x964be39cf833c7575b3bd2c903c25e7da40db799457f58f04f0d050bfdd44568",
+        "secretKeyUri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice/foo//bar",
+        "secretSeed": "n/a",
+        "ss58Address": "5FTmaodB8kS7iRRtEB9JtyHYxAk7FBrCocmwMJ1to8Vozd3b",
+        "ss58PublicKey": "5FTmaodB8kS7iRRtEB9JtyHYxAk7FBrCocmwMJ1to8Vozd3b"
+      }
+    }
+  }
+]
