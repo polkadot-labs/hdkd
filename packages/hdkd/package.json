@@ -14,6 +14,7 @@
   "scripts": {
     "build": "tsc --noEmit && tsup-node src/index.ts --clean --sourcemap --format esm,cjs --platform node --target esnext --dts",
     "test": "vitest",
+    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,md}\" \"test/**/*.{js,jsx,ts,tsx,json,md}\"",
     "generate-subkey-test-cases": "node scripts/generate-subkey-test-cases.js > test/data.json"
   },
   "keywords": [],

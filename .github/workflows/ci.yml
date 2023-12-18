@@ -33,6 +33,7 @@ jobs:
       - run: pnpm install
       - run: pnpm build
       - run: pnpm test
+      - run: pnpm lint
       - uses: ./.github/actions/publish
         if: github.ref == 'refs/heads/main'
         with:

@@ -7,7 +7,8 @@
   "scripts": {
     "start:polkadotjs": "tsup-node src/polkadotjs.ts --watch --clean --format esm --platform node --target esnext --onSuccess \"node --enable-source-maps dist/polkadotjs.js\"",
     "start:hdkd": "tsup-node src/hdkd.ts --watch --clean --format cjs --platform node --target esnext --onSuccess \"node --enable-source-maps dist/hdkd.cjs\"",
-    "build": "tsc --noEmit"
+    "build": "tsc --noEmit",
+    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "keywords": [],
   "author": "",
