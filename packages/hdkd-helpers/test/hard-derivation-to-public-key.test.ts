@@ -95,7 +95,7 @@ test.each([
   curveName: string,
   suri: string,
   derivationPrefix: string,
-  getPrivateKey: (Hex) => Hex,
+  getPrivateKey: (hex: Hex) => Hex,
   curve: Curve,
   expectedDerivedMiniSecret: Hex,
   expectedPublicKey: Hex,

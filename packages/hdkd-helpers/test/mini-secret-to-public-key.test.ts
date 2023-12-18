@@ -1,12 +1,13 @@
 import { afterAll, beforeAll, expect, test } from "vitest"
 import { sr25519_secret_from_seed } from "@polkadot-labs/schnorrkel-wasm"
-import { bytesToHex, hexToBytes } from "@noble/hashes/utils"
+import { bytesToHex } from "@noble/hashes/utils"
 
 import { DEV_MINI_SECRET } from "../src/constants"
 import { sr25519 } from "../src/sr25519"
 import { ecdsa } from "../src/ecdsa"
 import { ed25519 } from "../src/ed25519"
 import { Curve, Hex } from "../src/types"
+import { ensureBytes } from "@noble/curves/abstract/utils"
 
 beforeAll(async () => {
   // FIXME: Needed for thread_rng
@@ -42,14 +43,15 @@ test.each([
   [
     "sr25519",
     DEV_MINI_SECRET,
-    (miniSecret) => sr25519_secret_from_seed(hexToBytes(miniSecret)),
+    (miniSecret) =>
+      sr25519_secret_from_seed(ensureBytes("miniSecret", miniSecret)),
     sr25519,
     "46ebddef8cd9bb167dc30878d7113b7e168e6f0646beffd77d69d39bad76b47a",
   ],
 ] as [
   curveName: string,
   miniSecret: Hex,
-  getPrivateKey: (Hex) => Hex,
+  getPrivateKey: (hex: Hex) => Hex,
   curve: Curve,
   expectedPublicKey: Hex,
 ][])(
