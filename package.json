@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "build": "pnpm -r build",
-    "test": "pnpm -r test"
+    "test": "pnpm -r test",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "kratico (https://github.com/kratico)",
@@ -12,6 +13,8 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
     "vitest": "^1.0.4"
   },
@@ -19,5 +22,8 @@
     "printWidth": 80,
     "semi": false,
     "trailingComma": "all"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md}": "prettier --write"
   }
 }
