@@ -1,14 +1,14 @@
 import {
   createDerive,
   ed25519,
-  deriveEd25519,
+  ed25519Derive,
 } from "@polkadot-labs/hdkd-helpers"
 
 import type { CreateDeriveFn } from "./types"
 
-export const createEd25519Derive: CreateDeriveFn = (seed) =>
+export const ed25519CreateDerive: CreateDeriveFn = (seed) =>
   createDerive({
     seed,
     curve: ed25519,
-    derive: deriveEd25519,
+    derive: ed25519Derive,
   })

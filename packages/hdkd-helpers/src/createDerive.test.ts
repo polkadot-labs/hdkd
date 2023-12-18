@@ -4,10 +4,10 @@ import { bytesToHex } from "@noble/hashes/utils"
 import { createDerive } from "./createDerive"
 import { DEV_PHRASE } from "./constants"
 import { sr25519 } from "./sr25519"
-import { deriveSr25519 } from "./deriveSr25519"
+import { sr25519Derive } from "./sr25519Derive"
 import { Curve, DeriveKeyPairFn, Hex, ecdsa, ed25519 } from "."
-import { deriveEd25519 } from "./deriveEd25519"
-import { deriveEcdsa } from "./deriveEcdsa"
+import { ed25519Derive } from "./ed25519Derive"
+import { ecdsaDerive } from "./ecdsaDerive"
 import { parseSuri } from "./parseSuri"
 import { mnemonicToMiniSecret } from "./substrateBip39"
 
@@ -28,7 +28,7 @@ test("createKeySet sr25519", () => {
   const derive = createDerive({
     seed,
     curve: sr25519,
-    derive: deriveSr25519,
+    derive: sr25519Derive,
   })
   const keyPair = derive("//Alice")
 
@@ -47,7 +47,7 @@ test("createKeySet sr25519", () => {
   const derive = createDerive({
     seed,
     curve: sr25519,
-    derive: deriveSr25519,
+    derive: sr25519Derive,
   })
   const keyPair = derive("//Alice//foo")
 
@@ -61,7 +61,7 @@ test("createKeySet ed25519", () => {
   const derive = createDerive({
     seed,
     curve: ed25519,
-    derive: deriveEd25519,
+    derive: ed25519Derive,
   })
   const keyPair = derive("//Alice")
 
@@ -75,7 +75,7 @@ test("createKeySet ecdsa", () => {
   const derive = createDerive({
     seed,
     curve: ecdsa,
-    derive: deriveEcdsa,
+    derive: ecdsaDerive,
   })
   const keyPair = derive("//Alice")
 
@@ -89,91 +89,91 @@ test.each([
     "createKeySet for ecdsa",
     `${DEV_PHRASE}`,
     ecdsa,
-    deriveEcdsa,
+    ecdsaDerive,
     "035b26108e8b97479c547da4860d862dc08ab2c29ada449c74d5a9a58a6c46a8c4",
   ],
   [
     "createKeySet for ecdsa with hard derivation",
     `${DEV_PHRASE}//Alice`,
     ecdsa,
-    deriveEcdsa,
+    ecdsaDerive,
     "020a1091341fe5664bfa1782d5e04779689068c916b04cb365ec3153755684d9a1",
   ],
   [
     "createKeySet for ecdsa with nested hard derivation",
     `${DEV_PHRASE}//Alice//0`,
     ecdsa,
-    deriveEcdsa,
+    ecdsaDerive,
     "03ca2e6606a5c42b9671765ff60aaa98c3033ab0fb155f08afa884343def0857f0",
   ],
   [
     "createKeySet for ecdsa with password",
     `${DEV_PHRASE}//Alice///password`,
     ecdsa,
-    deriveEcdsa,
+    ecdsaDerive,
     "02fa78ba5b4ae2b0086a1c10363978990df68915635890c88d94e136dfb36241f9",
   ],
   [
     "createKeySet for ed25519",
     `${DEV_PHRASE}`,
     ed25519,
-    deriveEd25519,
+    ed25519Derive,
     "345071da55e5dccefaaa440339415ef9f2663338a38f7da0df21be5ab4e055ef",
   ],
   [
     "createKeySet for ed25519 with hard derivation",
     `${DEV_PHRASE}//Alice`,
     ed25519,
-    deriveEd25519,
+    ed25519Derive,
     "88dc3417d5058ec4b4503e0c12ea1a0a89be200fe98922423d4334014fa6b0ee",
   ],
   [
     "createKeySet for ed25519 with nested hard derivation",
     `${DEV_PHRASE}//Alice//0`,
     ed25519,
-    deriveEd25519,
+    ed25519Derive,
     "de6c1b2cf7076546c493ada471947fbab1f100a31c680ac82ea78c46e33dd3e4",
   ],
   [
     "createKeySet for ed25519 with password",
     `${DEV_PHRASE}//Alice///password`,
     ed25519,
-    deriveEd25519,
+    ed25519Derive,
     "2818a78aba524c30f6054d7bf23dd78bc2d20c4111d00f6ba56a060e97e0d8d4",
   ],
   [
     "createKeySet for sr25519",
     `${DEV_PHRASE}`,
     sr25519,
-    deriveSr25519,
+    sr25519Derive,
     "46ebddef8cd9bb167dc30878d7113b7e168e6f0646beffd77d69d39bad76b47a",
   ],
   [
     "createKeySet for sr25519 with hard derivation",
     `${DEV_PHRASE}//Alice`,
     sr25519,
-    deriveSr25519,
+    sr25519Derive,
     "d43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d",
   ],
   [
     "createKeySet for sr25519 with nested hard derivation",
     `${DEV_PHRASE}//Alice//0`,
     sr25519,
-    deriveSr25519,
+    sr25519Derive,
     "4435d0e6e507975038a9fe8f6002b6a8aa6a2740de8b2e5ea193654d204ada09",
   ],
   [
     "createKeySet for sr25519 with nested soft derivation",
     `${DEV_PHRASE}//Alice/0`,
     sr25519,
-    deriveSr25519,
+    sr25519Derive,
     "9057db4878163172ea51d570612043a98971737bf608b544991130ac110b0801",
   ],
   [
     "createKeySet for sr25519 with password",
     `${DEV_PHRASE}//Alice///password`,
     sr25519,
-    deriveSr25519,
+    sr25519Derive,
     "32fc18294f88e02ec071e59bb3996aa21f4519d92593dc6e01fda2921d459b23",
   ],
 ] as [

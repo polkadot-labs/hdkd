@@ -1,5 +1,5 @@
 import { bytesToHex } from "@noble/hashes/utils"
-import { createSr25519Derive } from "@polkadot-labs/hdkd"
+import { sr25519CreateDerive } from "@polkadot-labs/hdkd"
 import {
   sr25519,
   DEV_PHRASE,
@@ -9,7 +9,7 @@ import {
 
 const entropy = mnemonicToEntropy(DEV_PHRASE)
 const miniSecret = entropyToMiniSecret(entropy)
-const derive = createSr25519Derive(miniSecret)
+const derive = sr25519CreateDerive(miniSecret)
 
 const keypair = derive("//Alice")
 const message = new TextEncoder().encode("Hello")

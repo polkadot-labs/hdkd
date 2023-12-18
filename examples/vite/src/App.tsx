@@ -1,8 +1,8 @@
 import { bytesToHex } from "@noble/hashes/utils"
 import {
-  createSr25519Derive,
-  createEd25519Derive,
-  createEcdsaDerive,
+  sr25519CreateDerive,
+  ed25519CreateDerive,
+  ecdsaCreateDerive,
 } from "@polkadot-labs/hdkd"
 import { DEV_MINI_SECRET } from "@polkadot-labs/hdkd-helpers"
 import { useMemo } from "react"
@@ -12,13 +12,13 @@ function App() {
     () =>
       (
         [
-          ["sr25519", "//Alice", createSr25519Derive],
-          ["sr25519", "//Alice//0", createSr25519Derive],
-          ["sr25519", "//Alice/0", createSr25519Derive],
-          ["ed25519", "//Alice", createEd25519Derive],
-          ["ed25519", "//Alice//0", createEd25519Derive],
-          ["ecdsa", "//Alice", createEcdsaDerive],
-          ["ecdsa", "//Alice//0", createEcdsaDerive],
+          ["sr25519", "//Alice", sr25519CreateDerive],
+          ["sr25519", "//Alice//0", sr25519CreateDerive],
+          ["sr25519", "//Alice/0", sr25519CreateDerive],
+          ["ed25519", "//Alice", ed25519CreateDerive],
+          ["ed25519", "//Alice//0", ed25519CreateDerive],
+          ["ecdsa", "//Alice", ecdsaCreateDerive],
+          ["ecdsa", "//Alice//0", ecdsaCreateDerive],
         ] as const
       ).map(([signatureScheme, derivationPath, createDerive]) => {
         const derive = createDerive(DEV_MINI_SECRET)

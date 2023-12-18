@@ -8,15 +8,15 @@ import {
 import subkeyTestCases from "./subkey-test-cases.json"
 import {
   CreateDeriveFn,
-  createEcdsaDerive,
-  createEd25519Derive,
-  createSr25519Derive,
+  ecdsaCreateDerive,
+  ed25519CreateDerive,
+  sr25519CreateDerive,
 } from "../src"
 
 const schemes: Record<string, CreateDeriveFn> = {
-  ecdsa: createEcdsaDerive,
-  ed25519: createEd25519Derive,
-  sr25519: createSr25519Derive,
+  ecdsa: ecdsaCreateDerive,
+  ed25519: ed25519CreateDerive,
+  sr25519: sr25519CreateDerive,
 }
 
 beforeAll(async () => {
