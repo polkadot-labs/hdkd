@@ -1,14 +1,14 @@
 import {
-  createKeySet,
+  createDerive,
   sr25519,
   deriveSr25519,
 } from "@polkadot-labs/hdkd-helpers"
 
-import { DeriveFn } from "./types"
+import { CreateDeriveFn } from "./types"
 
-export const createSr25519Derive: DeriveFn = (seed) =>
-  createKeySet({
+export const createSr25519Derive: CreateDeriveFn = (seed) =>
+  createDerive({
     seed,
     curve: sr25519,
     derive: deriveSr25519,
-  }).derive
+  })

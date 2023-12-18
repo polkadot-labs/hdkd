@@ -5,13 +5,13 @@ import {
   sr25519_keypair_from_seed,
 } from "@polkadot-labs/schnorrkel-wasm"
 import { bytesToHex } from "@noble/hashes/utils"
-import { ensureBytes } from "@noble/curves/abstract/utils"
 
 import { DEV_MINI_SECRET } from "../src/constants"
 import { Hex } from "../src/types"
 import { createChainCode } from "../src/createChainCode"
 import { parseSuri } from "../src/parseSuri"
 import { parseDerivations } from "../src/parseDerivations"
+import { ensureBytes } from "../src/utils"
 
 beforeAll(async () => {
   // FIXME: Needed for thread_rng

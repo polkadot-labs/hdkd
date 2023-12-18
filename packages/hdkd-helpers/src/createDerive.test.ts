@@ -1,7 +1,7 @@
 import { afterAll, beforeAll, expect, test } from "vitest"
 import { bytesToHex } from "@noble/hashes/utils"
 
-import { createKeySet } from "./createKeySet"
+import { createDerive } from "./createDerive"
 import { DEV_PHRASE } from "./constants"
 import { sr25519 } from "./sr25519"
 import { deriveSr25519 } from "./deriveSr25519"
@@ -25,12 +25,12 @@ afterAll(() => {
 
 test("createKeySet sr25519", () => {
   const seed = mnemonicToMiniSecret(DEV_PHRASE)
-  const keySet = createKeySet({
+  const derive = createDerive({
     seed,
     curve: sr25519,
     derive: deriveSr25519,
   })
-  const keyPair = keySet.derive("//Alice")
+  const keyPair = derive("//Alice")
 
   expect(bytesToHex(keyPair.publicKey)).toBe(
     "d43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d",
@@ -44,12 +44,12 @@ test("createKeySet sr25519", () => {
 
 test("createKeySet sr25519", () => {
   const seed = mnemonicToMiniSecret(DEV_PHRASE)
-  const keySet = createKeySet({
+  const derive = createDerive({
     seed,
     curve: sr25519,
     derive: deriveSr25519,
   })
-  const keyPair = keySet.derive("//Alice//foo")
+  const keyPair = derive("//Alice//foo")
 
   expect(bytesToHex(keyPair.publicKey)).toBe(
     "c674c01a238914605f5f47615c3230eff592a2d1148190cac4b7825e61c80842",
@@ -58,12 +58,12 @@ test("createKeySet sr25519", () => {
 
 test("createKeySet ed25519", () => {
   const seed = mnemonicToMiniSecret(DEV_PHRASE)
-  const keySet = createKeySet({
+  const derive = createDerive({
     seed,
     curve: ed25519,
     derive: deriveEd25519,
   })
-  const keyPair = keySet.derive("//Alice")
+  const keyPair = derive("//Alice")
 
   expect(bytesToHex(keyPair.publicKey)).toBe(
     "88dc3417d5058ec4b4503e0c12ea1a0a89be200fe98922423d4334014fa6b0ee",
@@ -72,12 +72,12 @@ test("createKeySet ed25519", () => {
 
 test("createKeySet ecdsa", () => {
   const seed = mnemonicToMiniSecret(DEV_PHRASE)
-  const keySet = createKeySet({
+  const derive = createDerive({
     seed,
     curve: ecdsa,
     derive: deriveEcdsa,
   })
-  const keyPair = keySet.derive("//Alice")
+  const keyPair = derive("//Alice")
 
   expect(bytesToHex(keyPair.publicKey)).toBe(
     "020a1091341fe5664bfa1782d5e04779689068c916b04cb365ec3153755684d9a1",
@@ -182,15 +182,15 @@ test.each([
   curve: Curve,
   derive: DeriveKeyPairFn,
   expectedPublicKey: Hex,
-][])("%s", (_, suri, curve, derive, expectedPublicKey) => {
+][])("%s", (_, suri, curve, deriveKeyPair, expectedPublicKey) => {
   const { phrase, paths, password } = parseSuri(suri)
   const seed = mnemonicToMiniSecret(phrase, password)
-  const keySet = createKeySet({
+  const derive = createDerive({
     seed,
     curve,
-    derive,
+    derive: deriveKeyPair,
   })
-  const keyPair = keySet.derive(paths)
+  const keyPair = derive(paths)
 
   expect(bytesToHex(keyPair.publicKey)).toBe(expectedPublicKey)
 

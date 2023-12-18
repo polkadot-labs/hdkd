@@ -11,14 +11,10 @@ export type KeyPair = {
   sign: (message: Hex) => Uint8Array
 }
 
-export type KeySet = {
-  derive(path: string): KeyPair
-}
+export type DeriveFn = (path: string) => KeyPair
 
-export type DeriveKeyPairFn = {
-  (
-    seed: Uint8Array,
-    curve: Curve,
-    derivations: [type: "hard" | "soft", chainCodes: Uint8Array][],
-  ): KeyPair
-}
+export type DeriveKeyPairFn = (
+  seed: Uint8Array,
+  curve: Curve,
+  derivations: [type: "hard" | "soft", chainCodes: Uint8Array][],
+) => KeyPair

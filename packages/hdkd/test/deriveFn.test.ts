@@ -1,16 +1,19 @@
 import { test, expect, beforeAll, afterAll } from "vitest"
-import { bytesToHex } from "@noble/curves/abstract/utils"
-import { mnemonicToMiniSecret, parseSuri } from "@polkadot-labs/hdkd-helpers"
+import {
+  mnemonicToMiniSecret,
+  parseSuri,
+  ensureBytes,
+} from "@polkadot-labs/hdkd-helpers"
 
 import subkeyTestCases from "./subkey-test-cases.json"
 import {
-  DeriveFn,
+  CreateDeriveFn,
   createEcdsaDerive,
   createEd25519Derive,
   createSr25519Derive,
 } from "../src"
 
-const schemes: Record<string, DeriveFn> = {
+const schemes: Record<string, CreateDeriveFn> = {
   ecdsa: createEcdsaDerive,
   ed25519: createEd25519Derive,
   sr25519: createSr25519Derive,
@@ -35,6 +38,8 @@ test.each(subkeyTestCases)(
     const seed = mnemonicToMiniSecret(phrase, password)
     const keypair = schemes[input.scheme](seed)(paths)
 
-    expect(bytesToHex(keypair.publicKey)).toEqual(output.publicKey.slice(2))
+    expect(keypair.publicKey).toEqual(
+      ensureBytes("output.publicKey", output.publicKey),
+    )
   },
 )

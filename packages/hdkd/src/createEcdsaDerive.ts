@@ -1,10 +1,10 @@
-import { createKeySet, ecdsa, deriveEcdsa } from "@polkadot-labs/hdkd-helpers"
+import { createDerive, ecdsa, deriveEcdsa } from "@polkadot-labs/hdkd-helpers"
 
-import type { DeriveFn } from "./types"
+import type { CreateDeriveFn } from "./types"
 
-export const createEcdsaDerive: DeriveFn = (seed) =>
-  createKeySet({
+export const createEcdsaDerive: CreateDeriveFn = (seed) =>
+  createDerive({
     seed,
     curve: ecdsa,
     derive: deriveEcdsa,
-  }).derive
+  })

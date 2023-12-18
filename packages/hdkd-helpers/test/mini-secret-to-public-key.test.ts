@@ -7,7 +7,7 @@ import { sr25519 } from "../src/sr25519"
 import { ecdsa } from "../src/ecdsa"
 import { ed25519 } from "../src/ed25519"
 import { Curve, Hex } from "../src/types"
-import { ensureBytes } from "@noble/curves/abstract/utils"
+import { ensureBytes } from "../src/utils"
 
 beforeAll(async () => {
   // FIXME: Needed for thread_rng

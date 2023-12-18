@@ -5,7 +5,6 @@ import {
 } from "@polkadot-labs/schnorrkel-wasm"
 import { bytesToHex } from "@noble/hashes/utils"
 import { str, Tuple, Bytes } from "scale-ts"
-import { ensureBytes } from "@noble/curves/abstract/utils"
 
 import { DEV_MINI_SECRET } from "../src/constants"
 import { sr25519 } from "../src/sr25519"
@@ -14,7 +13,7 @@ import { ed25519 } from "../src/ed25519"
 import { Curve, Hex } from "../src/types"
 import { parseSuri } from "../src/parseSuri"
 import { parseDerivations } from "../src/parseDerivations"
-import { blake2b256 } from "../src/utils"
+import { blake2b256, ensureBytes } from "../src/utils"
 import { createChainCode } from "../src/createChainCode"
 
 beforeAll(async () => {

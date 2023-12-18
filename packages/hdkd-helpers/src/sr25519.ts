@@ -1,4 +1,4 @@
-import { ensureBytes } from "@noble/curves/abstract/utils"
+import { ensureBytes } from "./utils"
 import {
   sr25519_pubkey,
   sr25519_sign,
