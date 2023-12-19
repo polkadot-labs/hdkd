@@ -3,7 +3,7 @@ import {
   sr25519_derive_keypair_soft,
   sr25519_keypair_from_seed,
 } from "@polkadot-labs/schnorrkel-wasm"
-import { DeriveKeyPairFn } from "./types"
+import { DeriveKeyPairFn } from "./internal/types"
 
 export const sr25519Derive: DeriveKeyPairFn = (seed, curve, derivations) => {
   const keypair = sr25519_keypair_from_seed(seed)

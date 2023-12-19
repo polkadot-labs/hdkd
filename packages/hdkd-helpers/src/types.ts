@@ -12,9 +12,3 @@ export type KeyPair = {
 }
 
 export type DeriveFn = (path: string) => KeyPair
-
-export type DeriveKeyPairFn = (
-  seed: Uint8Array,
-  curve: Curve,
-  derivations: [type: "hard" | "soft", chainCodes: Uint8Array][],
-) => KeyPair

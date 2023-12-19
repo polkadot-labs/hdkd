@@ -5,11 +5,12 @@ import { createDerive } from "./createDerive"
 import { DEV_PHRASE } from "./constants"
 import { sr25519 } from "./sr25519"
 import { sr25519Derive } from "./sr25519Derive"
-import { Curve, DeriveKeyPairFn, Hex, ecdsa, ed25519 } from "."
+import { Curve, Hex, ecdsa, ed25519 } from "."
 import { ed25519Derive } from "./ed25519Derive"
 import { ecdsaDerive } from "./ecdsaDerive"
 import { parseSuri } from "./parseSuri"
 import { mnemonicToMiniSecret } from "./substrateBip39"
+import { DeriveKeyPairFn } from "./internal/types"
 
 beforeAll(async () => {
   // FIXME: Needed for thread_rng
