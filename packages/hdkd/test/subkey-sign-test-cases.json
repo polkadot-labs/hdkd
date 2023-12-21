@@ -1,0 +1,35 @@
+[
+  {
+    "input": {
+      "scheme": "ecdsa",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice",
+      "message": "Hello World"
+    },
+    "subkey": {
+      "command": "subkey sign --scheme ecdsa --suri bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice --hex --message 48656c6c6f20576f726c64",
+      "output": "0x26aea3cd29f36e6f153d8be84751b7b15bd66d6751de1ac5bce688a6846627dc1ae8827a5ebe9422bfede2080a467872f56e7c9be5bf7ca005bb73aa2fca658500"
+    }
+  },
+  {
+    "input": {
+      "scheme": "ed25519",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice",
+      "message": "Hello World"
+    },
+    "subkey": {
+      "command": "subkey sign --scheme ed25519 --suri bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice --hex --message 48656c6c6f20576f726c64",
+      "output": "0xd80bd057bf0275f6ba4e728d070b654892b5553aa1c2df7f7e5aca9e23dcbaf06e5af59df4208f122a88524bbd1158c0c58d91a3e363fc013d6221a738fd3006"
+    }
+  },
+  {
+    "input": {
+      "scheme": "sr25519",
+      "suri": "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice",
+      "message": "Hello World"
+    },
+    "subkey": {
+      "command": "subkey sign --scheme sr25519 --suri bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice --hex --message 48656c6c6f20576f726c64",
+      "output": "0x82b3653fbaeecd1491ff24899c0d7c8a69bd3670af99795ebcf144b9bc2174401063bc57c613a26cac49d7468e5ce484bcbe5b747c952fd4664a25fb4e8fa58f"
+    }
+  }
+]

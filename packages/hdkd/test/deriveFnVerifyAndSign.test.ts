@@ -1,24 +1,32 @@
 import { test, expect, beforeAll, afterAll } from "vitest"
 import {
+  Curve,
+  ensureBytes,
   mnemonicToMiniSecret,
   parseSuri,
-  ensureBytes,
+  ecdsa,
+  ed25519,
+  sr25519,
 } from "@polkadot-labs/hdkd-helpers"
-import registry from "@substrate/ss58-registry"
 
-import subkeyTestCases from "./subkey-inspect-test-cases.json"
+import subkeyTestCases from "./subkey-sign-test-cases.json"
 import {
   CreateDeriveFn,
   ecdsaCreateDerive,
   ed25519CreateDerive,
   sr25519CreateDerive,
-  withNetworkAccount,
 } from "../src"
 
 const schemes: Record<string, CreateDeriveFn> = {
   ecdsa: ecdsaCreateDerive,
   ed25519: ed25519CreateDerive,
   sr25519: sr25519CreateDerive,
+}
+
+const curves: Record<string, Curve> = {
+  ecdsa,
+  ed25519,
+  sr25519,
 }
 
 beforeAll(async () => {
@@ -33,27 +41,24 @@ afterAll(() => {
   delete globalThis.crypto
 })
 
-const prefixByNetwork = Object.fromEntries(
-  registry.map(({ network, prefix }) => [network, prefix]),
-)
-
 test.each(subkeyTestCases)(
   "withNetworkAccount for $input.scheme $input.network $input.suri",
   ({ input, subkey: { output } }) => {
     const { phrase, paths, password } = parseSuri(input.suri)
     const seed = mnemonicToMiniSecret(phrase, password)
-    const keypair = withNetworkAccount(
-      schemes[input.scheme](seed)(paths),
-      prefixByNetwork[output.networkId],
-    )
+    const keypair = schemes[input.scheme](seed)(paths)
 
-    expect(keypair.publicKey).toEqual(
-      ensureBytes("output.publicKey", output.publicKey),
-    )
-    expect(keypair.accountId).toEqual(
-      ensureBytes("output.accountId", output.accountId),
-    )
-    expect(keypair.ss58Address).toEqual(output.ss58Address)
-    expect(keypair.ss58PublicKey).toEqual(output.ss58PublicKey)
+    const message = new TextEncoder().encode(input.message)
+
+    expect(
+      curves[input.scheme].verify(output, message, keypair.publicKey),
+    ).toBe(true)
+
+    // TODO: when subkey is installed in CI, do keypair.sign() and verify with subkey
+    // sr25519 signatures are not deterministic
+    if (input.scheme === "sr25519") return
+
+    const signature = keypair.sign(message)
+    expect(signature).toEqual(ensureBytes("output", output))
   },
 )
