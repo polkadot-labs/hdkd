@@ -6,6 +6,7 @@ import { Hex } from "./types"
 import { DeriveKeyPairFn } from "./internal/types"
 
 export const blake2b256 = (msg: Hex) => blake2b(msg, { dkLen: 32 })
+export const blake2b512 = (msg: Hex) => blake2b(msg, { dkLen: 64 })
 
 export const ensureBytes = (
   title: string,

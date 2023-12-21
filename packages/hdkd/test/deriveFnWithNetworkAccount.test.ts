@@ -4,6 +4,7 @@ import {
   parseSuri,
   ensureBytes,
 } from "@polkadot-labs/hdkd-helpers"
+import registry from "@substrate/ss58-registry"
 
 import subkeyTestCases from "./subkey-test-cases.json"
 import {
@@ -11,6 +12,7 @@ import {
   ecdsaCreateDerive,
   ed25519CreateDerive,
   sr25519CreateDerive,
+  withNetworkAccount,
 } from "../src"
 
 const schemes: Record<string, CreateDeriveFn> = {
@@ -31,15 +33,27 @@ afterAll(() => {
   delete globalThis.crypto
 })
 
+const prefixByNetwork = Object.fromEntries(
+  registry.map(({ network, prefix }) => [network, prefix]),
+)
+
 test.each(subkeyTestCases)(
-  "deriveFn for $input.scheme $input.suri",
+  "withNetworkAccount for $input.scheme $input.network $input.suri",
   ({ input, subkey: { output } }) => {
     const { phrase, paths, password } = parseSuri(input.suri)
     const seed = mnemonicToMiniSecret(phrase, password)
-    const keypair = schemes[input.scheme](seed)(paths)
+    const keypair = withNetworkAccount(
+      schemes[input.scheme](seed)(paths),
+      prefixByNetwork[output.networkId],
+    )
 
     expect(keypair.publicKey).toEqual(
       ensureBytes("output.publicKey", output.publicKey),
     )
+    expect(keypair.accountId).toEqual(
+      ensureBytes("output.accountId", output.accountId),
+    )
+    expect(keypair.ss58Address).toEqual(output.ss58Address)
+    expect(keypair.ss58PublicKey).toEqual(output.ss58PublicKey)
   },
 )

@@ -15,7 +15,7 @@
     "build": "tsc --noEmit && tsup-node src/index.ts --clean --sourcemap --format esm,cjs --platform node --target esnext --dts",
     "test": "vitest",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,md}\" \"test/**/*.{js,jsx,ts,tsx,json,md}\"",
-    "generate-subkey-test-cases": "node scripts/generate-subkey-test-cases.js > test/data.json"
+    "generate-subkey-test-cases": "node scripts/generate-subkey-test-cases.js > test/subkey-test-cases.json"
   },
   "keywords": [],
   "author": "kratico (https://github.com/kratico)",
@@ -29,6 +29,7 @@
   ],
   "devDependencies": {
     "@noble/curves": "^1.3.0",
+    "@substrate/ss58-registry": "^1.44.0",
     "execa": "^8.0.1",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",

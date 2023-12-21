@@ -1,31 +1,51 @@
 import { $ } from "execa"
 import { DEV_PHRASE } from "@polkadot-labs/hdkd-helpers"
 
+const generateVariants = ([head, ...tail]) => {
+  if (tail.length === 0) return head.map((h) => [h])
+  const variants = []
+  for (const h of head)
+    for (const v of generateVariants(tail)) variants.push([h, ...v])
+  return variants
+}
+
 const variants = [
-  ["ecdsa", `${DEV_PHRASE}//Alice`],
-  ["ecdsa", `${DEV_PHRASE}//Alice//0`],
-  ["ecdsa", `${DEV_PHRASE}//Alice///password`],
-  ["ed25519", `${DEV_PHRASE}//Alice`],
-  ["ed25519", `${DEV_PHRASE}//Alice//0`],
-  ["ed25519", `${DEV_PHRASE}//Alice///password`],
-  ["sr25519", `${DEV_PHRASE}//Alice`],
-  ["sr25519", `${DEV_PHRASE}//Alice//0`],
-  ["sr25519", `${DEV_PHRASE}//Alice///password`],
-  ["sr25519", `${DEV_PHRASE}//Alice/0`],
-  ["sr25519", `${DEV_PHRASE}//Alice/foo`],
-  ["sr25519", `${DEV_PHRASE}//Alice/foo/bar`],
-  ["sr25519", `${DEV_PHRASE}//Alice/foo//bar`],
+  ...generateVariants([
+    ["ecdsa", "ed25519", "sr25519"],
+    [DEV_PHRASE],
+    ["BareSecp256k1", "BareEd25519", "BareSr25519"],
+  ]),
+  ...generateVariants([
+    ["ecdsa", "ed25519", "sr25519"],
+    [
+      `${DEV_PHRASE}//Alice`,
+      `${DEV_PHRASE}//Alice//0`,
+      `${DEV_PHRASE}//Alice///password`,
+    ],
+    ["substrate", "polkadot"],
+  ]),
+  ...generateVariants([
+    ["sr25519"],
+    [
+      `${DEV_PHRASE}//Alice/0`,
+      `${DEV_PHRASE}//Alice/foo`,
+      `${DEV_PHRASE}//Alice/foo/bar`,
+      `${DEV_PHRASE}//Alice/foo//bar`,
+    ],
+    ["substrate"],
+  ]),
 ]
 
-const subkeyInspect = (scheme, suri) =>
+const subkeyInspect = (scheme, suri, network) =>
   // TODO: install subkey in CI
-  $`subkey inspect --output-type json --scheme ${scheme} ${suri}`
+  $`subkey inspect --output-type json --scheme ${scheme} ${suri} --network ${network}`
 
 const testCases = await Promise.all(
-  variants.map(async ([scheme, suri]) => {
-    const { command, stdout } = await subkeyInspect(scheme, suri)
+  variants.map(async ([scheme, suri, network]) => {
+    network ??= "substrate"
+    const { command, stdout } = await subkeyInspect(scheme, suri, network)
     return {
-      input: { scheme, suri },
+      input: { scheme, suri, network },
       subkey: {
         command,
         output: JSON.parse(stdout),
