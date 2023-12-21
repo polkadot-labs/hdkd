@@ -12,8 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Cache turbo build setup
-        uses: actions/cache@v3
+      - uses: actions/cache@v3
         with:
           path: .turbo
           key: ${{ runner.os }}-turbo-${{ github.sha }}
@@ -39,9 +38,9 @@ jobs:
           node-version: 18.x
           cache: pnpm
       - run: pnpm install
-      - run: pnpm build
-      - run: pnpm test
-      - run: pnpm lint
+      - run: pnpm turbo build
+      - run: pnpm turbo test
+      - run: pnpm turbo lint
       - uses: ./.github/actions/publish
         if: github.ref == 'refs/heads/main'
         with:
