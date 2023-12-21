@@ -12,6 +12,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: Cache turbo build setup
+        uses: actions/cache@v3
+        with:
+          path: .turbo
+          key: ${{ runner.os }}-turbo-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-turbo-
       - uses: actions/cache@v3
         with:
           path: |
@@ -21,7 +28,8 @@ jobs:
             ~/.cargo/git/db/
             packages/schnorrkel-wasm/rust/
           key: ${{ runner.os }}-cargo-${{ hashFiles('packages/schnorrkel-wasm/rust/Cargo.lock') }}
-          restore-keys: ${{ runner.os }}-cargo-
+          restore-keys: |
+            ${{ runner.os }}-cargo-
       - run: which wasm-pack || cargo install wasm-pack
       - uses: pnpm/action-setup@v2
         with:
