@@ -38,9 +38,7 @@ jobs:
           node-version: 18.x
           cache: pnpm
       - run: pnpm install
-      - run: pnpm turbo build
-      - run: pnpm turbo test
-      - run: pnpm turbo lint
+      - run: pnpm turbo build test lint --cache-dir=.turbo
       - uses: ./.github/actions/publish
         if: github.ref == 'refs/heads/main'
         with:
