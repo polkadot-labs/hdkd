@@ -15,19 +15,10 @@ export const createDerive =
     derive(
       ensureBytes("seed", seed, 32),
       {
-        getPublicKey: (privateKey) =>
-          curve.getPublicKey(ensureBytes("privateKey", privateKey)),
-        sign: (message, privateKey) =>
-          curve.sign(
-            ensureBytes("message", message),
-            ensureBytes("privateKey", privateKey),
-          ),
+        getPublicKey: (privateKey) => curve.getPublicKey(privateKey),
+        sign: (message, privateKey) => curve.sign(message, privateKey),
         verify: (signature, message, publicKey) =>
-          curve.verify(
-            ensureBytes("signature", signature),
-            ensureBytes("message", message),
-            ensureBytes("publicKey", publicKey),
-          ),
+          curve.verify(signature, message, publicKey),
       },
       parseDerivations(path).map(([type, code]) => [
         type,
