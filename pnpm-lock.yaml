@@ -42,8 +42,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
       scale-ts:
-        specifier: ^1.4.2
-        version: 1.4.2
+        specifier: ^1.4.3
+        version: 1.4.3
     devDependencies:
       tsup:
         specifier: ^8.0.1
@@ -144,8 +144,8 @@ importers:
         specifier: ^1.1.5
         version: 1.1.5
       scale-ts:
-        specifier: ^1.4.2
-        version: 1.4.2
+        specifier: ^1.4.3
+        version: 1.4.3
     devDependencies:
       tsup:
         specifier: ^8.0.1
@@ -2153,8 +2153,8 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /scale-ts@1.4.2:
-    resolution: {integrity: sha512-WTS1myYKhrNKzGCmQ434LkDGfgppcGUHCdpl1baH2jEu2Ow8al+llw5vOKO4Tk1/Y58+TfriReMtGV/07VMGmg==}
+  /scale-ts@1.4.3:
+    resolution: {integrity: sha512-45xNR+ovE11s5TY2deCwqct83TwoHDHFiqUlBBWR4H9ukEa1GHGB/YZPoNkNho0dbi9XxtDrZf5M/YZdKa3M1Q==}
     dev: false
 
   /scheduler@0.23.0:
