@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 && prettier --check README.md \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 && prettier --check \"*.{js,cjs,jsx,ts,tsx,json,md}\" \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
     "preview": "vite preview"
   },
   "dependencies": {

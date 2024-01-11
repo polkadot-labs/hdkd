@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsc --noEmit && tsup-node src/index.ts --clean --sourcemap --format esm,cjs --platform node --target esnext --dts",
     "test": "vitest",
-    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,md}\" \"test/**/*.{js,jsx,ts,tsx,json,md}\""
+    "lint": "prettier --check \"*.{js,jsx,ts,mts,tsx,json,md}\" \"{src,test}/**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "keywords": [],
   "author": "kratico (https://github.com/kratico)",
