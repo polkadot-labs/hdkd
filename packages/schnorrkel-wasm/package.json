@@ -1,6 +1,6 @@
 {
   "name": "@polkadot-labs/schnorrkel-wasm",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "types": "./dist/nodejs/schnorrkel.d.ts",
   "files": [
