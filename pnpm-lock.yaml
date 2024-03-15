@@ -30,8 +30,8 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
       '@noble/hashes':
-        specifier: ^1.3.3
-        version: 1.3.3
+        specifier: ^1.4.0
+        version: 1.4.0
       '@polkadot-labs/hdkd':
         specifier: workspace:*
         version: link:../../packages/hdkd
@@ -55,8 +55,8 @@ importers:
   examples/vite:
     dependencies:
       '@noble/hashes':
-        specifier: ^1.3.3
-        version: 1.3.3
+        specifier: ^1.4.0
+        version: 1.4.0
       '@polkadot-labs/hdkd':
         specifier: workspace:*
         version: link:../../packages/hdkd
@@ -135,8 +135,8 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
       '@noble/hashes':
-        specifier: ^1.3.3
-        version: 1.3.3
+        specifier: ^1.4.0
+        version: 1.4.0
       '@polkadot-labs/schnorrkel-wasm':
         specifier: workspace:*
         version: link:../schnorrkel-wasm
@@ -462,11 +462,6 @@ packages:
     resolution: {integrity: sha512-p+4cb332SFCrReJkCYe8Xzm0OWi4Jji5jVdIZRL/PmacmDkFNw6MrrV+gGpiPxLHbV+zKFRywUWbaseT+tZRXg==}
     dependencies:
       '@noble/hashes': 1.4.0
-
-  /@noble/hashes@1.3.3:
-    resolution: {integrity: sha512-V7/fPHgl+jsVPXqqeOzT8egNj2iBIVt+ECeMMG8TdcnTikP3oaBtUVqpT/gYCR68aEBJSF+XbYUxStjbFMqIIA==}
-    engines: {node: '>= 16'}
-    dev: false
 
   /@noble/hashes@1.4.0:
     resolution: {integrity: sha512-V1JJ1WTRUqHHrOSh597hURcMqVKVGL/ea3kv0gSnEdsEZ0/+VyPghM1lMNGc00z7CIQorSvbKpuJkxvuHbvdbg==}
@@ -1043,7 +1038,7 @@ packages:
   /bip39@3.1.0:
     resolution: {integrity: sha512-c9kiwdk45Do5GL0vJMe7tS95VjCii65mYAH7DfWl3uW8AVzXKQVUm64i3hzVybBDMp9r7j9iNxR85+ul8MdN/A==}
     dependencies:
-      '@noble/hashes': 1.3.3
+      '@noble/hashes': 1.4.0
     dev: false
 
   /brace-expansion@1.1.11:
