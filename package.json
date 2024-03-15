@@ -27,5 +27,6 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json,md}": "prettier --write"
-  }
+  },
+  "version": "1.0.0"
 }
