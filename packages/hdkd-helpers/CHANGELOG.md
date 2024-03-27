@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.7](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.6...hdkd-helpers-v0.0.7) (2024-03-27)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump typescript from 5.4.2 to 5.4.3 ([#129](https://github.com/polkadot-labs/hdkd/issues/129)) ([b1fada7](https://github.com/polkadot-labs/hdkd/commit/b1fada7ee311501655170f399d83f651e157a23d))
+* **deps:** bump @scure/base from 1.1.5 to 1.1.6 ([#128](https://github.com/polkadot-labs/hdkd/issues/128)) ([750771f](https://github.com/polkadot-labs/hdkd/commit/750771faeec823d360576bcacba5a935e99f50ed))
+* prettier ignore CHANGELOG.md ([#122](https://github.com/polkadot-labs/hdkd/issues/122)) ([1c8db63](https://github.com/polkadot-labs/hdkd/commit/1c8db63734300b926619dff87949722a401e2592))
+
 ## [0.0.6](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.5...hdkd-helpers-v0.0.6) (2024-03-16)
 
 
