@@ -30,7 +30,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cargo-
       - run: which wasm-pack || cargo install wasm-pack
-      - uses: pnpm/action-setup@v3
+      - uses: pnpm/action-setup@v4
         with:
           version: 8
       - uses: actions/setup-node@v4
