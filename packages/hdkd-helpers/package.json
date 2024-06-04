@@ -27,7 +27,7 @@
     "dist"
   ],
   "devDependencies": {
-    "tsup": "^8.0.2",
+    "tsup": "^8.1.0",
     "typescript": "^5.4.5",
     "vite-plugin-wasm": "^3.3.0"
   },
