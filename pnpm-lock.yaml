@@ -114,8 +114,8 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
       '@substrate/ss58-registry':
-        specifier: ^1.48.0
-        version: 1.48.0
+        specifier: ^1.49.0
+        version: 1.49.0
       execa:
         specifier: ^9.2.0
         version: 9.2.0
@@ -626,8 +626,8 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /@substrate/ss58-registry@1.48.0:
-    resolution: {integrity: sha512-lE9TGgtd93fTEIoHhSdtvSFBoCsvTbqiCvQIMvX4m6BO/hESywzzTzTFMVP1doBwDDMAN4lsMfIM3X3pdmt7kQ==}
+  /@substrate/ss58-registry@1.49.0:
+    resolution: {integrity: sha512-leW6Ix4LD7XgvxT7+aobPWSw+WvPcN2Rxof1rmd0mNC5t2n99k1N7UNEvz7YEFSOUeHWmKIY7F5q8KeIqYoHfA==}
     dev: true
 
   /@swc/core-darwin-arm64@1.5.24:
