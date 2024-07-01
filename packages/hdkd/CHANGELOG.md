@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.0.7](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.6...hdkd-v0.0.7) (2024-07-01)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump @substrate/ss58-registry from 1.48.0 to 1.49.0 ([#225](https://github.com/polkadot-labs/hdkd/issues/225)) ([6cd5902](https://github.com/polkadot-labs/hdkd/commit/6cd59025cd7099a261ea29fb47aa22dac2a94fc6))
+* **deps-dev:** bump execa from 8.0.1 to 9.1.0 ([#190](https://github.com/polkadot-labs/hdkd/issues/190)) ([f12269a](https://github.com/polkadot-labs/hdkd/commit/f12269a9f4a37930715215ddcdc52a9f09845a2d))
+* **deps-dev:** bump execa from 9.1.0 to 9.2.0 ([#210](https://github.com/polkadot-labs/hdkd/issues/210)) ([b91e80f](https://github.com/polkadot-labs/hdkd/commit/b91e80f67d5b0d646b7f2ec4cc99d35203c0971f))
+* **deps-dev:** bump execa from 9.2.0 to 9.3.0 ([#226](https://github.com/polkadot-labs/hdkd/issues/226)) ([6180515](https://github.com/polkadot-labs/hdkd/commit/61805158384a62341dd8bb57990e6a17df61b66c))
+* **deps-dev:** bump tsup from 8.0.2 to 8.1.0 ([#204](https://github.com/polkadot-labs/hdkd/issues/204)) ([e5d4760](https://github.com/polkadot-labs/hdkd/commit/e5d4760f01f136a5f471b6c94b051d1deee60fce))
+* **deps-dev:** bump typescript from 5.4.2 to 5.4.3 ([#129](https://github.com/polkadot-labs/hdkd/issues/129)) ([b1fada7](https://github.com/polkadot-labs/hdkd/commit/b1fada7ee311501655170f399d83f651e157a23d))
+* **deps-dev:** bump typescript from 5.4.3 to 5.4.4 ([#148](https://github.com/polkadot-labs/hdkd/issues/148)) ([38fd319](https://github.com/polkadot-labs/hdkd/commit/38fd3192b6b4187651ed64c19220be8ece61f3ba))
+* **deps-dev:** bump typescript from 5.4.4 to 5.4.5 ([#153](https://github.com/polkadot-labs/hdkd/issues/153)) ([f927ae2](https://github.com/polkadot-labs/hdkd/commit/f927ae2cfa5e0807032a88458e0c61ea9bf2c54c))
+* **deps-dev:** bump typescript from 5.4.5 to 5.5.2 ([#224](https://github.com/polkadot-labs/hdkd/issues/224)) ([e0af89a](https://github.com/polkadot-labs/hdkd/commit/e0af89a1b0e9c1af4a537cdef490557edf32ee0a))
+* prettier ignore CHANGELOG.md ([#122](https://github.com/polkadot-labs/hdkd/issues/122)) ([1c8db63](https://github.com/polkadot-labs/hdkd/commit/1c8db63734300b926619dff87949722a401e2592))
+
 ## [0.0.6](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.5...hdkd-v0.0.6) (2024-03-16)
 
 
