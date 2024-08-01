@@ -14,7 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "tsup": "^8.2.2",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "@noble/curves": "^1.4.2",
