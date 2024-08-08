@@ -27,8 +27,8 @@ importers:
   examples/playground:
     dependencies:
       '@noble/curves':
-        specifier: ^1.4.2
-        version: 1.4.2
+        specifier: ^1.5.0
+        version: 1.5.0
       '@noble/hashes':
         specifier: ^1.4.0
         version: 1.4.0
@@ -111,8 +111,8 @@ importers:
         version: link:../schnorrkel-wasm
     devDependencies:
       '@noble/curves':
-        specifier: ^1.4.2
-        version: 1.4.2
+        specifier: ^1.5.0
+        version: 1.5.0
       '@substrate/ss58-registry':
         specifier: ^1.49.0
         version: 1.49.0
@@ -132,8 +132,8 @@ importers:
   packages/hdkd-helpers:
     dependencies:
       '@noble/curves':
-        specifier: ^1.4.2
-        version: 1.4.2
+        specifier: ^1.5.0
+        version: 1.5.0
       '@noble/hashes':
         specifier: ^1.4.0
         version: 1.4.0
@@ -504,8 +504,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@noble/curves@1.4.2':
-    resolution: {integrity: sha512-TavHr8qycMChk8UwMld0ZDRvatedkzWfH8IiaeGCfymOP5i0hSCozz9vHOL0nkwk7HRMlFnAiKpS2jrUmSybcw==}
+  '@noble/curves@1.5.0':
+    resolution: {integrity: sha512-J5EKamIHnKPyClwVrzmaf5wSdQXgdHcPZIZLu3bwnbeCx8/7NPK5q2ZBWF+5FvYGByjiQQsJYX6jfgB2wDPn3A==}
 
   '@noble/hashes@1.4.0':
     resolution: {integrity: sha512-V1JJ1WTRUqHHrOSh597hURcMqVKVGL/ea3kv0gSnEdsEZ0/+VyPghM1lMNGc00z7CIQorSvbKpuJkxvuHbvdbg==}
@@ -2125,7 +2125,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@noble/curves@1.4.2':
+  '@noble/curves@1.5.0':
     dependencies:
       '@noble/hashes': 1.4.0
 
