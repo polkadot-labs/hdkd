@@ -47,7 +47,7 @@ importers:
     devDependencies:
       tsup:
         specifier: ^8.2.4
-        version: 8.2.4(@swc/core@1.5.24)(postcss@8.4.39)(typescript@5.5.4)(yaml@2.5.0)
+        version: 8.2.4(@swc/core@1.5.24)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0)
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
@@ -84,7 +84,7 @@ importers:
         version: 8.0.0(eslint@8.57.0)(typescript@5.5.4)
       '@vitejs/plugin-react-swc':
         specifier: ^3.7.0
-        version: 3.7.0(vite@5.3.5)
+        version: 3.7.0(vite@5.4.0)
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
@@ -98,8 +98,8 @@ importers:
         specifier: ^5.5.4
         version: 5.5.4
       vite:
-        specifier: ^5.3.5
-        version: 5.3.5
+        specifier: ^5.4.0
+        version: 5.4.0
 
   packages/hdkd:
     dependencies:
@@ -121,13 +121,13 @@ importers:
         version: 9.3.0
       tsup:
         specifier: ^8.2.4
-        version: 8.2.4(@swc/core@1.5.24)(postcss@8.4.39)(typescript@5.5.4)(yaml@2.5.0)
+        version: 8.2.4(@swc/core@1.5.24)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0)
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
       vite-plugin-wasm:
         specifier: ^3.3.0
-        version: 3.3.0(vite@5.3.5)
+        version: 3.3.0(vite@5.4.0)
 
   packages/hdkd-helpers:
     dependencies:
@@ -149,13 +149,13 @@ importers:
     devDependencies:
       tsup:
         specifier: ^8.2.4
-        version: 8.2.4(@swc/core@1.5.24)(postcss@8.4.39)(typescript@5.5.4)(yaml@2.5.0)
+        version: 8.2.4(@swc/core@1.5.24)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0)
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
       vite-plugin-wasm:
         specifier: ^3.3.0
-        version: 3.3.0(vite@5.3.5)
+        version: 3.3.0(vite@5.4.0)
 
   packages/schnorrkel-wasm: {}
 
@@ -1517,8 +1517,8 @@ packages:
       yaml:
         optional: true
 
-  postcss@8.4.39:
-    resolution: {integrity: sha512-0vzE+lAiG7hZl1/9I8yzKLx3aR9Xbof3fBHKunvMfOCYAtMhrsnccJY2iTURb9EZd5+pLuiNV9/c/GZJOHsgIw==}
+  postcss@8.4.41:
+    resolution: {integrity: sha512-TesUflQ0WKZqAvg52PWL6kHgLKP6xB6heTOdoYM0Wt2UHyxNa4K25EZZMgKns3BH1RLVbZCREPpLY0rhnNoHVQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -1814,8 +1814,8 @@ packages:
     peerDependencies:
       vite: ^2 || ^3 || ^4 || ^5
 
-  vite@5.3.5:
-    resolution: {integrity: sha512-MdjglKR6AQXQb9JGiS7Rc2wC6uMjcm7Go/NHNO63EwiJXfuk9PgqiP/n5IDJCziMkfw9n4Ubp7lttNwz+8ZVKA==}
+  vite@5.4.0:
+    resolution: {integrity: sha512-5xokfMX0PIiwCMCMb9ZJcMyh5wbBun0zUzKib+L65vAZ8GY9ePZMXxFrHbr/Kyll2+LSCY7xtERPpxkBDKngwg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -1823,6 +1823,7 @@ packages:
       less: '*'
       lightningcss: ^1.21.0
       sass: '*'
+      sass-embedded: '*'
       stylus: '*'
       sugarss: '*'
       terser: ^5.4.0
@@ -1834,6 +1835,8 @@ packages:
       lightningcss:
         optional: true
       sass:
+        optional: true
+      sass-embedded:
         optional: true
       stylus:
         optional: true
@@ -2350,10 +2353,10 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react-swc@3.7.0(vite@5.3.5)':
+  '@vitejs/plugin-react-swc@3.7.0(vite@5.4.0)':
     dependencies:
       '@swc/core': 1.5.24
-      vite: 5.3.5
+      vite: 5.4.0
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -3113,14 +3116,14 @@ snapshots:
 
   pirates@4.0.6: {}
 
-  postcss-load-config@6.0.1(postcss@8.4.39)(yaml@2.5.0):
+  postcss-load-config@6.0.1(postcss@8.4.41)(yaml@2.5.0):
     dependencies:
       lilconfig: 3.1.1
     optionalDependencies:
-      postcss: 8.4.39
+      postcss: 8.4.41
       yaml: 2.5.0
 
-  postcss@8.4.39:
+  postcss@8.4.41:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.1
@@ -3323,7 +3326,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  tsup@8.2.4(@swc/core@1.5.24)(postcss@8.4.39)(typescript@5.5.4)(yaml@2.5.0):
+  tsup@8.2.4(@swc/core@1.5.24)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.23.0)
       cac: 6.7.14
@@ -3335,7 +3338,7 @@ snapshots:
       globby: 11.1.0
       joycon: 3.1.1
       picocolors: 1.0.1
-      postcss-load-config: 6.0.1(postcss@8.4.39)(yaml@2.5.0)
+      postcss-load-config: 6.0.1(postcss@8.4.41)(yaml@2.5.0)
       resolve-from: 5.0.0
       rollup: 4.19.0
       source-map: 0.8.0-beta.0
@@ -3343,7 +3346,7 @@ snapshots:
       tree-kill: 1.2.2
     optionalDependencies:
       '@swc/core': 1.5.24
-      postcss: 8.4.39
+      postcss: 8.4.41
       typescript: 5.5.4
     transitivePeerDependencies:
       - jiti
@@ -3396,25 +3399,26 @@ snapshots:
       debug: 4.3.6
       pathe: 1.1.2
       tinyrainbow: 1.2.0
-      vite: 5.3.5
+      vite: 5.4.0
     transitivePeerDependencies:
       - '@types/node'
       - less
       - lightningcss
       - sass
+      - sass-embedded
       - stylus
       - sugarss
       - supports-color
       - terser
 
-  vite-plugin-wasm@3.3.0(vite@5.3.5):
+  vite-plugin-wasm@3.3.0(vite@5.4.0):
     dependencies:
-      vite: 5.3.5
+      vite: 5.4.0
 
-  vite@5.3.5:
+  vite@5.4.0:
     dependencies:
       esbuild: 0.21.4
-      postcss: 8.4.39
+      postcss: 8.4.41
       rollup: 4.19.0
     optionalDependencies:
       fsevents: 2.3.3
@@ -3437,13 +3441,14 @@ snapshots:
       tinybench: 2.8.0
       tinypool: 1.0.0
       tinyrainbow: 1.2.0
-      vite: 5.3.5
+      vite: 5.4.0
       vite-node: 2.0.5
       why-is-node-running: 2.3.0
     transitivePeerDependencies:
       - less
       - lightningcss
       - sass
+      - sass-embedded
       - stylus
       - sugarss
       - supports-color
