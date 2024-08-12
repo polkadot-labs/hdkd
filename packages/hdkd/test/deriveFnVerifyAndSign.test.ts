@@ -1,21 +1,21 @@
-import { test, expect, beforeAll, afterAll } from "vitest"
 import {
   Curve,
+  ecdsa,
+  ed25519,
   ensureBytes,
   mnemonicToMiniSecret,
   parseSuri,
-  ecdsa,
-  ed25519,
   sr25519,
 } from "@polkadot-labs/hdkd-helpers"
+import { expect, test } from "vitest"
 
-import subkeyTestCases from "./subkey-sign-test-cases.json"
 import {
   CreateDeriveFn,
   ecdsaCreateDerive,
   ed25519CreateDerive,
   sr25519CreateDerive,
 } from "../src"
+import subkeyTestCases from "./subkey-sign-test-cases.json"
 
 const schemes: Record<string, CreateDeriveFn> = {
   ecdsa: ecdsaCreateDerive,
@@ -28,18 +28,6 @@ const curves: Record<string, Curve> = {
   ed25519,
   sr25519,
 }
-
-beforeAll(async () => {
-  // FIXME: Needed for thread_rng
-  // see https://docs.rs/getrandom#nodejs-es-module-support
-  // @ts-expect-error
-  globalThis.crypto = (await import("node:crypto")).webcrypto
-})
-
-afterAll(() => {
-  // @ts-expect-error
-  delete globalThis.crypto
-})
 
 test.each(subkeyTestCases)(
   "withNetworkAccount for $input.scheme $input.network $input.suri",

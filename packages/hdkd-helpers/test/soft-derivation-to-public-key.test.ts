@@ -1,29 +1,17 @@
-import { afterAll, beforeAll, expect, test } from "vitest"
+import { bytesToHex } from "@noble/hashes/utils"
 import {
   sr25519_derive_public_soft,
   sr25519_secret_from_seed,
 } from "@polkadot-labs/schnorrkel-wasm"
-import { bytesToHex } from "@noble/hashes/utils"
+import { expect, test } from "vitest"
 
 import { DEV_MINI_SECRET } from "../src/constants"
+import { createChainCode } from "../src/createChainCode"
+import { parseDerivations } from "../src/parseDerivations"
+import { parseSuri } from "../src/parseSuri"
 import { sr25519 } from "../src/sr25519"
 import { Hex } from "../src/types"
-import { createChainCode } from "../src/createChainCode"
-import { parseSuri } from "../src/parseSuri"
-import { parseDerivations } from "../src/parseDerivations"
 import { ensureBytes } from "../src/utils"
-
-beforeAll(async () => {
-  // FIXME: Needed for thread_rng
-  // see https://docs.rs/getrandom#nodejs-es-module-support
-  // @ts-expect-error
-  globalThis.crypto = (await import("node:crypto")).webcrypto
-})
-
-afterAll(() => {
-  // @ts-expect-error
-  delete globalThis.crypto
-})
 
 // Test values from
 //   subkey inspect --scheme sr25519 /foo
