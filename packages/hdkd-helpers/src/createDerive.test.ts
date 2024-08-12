@@ -1,28 +1,16 @@
-import { afterAll, beforeAll, expect, test } from "vitest"
 import { bytesToHex } from "@noble/hashes/utils"
+import { expect, test } from "vitest"
 
-import { createDerive } from "./createDerive"
+import { Curve, Hex, ecdsa, ed25519 } from "."
 import { DEV_PHRASE } from "./constants"
+import { createDerive } from "./createDerive"
+import { ecdsaDerive } from "./ecdsaDerive"
+import { ed25519Derive } from "./ed25519Derive"
+import { DeriveKeyPairFn } from "./internal/types"
+import { parseSuri } from "./parseSuri"
 import { sr25519 } from "./sr25519"
 import { sr25519Derive } from "./sr25519Derive"
-import { Curve, Hex, ecdsa, ed25519 } from "."
-import { ed25519Derive } from "./ed25519Derive"
-import { ecdsaDerive } from "./ecdsaDerive"
-import { parseSuri } from "./parseSuri"
 import { mnemonicToMiniSecret } from "./substrateBip39"
-import { DeriveKeyPairFn } from "./internal/types"
-
-beforeAll(async () => {
-  // FIXME: Needed for thread_rng
-  // see https://docs.rs/getrandom#nodejs-es-module-support
-  // @ts-expect-error
-  globalThis.crypto = (await import("node:crypto")).webcrypto
-})
-
-afterAll(() => {
-  // @ts-expect-error
-  delete globalThis.crypto
-})
 
 test("createKeySet sr25519", () => {
   const seed = mnemonicToMiniSecret(DEV_PHRASE)
