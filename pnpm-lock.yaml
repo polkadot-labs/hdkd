@@ -114,8 +114,8 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0
       '@substrate/ss58-registry':
-        specifier: ^1.49.0
-        version: 1.49.0
+        specifier: ^1.50.0
+        version: 1.50.0
       execa:
         specifier: ^9.3.1
         version: 9.3.1
@@ -697,8 +697,8 @@ packages:
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
 
-  '@substrate/ss58-registry@1.49.0':
-    resolution: {integrity: sha512-leW6Ix4LD7XgvxT7+aobPWSw+WvPcN2Rxof1rmd0mNC5t2n99k1N7UNEvz7YEFSOUeHWmKIY7F5q8KeIqYoHfA==}
+  '@substrate/ss58-registry@1.50.0':
+    resolution: {integrity: sha512-mkmlMlcC+MSd9rA+PN8ljGAm5fVZskvVwkXIsbx4NFwaT8kt38r7e9cyDWscG3z2Zn40POviZvEMrJSk+r2SgQ==}
 
   '@swc/core-darwin-arm64@1.5.24':
     resolution: {integrity: sha512-M7oLOcC0sw+UTyAuL/9uyB9GeO4ZpaBbH76JSH6g1m0/yg7LYJZGRmplhDmwVSDAR5Fq4Sjoi1CksmmGkgihGA==}
@@ -2332,7 +2332,7 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
-  '@substrate/ss58-registry@1.49.0': {}
+  '@substrate/ss58-registry@1.50.0': {}
 
   '@swc/core-darwin-arm64@1.5.24':
     optional: true
