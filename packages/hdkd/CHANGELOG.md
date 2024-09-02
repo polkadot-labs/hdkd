@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.8](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.7...hdkd-v0.0.8) (2024-09-02)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump @substrate/ss58-registry from 1.49.0 to 1.50.0 ([#302](https://github.com/polkadot-labs/hdkd/issues/302)) ([b04833d](https://github.com/polkadot-labs/hdkd/commit/b04833d166e70ead4213e7889695418374ea05d4))
+* **deps-dev:** bump execa from 9.3.0 to 9.3.1 ([#292](https://github.com/polkadot-labs/hdkd/issues/292)) ([4054417](https://github.com/polkadot-labs/hdkd/commit/4054417eb860750c82822e16636301e55bbf6444))
+* use node v20 in CI ([#286](https://github.com/polkadot-labs/hdkd/issues/286)) ([41a9eb9](https://github.com/polkadot-labs/hdkd/commit/41a9eb96e7eb6f50b0bef829635b3643d2994c7a))
+
 ## [0.0.7](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.6...hdkd-v0.0.7) (2024-08-11)
 
 
