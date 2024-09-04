@@ -28,7 +28,7 @@
     "dist"
   ],
   "devDependencies": {
-    "@noble/curves": "^1.5.0",
+    "@noble/curves": "^1.6.0",
     "@substrate/ss58-registry": "^1.50.0",
     "execa": "^9.3.1",
     "tsup": "^8.2.4",
