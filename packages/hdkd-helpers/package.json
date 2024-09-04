@@ -32,7 +32,7 @@
     "vite-plugin-wasm": "^3.3.0"
   },
   "dependencies": {
-    "@noble/curves": "^1.5.0",
+    "@noble/curves": "^1.6.0",
     "@noble/hashes": "^1.5.0",
     "@polkadot-labs/schnorrkel-wasm": "workspace:*",
     "@scure/base": "^1.1.8",
