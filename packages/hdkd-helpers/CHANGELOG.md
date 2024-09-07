@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.8](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.7...hdkd-helpers-v0.0.8) (2024-09-07)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump @noble/curves from 1.5.0 to 1.6.0 ([#314](https://github.com/polkadot-labs/hdkd/issues/314)) ([78510be](https://github.com/polkadot-labs/hdkd/commit/78510be0d236f84481ece7bca84d2b097eb44ad5))
+* **deps:** bump @noble/hashes from 1.4.0 to 1.5.0 ([#310](https://github.com/polkadot-labs/hdkd/issues/310)) ([853dc85](https://github.com/polkadot-labs/hdkd/commit/853dc854d49a1c70c3a18ef8c7c9afc3aeb1c1a4))
+* **deps:** bump @scure/base from 1.1.7 to 1.1.8 ([#315](https://github.com/polkadot-labs/hdkd/issues/315)) ([17894f2](https://github.com/polkadot-labs/hdkd/commit/17894f2562f30e3291488c7f6befd956cdddf22f))
+* use node v20 in CI ([#286](https://github.com/polkadot-labs/hdkd/issues/286)) ([41a9eb9](https://github.com/polkadot-labs/hdkd/commit/41a9eb96e7eb6f50b0bef829635b3643d2994c7a))
+
 ## [0.0.7](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.6...hdkd-helpers-v0.0.7) (2024-08-11)
 
 
