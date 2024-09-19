@@ -141,8 +141,8 @@ importers:
         specifier: workspace:*
         version: link:../schnorrkel-wasm
       '@scure/base':
-        specifier: ^1.1.8
-        version: 1.1.8
+        specifier: ^1.1.9
+        version: 1.1.9
       scale-ts:
         specifier: ^1.6.0
         version: 1.6.0
@@ -684,8 +684,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@scure/base@1.1.8':
-    resolution: {integrity: sha512-6CyAclxj3Nb0XT7GHK6K4zK6k2xJm6E4Ft0Ohjt4WgegiFUHEtFb2CGzmPmGBwoIhrLsqNLYfLr04Y1GePrzZg==}
+  '@scure/base@1.1.9':
+    resolution: {integrity: sha512-8YKhl8GHiNI/pU2VMaofa2Tor7PJRAjwQLBBuilkJ9L5+13yVbC7JO/wS7piioAvPSwR3JKM1IJ/u4xQzbcXKg==}
 
   '@sec-ant/readable-stream@0.4.1':
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
@@ -2341,7 +2341,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.21.0':
     optional: true
 
-  '@scure/base@1.1.8': {}
+  '@scure/base@1.1.9': {}
 
   '@sec-ant/readable-stream@0.4.1': {}
 
