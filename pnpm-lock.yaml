@@ -84,7 +84,7 @@ importers:
         version: 8.6.0(eslint@8.57.0)(typescript@5.6.2)
       '@vitejs/plugin-react-swc':
         specifier: ^3.7.0
-        version: 3.7.0(vite@5.4.6)
+        version: 3.7.0(vite@5.4.7)
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
@@ -98,8 +98,8 @@ importers:
         specifier: ^5.6.2
         version: 5.6.2
       vite:
-        specifier: ^5.4.6
-        version: 5.4.6
+        specifier: ^5.4.7
+        version: 5.4.7
 
   packages/hdkd:
     dependencies:
@@ -127,7 +127,7 @@ importers:
         version: 5.6.2
       vite-plugin-wasm:
         specifier: ^3.3.0
-        version: 3.3.0(vite@5.4.6)
+        version: 3.3.0(vite@5.4.7)
 
   packages/hdkd-helpers:
     dependencies:
@@ -155,7 +155,7 @@ importers:
         version: 5.6.2
       vite-plugin-wasm:
         specifier: ^3.3.0
-        version: 3.3.0(vite@5.4.6)
+        version: 3.3.0(vite@5.4.7)
 
   packages/schnorrkel-wasm: {}
 
@@ -1915,8 +1915,8 @@ packages:
     peerDependencies:
       vite: ^2 || ^3 || ^4 || ^5
 
-  vite@5.4.6:
-    resolution: {integrity: sha512-IeL5f8OO5nylsgzd9tq4qD2QqI0k2CQLGrWD0rCN0EQJZpBK5vJAx0I+GDkMOXxQX/OfFHMuLIx6ddAxGX/k+Q==}
+  vite@5.4.7:
+    resolution: {integrity: sha512-5l2zxqMEPVENgvzTuBpHer2awaetimj2BGkhBPdnwKbPNOlHsODU+oiazEZzLK7KhAnOrO+XGYJYn4ZlUhDtDQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -2497,10 +2497,10 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react-swc@3.7.0(vite@5.4.6)':
+  '@vitejs/plugin-react-swc@3.7.0(vite@5.4.7)':
     dependencies:
       '@swc/core': 1.5.24
-      vite: 5.4.6
+      vite: 5.4.7
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -2511,13 +2511,13 @@ snapshots:
       chai: 5.1.1
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.1(@vitest/spy@2.1.1)(vite@5.4.6)':
+  '@vitest/mocker@2.1.1(@vitest/spy@2.1.1)(vite@5.4.7)':
     dependencies:
       '@vitest/spy': 2.1.1
       estree-walker: 3.0.3
       magic-string: 0.30.11
     optionalDependencies:
-      vite: 5.4.6
+      vite: 5.4.7
 
   '@vitest/pretty-format@2.1.1':
     dependencies:
@@ -3578,7 +3578,7 @@ snapshots:
       cac: 6.7.14
       debug: 4.3.6
       pathe: 1.1.2
-      vite: 5.4.6
+      vite: 5.4.7
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -3590,11 +3590,11 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-wasm@3.3.0(vite@5.4.6):
+  vite-plugin-wasm@3.3.0(vite@5.4.7):
     dependencies:
-      vite: 5.4.6
+      vite: 5.4.7
 
-  vite@5.4.6:
+  vite@5.4.7:
     dependencies:
       esbuild: 0.21.4
       postcss: 8.4.44
@@ -3605,7 +3605,7 @@ snapshots:
   vitest@2.1.1:
     dependencies:
       '@vitest/expect': 2.1.1
-      '@vitest/mocker': 2.1.1(@vitest/spy@2.1.1)(vite@5.4.6)
+      '@vitest/mocker': 2.1.1(@vitest/spy@2.1.1)(vite@5.4.7)
       '@vitest/pretty-format': 2.1.1
       '@vitest/runner': 2.1.1
       '@vitest/snapshot': 2.1.1
@@ -3620,7 +3620,7 @@ snapshots:
       tinyexec: 0.3.0
       tinypool: 1.0.0
       tinyrainbow: 1.2.0
-      vite: 5.4.6
+      vite: 5.4.7
       vite-node: 2.1.1
       why-is-node-running: 2.3.0
     transitivePeerDependencies:
