@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.9](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.8...hdkd-helpers-v0.0.9) (2024-10-21)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump tsup from 8.2.4 to 8.3.0 ([#335](https://github.com/polkadot-labs/hdkd/issues/335)) ([8149754](https://github.com/polkadot-labs/hdkd/commit/8149754188a91b8a1b73824ad1f07f8916d42291))
+* **deps-dev:** bump typescript from 5.5.4 to 5.6.2 ([#319](https://github.com/polkadot-labs/hdkd/issues/319)) ([fe25150](https://github.com/polkadot-labs/hdkd/commit/fe25150aa0c0a373de484b8fd55fc41c61145c05))
+* **deps-dev:** bump typescript from 5.6.2 to 5.6.3 ([#355](https://github.com/polkadot-labs/hdkd/issues/355)) ([4f6dd39](https://github.com/polkadot-labs/hdkd/commit/4f6dd398c6e17334b48768b3f0d661e8cbc95350))
+* **deps:** bump @scure/base from 1.1.8 to 1.1.9 ([#336](https://github.com/polkadot-labs/hdkd/issues/336)) ([32ca463](https://github.com/polkadot-labs/hdkd/commit/32ca46340b28df3763673338f278c8cb600638ce))
+
 ## [0.0.8](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.7...hdkd-helpers-v0.0.8) (2024-09-07)
 
 
