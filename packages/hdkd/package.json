@@ -36,7 +36,6 @@
     "vite-plugin-wasm": "^3.3.0"
   },
   "dependencies": {
-    "@polkadot-labs/hdkd-helpers": "workspace:*",
-    "@polkadot-labs/schnorrkel-wasm": "workspace:*"
+    "@polkadot-labs/hdkd-helpers": "workspace:*"
   }
 }

@@ -106,9 +106,6 @@ importers:
       '@polkadot-labs/hdkd-helpers':
         specifier: workspace:*
         version: link:../hdkd-helpers
-      '@polkadot-labs/schnorrkel-wasm':
-        specifier: workspace:*
-        version: link:../schnorrkel-wasm
     devDependencies:
       '@noble/curves':
         specifier: ^1.6.0
@@ -137,16 +134,19 @@ importers:
       '@noble/hashes':
         specifier: ^1.5.0
         version: 1.5.0
-      '@polkadot-labs/schnorrkel-wasm':
-        specifier: workspace:*
-        version: link:../schnorrkel-wasm
       '@scure/base':
         specifier: ^1.1.9
         version: 1.1.9
+      micro-sr25519:
+        specifier: ^0.1.0
+        version: 0.1.0
       scale-ts:
         specifier: ^1.6.1
         version: 1.6.1
     devDependencies:
+      '@polkadot-labs/schnorrkel-wasm':
+        specifier: workspace:*
+        version: link:../schnorrkel-wasm
       tsup:
         specifier: ^8.3.5
         version: 8.3.5(@swc/core@1.7.26)(postcss@8.4.44)(typescript@5.6.3)(yaml@2.5.0)
@@ -504,8 +504,16 @@ packages:
     resolution: {integrity: sha512-TlaHRXDehJuRNR9TfZDNQ45mMEd5dwUwmicsafcIX4SsNiqnCHKjE/1alYPd/lDRVhxdhUAlv8uEhMCI5zjIJQ==}
     engines: {node: ^14.21.3 || >=16}
 
+  '@noble/curves@1.7.0':
+    resolution: {integrity: sha512-UTMhXK9SeDhFJVrHeUJ5uZlI6ajXg10O6Ddocf9S6GjbSBVZsJo88HzKwXznNfGpMTRDyJkqMjNDPYgf0qFWnw==}
+    engines: {node: ^14.21.3 || >=16}
+
   '@noble/hashes@1.5.0':
     resolution: {integrity: sha512-1j6kQFb7QRru7eKN3ZDvRcP13rugwdxZqCjbiAVZfIJwgj2A65UmT4TgARXGlXgnRkORLTDTrO19ZErt7+QXgA==}
+    engines: {node: ^14.21.3 || >=16}
+
+  '@noble/hashes@1.6.0':
+    resolution: {integrity: sha512-YUULf0Uk4/mAA89w+k3+yUYh6NrEvxZa5T6SY3wlMvE2chHkxFUUIDI8/XW1QSC357iA5pSnqt7XEhvFOqmDyQ==}
     engines: {node: ^14.21.3 || >=16}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -1353,6 +1361,9 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
 
+  micro-sr25519@0.1.0:
+    resolution: {integrity: sha512-at5zfxiKNhh07v4GPb8Sc6wCW+jd18FMMgPM0ACIQMcgvMfB9a34mfOlXr5B04J4yFZ6imlvJfRaFbOxMA7ytw==}
+
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
@@ -2114,7 +2125,13 @@ snapshots:
     dependencies:
       '@noble/hashes': 1.5.0
 
+  '@noble/curves@1.7.0':
+    dependencies:
+      '@noble/hashes': 1.6.0
+
   '@noble/hashes@1.5.0': {}
+
+  '@noble/hashes@1.6.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -2950,6 +2967,11 @@ snapshots:
   merge-stream@2.0.0: {}
 
   merge2@1.4.1: {}
+
+  micro-sr25519@0.1.0:
+    dependencies:
+      '@noble/curves': 1.7.0
+      '@noble/hashes': 1.6.0
 
   micromatch@4.0.8:
     dependencies:
