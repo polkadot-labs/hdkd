@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.0.9](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.8...hdkd-v0.0.9) (2024-11-24)
+
+
+### Features
+
+* **hdkd-helpers:** use micro-sr25519 ([#396](https://github.com/polkadot-labs/hdkd/issues/396)) ([f9e6042](https://github.com/polkadot-labs/hdkd/commit/f9e604294dca10e35ff750e02f92392befb0ab63))
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump @substrate/ss58-registry from 1.50.0 to 1.51.0 ([#354](https://github.com/polkadot-labs/hdkd/issues/354)) ([9f1d5fa](https://github.com/polkadot-labs/hdkd/commit/9f1d5fa668f4dedd769d93dcf205d6ea664d5d4c))
+* **deps-dev:** bump execa from 9.3.1 to 9.4.0 ([#333](https://github.com/polkadot-labs/hdkd/issues/333)) ([1f2b05b](https://github.com/polkadot-labs/hdkd/commit/1f2b05b366391099356642a752da2ac454bb2530))
+* **deps-dev:** bump execa from 9.4.0 to 9.4.1 ([#362](https://github.com/polkadot-labs/hdkd/issues/362)) ([ff8978f](https://github.com/polkadot-labs/hdkd/commit/ff8978ff15839b123cca7d935239f6cdd24edc27))
+* **deps-dev:** bump execa from 9.4.1 to 9.5.0 ([#374](https://github.com/polkadot-labs/hdkd/issues/374)) ([89967b5](https://github.com/polkadot-labs/hdkd/commit/89967b59744b4ef0637fb932c8f309c1c5d5a10b))
+* **deps-dev:** bump execa from 9.5.0 to 9.5.1 ([#382](https://github.com/polkadot-labs/hdkd/issues/382)) ([df9d557](https://github.com/polkadot-labs/hdkd/commit/df9d557b65fbcbfa32a27b828d9053f5360227fa))
+* **deps-dev:** bump tsup from 8.2.4 to 8.3.0 ([#335](https://github.com/polkadot-labs/hdkd/issues/335)) ([8149754](https://github.com/polkadot-labs/hdkd/commit/8149754188a91b8a1b73824ad1f07f8916d42291))
+* **deps-dev:** bump tsup from 8.3.0 to 8.3.5 ([#375](https://github.com/polkadot-labs/hdkd/issues/375)) ([d58a454](https://github.com/polkadot-labs/hdkd/commit/d58a4547af46f0580f64a17bff00ee72dbfebafb))
+* **deps-dev:** bump typescript from 5.5.4 to 5.6.2 ([#319](https://github.com/polkadot-labs/hdkd/issues/319)) ([fe25150](https://github.com/polkadot-labs/hdkd/commit/fe25150aa0c0a373de484b8fd55fc41c61145c05))
+* **deps-dev:** bump typescript from 5.6.2 to 5.6.3 ([#355](https://github.com/polkadot-labs/hdkd/issues/355)) ([4f6dd39](https://github.com/polkadot-labs/hdkd/commit/4f6dd398c6e17334b48768b3f0d661e8cbc95350))
+
 ## [0.0.8](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.7...hdkd-v0.0.8) (2024-09-07)
 
 

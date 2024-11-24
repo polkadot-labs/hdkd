@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.0.9](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.8...hdkd-helpers-v0.0.9) (2024-11-24)
+
+
+### Features
+
+* **hdkd-helpers:** use micro-sr25519 ([#396](https://github.com/polkadot-labs/hdkd/issues/396)) ([f9e6042](https://github.com/polkadot-labs/hdkd/commit/f9e604294dca10e35ff750e02f92392befb0ab63))
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump tsup from 8.2.4 to 8.3.0 ([#335](https://github.com/polkadot-labs/hdkd/issues/335)) ([8149754](https://github.com/polkadot-labs/hdkd/commit/8149754188a91b8a1b73824ad1f07f8916d42291))
+* **deps-dev:** bump tsup from 8.3.0 to 8.3.5 ([#375](https://github.com/polkadot-labs/hdkd/issues/375)) ([d58a454](https://github.com/polkadot-labs/hdkd/commit/d58a4547af46f0580f64a17bff00ee72dbfebafb))
+* **deps-dev:** bump typescript from 5.5.4 to 5.6.2 ([#319](https://github.com/polkadot-labs/hdkd/issues/319)) ([fe25150](https://github.com/polkadot-labs/hdkd/commit/fe25150aa0c0a373de484b8fd55fc41c61145c05))
+* **deps-dev:** bump typescript from 5.6.2 to 5.6.3 ([#355](https://github.com/polkadot-labs/hdkd/issues/355)) ([4f6dd39](https://github.com/polkadot-labs/hdkd/commit/4f6dd398c6e17334b48768b3f0d661e8cbc95350))
+* **deps:** bump @scure/base from 1.1.8 to 1.1.9 ([#336](https://github.com/polkadot-labs/hdkd/issues/336)) ([32ca463](https://github.com/polkadot-labs/hdkd/commit/32ca46340b28df3763673338f278c8cb600638ce))
+* **deps:** bump scale-ts from 1.6.0 to 1.6.1 ([#377](https://github.com/polkadot-labs/hdkd/issues/377)) ([de9decb](https://github.com/polkadot-labs/hdkd/commit/de9decb3dd314b0f6ca3928db73e40ab215b8859))
+
 ## [0.0.8](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.7...hdkd-helpers-v0.0.8) (2024-09-07)
 
 
