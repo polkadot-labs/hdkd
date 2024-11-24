@@ -1,22 +1,14 @@
-import {
-  sr25519_derive_keypair_hard,
-  sr25519_derive_keypair_soft,
-  sr25519_keypair_from_seed,
-} from "@polkadot-labs/schnorrkel-wasm"
+import { getPublicKey, HDKD, secretFromSeed } from "micro-sr25519"
 import { DeriveKeyPairFn } from "./internal/types"
 
 export const sr25519Derive: DeriveKeyPairFn = (seed, curve, derivations) => {
-  const keypair = sr25519_keypair_from_seed(seed)
-  const derivedKeypair = derivations.reduce((keypair, [type, chainCode]) => {
-    const deriveFn =
-      type === "hard"
-        ? sr25519_derive_keypair_hard
-        : sr25519_derive_keypair_soft
-    return deriveFn(keypair, chainCode)
-  }, keypair)
-  const privateKey = derivedKeypair.slice(0, 64)
+  const privateKey = derivations.reduce((secretKey, [type, chainCode]) => {
+    const deriveFn = type === "hard" ? HDKD.secretHard : HDKD.secretSoft
+    return deriveFn(secretKey, chainCode)
+  }, secretFromSeed(seed))
+  const publicKey = getPublicKey(privateKey)
   return {
-    publicKey: derivedKeypair.slice(64),
+    publicKey,
     sign(message) {
       return curve.sign(message, privateKey)
     },
