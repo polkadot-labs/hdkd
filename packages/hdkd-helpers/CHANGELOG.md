@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.10](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.9...hdkd-helpers-v0.0.10) (2024-11-30)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump typescript from 5.6.3 to 5.7.2 ([#400](https://github.com/polkadot-labs/hdkd/issues/400)) ([fac939d](https://github.com/polkadot-labs/hdkd/commit/fac939d8dbe7bcd7db9e2fca1c03ab0f1cdb1847))
+* **deps:** bump @noble/curves from 1.6.0 to 1.7.0 ([#397](https://github.com/polkadot-labs/hdkd/issues/397)) ([cc9e15f](https://github.com/polkadot-labs/hdkd/commit/cc9e15fbe26b50fb6d59dec63ddd6e4aefa1782d))
+* **deps:** bump @noble/hashes from 1.5.0 to 1.6.1 ([#399](https://github.com/polkadot-labs/hdkd/issues/399)) ([92014a5](https://github.com/polkadot-labs/hdkd/commit/92014a5726624583bffadf3397e4380fb90af3be))
+* **deps:** bump @scure/base from 1.1.9 to 1.2.1 ([#398](https://github.com/polkadot-labs/hdkd/issues/398)) ([282172d](https://github.com/polkadot-labs/hdkd/commit/282172dc38c957f50a9be3640f3148fe47224843))
+* update readmes and package descriptions ([#410](https://github.com/polkadot-labs/hdkd/issues/410)) ([83cf3cd](https://github.com/polkadot-labs/hdkd/commit/83cf3cdc75862f6048269b2f3327ce74ccca905d))
+
 ## [0.0.9](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.8...hdkd-helpers-v0.0.9) (2024-11-24)
 
 
