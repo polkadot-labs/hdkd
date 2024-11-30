@@ -1,7 +1,7 @@
 {
   "name": "@polkadot-labs/schnorrkel-wasm",
   "version": "0.0.5",
-  "description": "",
+  "description": "JavaScript WebAssembly (WASM) wrapper for the schnorrkel Rust crate",
   "types": "./dist/nodejs/schnorrkel.d.ts",
   "files": [
     "./dist/nodejs/schnorrkel_bg.wasm",
@@ -20,7 +20,13 @@
   "scripts": {
     "build": "cd rust && wasm-pack build --release -t nodejs --out-dir ../dist/nodejs && cd .. && node scripts/patch.mjs"
   },
-  "keywords": [],
+  "keywords": [
+    "sr25519",
+    "schnorrkel",
+    "polkadot",
+    "substrate",
+    "wasm"
+  ],
   "author": "kratico (https://github.com/kratico)",
   "repository": {
     "type": "git",
