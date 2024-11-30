@@ -135,8 +135,8 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0
       '@scure/base':
-        specifier: ^1.1.9
-        version: 1.1.9
+        specifier: ^1.2.1
+        version: 1.2.1
       micro-sr25519:
         specifier: ^0.1.0
         version: 0.1.0
@@ -622,8 +622,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@scure/base@1.1.9':
-    resolution: {integrity: sha512-8YKhl8GHiNI/pU2VMaofa2Tor7PJRAjwQLBBuilkJ9L5+13yVbC7JO/wS7piioAvPSwR3JKM1IJ/u4xQzbcXKg==}
+  '@scure/base@1.2.1':
+    resolution: {integrity: sha512-DGmGtC8Tt63J5GfHgfl5CuAXh96VF/LD8K9Hr/Gv0J2lAoRGlPOMpqMpMbCTOoOJMZCk2Xt+DskdDyn6dEFdzQ==}
 
   '@sec-ant/readable-stream@0.4.1':
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
@@ -2202,7 +2202,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.24.2':
     optional: true
 
-  '@scure/base@1.1.9': {}
+  '@scure/base@1.2.1': {}
 
   '@sec-ant/readable-stream@0.4.1': {}
 
