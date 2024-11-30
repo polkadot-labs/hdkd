@@ -27,8 +27,8 @@ importers:
   examples/playground:
     dependencies:
       '@noble/curves':
-        specifier: ^1.6.0
-        version: 1.6.0
+        specifier: ^1.7.0
+        version: 1.7.0
       '@noble/hashes':
         specifier: ^1.6.1
         version: 1.6.1
@@ -108,8 +108,8 @@ importers:
         version: link:../hdkd-helpers
     devDependencies:
       '@noble/curves':
-        specifier: ^1.6.0
-        version: 1.6.0
+        specifier: ^1.7.0
+        version: 1.7.0
       '@substrate/ss58-registry':
         specifier: ^1.51.0
         version: 1.51.0
@@ -129,8 +129,8 @@ importers:
   packages/hdkd-helpers:
     dependencies:
       '@noble/curves':
-        specifier: ^1.6.0
-        version: 1.6.0
+        specifier: ^1.7.0
+        version: 1.7.0
       '@noble/hashes':
         specifier: ^1.6.1
         version: 1.6.1
@@ -362,16 +362,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@noble/curves@1.6.0':
-    resolution: {integrity: sha512-TlaHRXDehJuRNR9TfZDNQ45mMEd5dwUwmicsafcIX4SsNiqnCHKjE/1alYPd/lDRVhxdhUAlv8uEhMCI5zjIJQ==}
-    engines: {node: ^14.21.3 || >=16}
-
   '@noble/curves@1.7.0':
     resolution: {integrity: sha512-UTMhXK9SeDhFJVrHeUJ5uZlI6ajXg10O6Ddocf9S6GjbSBVZsJo88HzKwXznNfGpMTRDyJkqMjNDPYgf0qFWnw==}
-    engines: {node: ^14.21.3 || >=16}
-
-  '@noble/hashes@1.5.0':
-    resolution: {integrity: sha512-1j6kQFb7QRru7eKN3ZDvRcP13rugwdxZqCjbiAVZfIJwgj2A65UmT4TgARXGlXgnRkORLTDTrO19ZErt7+QXgA==}
     engines: {node: ^14.21.3 || >=16}
 
   '@noble/hashes@1.6.0':
@@ -1922,15 +1914,9 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@noble/curves@1.6.0':
-    dependencies:
-      '@noble/hashes': 1.5.0
-
   '@noble/curves@1.7.0':
     dependencies:
       '@noble/hashes': 1.6.0
-
-  '@noble/hashes@1.5.0': {}
 
   '@noble/hashes@1.6.0': {}
 
