@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.6](https://github.com/polkadot-labs/hdkd/compare/schnorrkel-wasm-v0.0.5...schnorrkel-wasm-v0.0.6) (2024-11-30)
+
+
+### Miscellaneous Chores
+
+* update readmes and package descriptions ([#410](https://github.com/polkadot-labs/hdkd/issues/410)) ([83cf3cd](https://github.com/polkadot-labs/hdkd/commit/83cf3cdc75862f6048269b2f3327ce74ccca905d))
+
 ## [0.0.5](https://github.com/polkadot-labs/hdkd/compare/schnorrkel-wasm-v0.0.4...schnorrkel-wasm-v0.0.5) (2024-03-16)
 
 
