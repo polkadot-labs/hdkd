@@ -7,7 +7,18 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["tsconfig.base.json", "packages/schnorrkel-wasm/rust/**"]
+    "ignore": [
+      "*.yml",
+      "*.yaml",
+      "*.md",
+      "*.html",
+      "*.svg",
+      ".*ignore",
+      "LICENSE",
+      ".husky/**",
+      "tsconfig.base.json",
+      "packages/schnorrkel-wasm/rust/**"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -19,7 +30,11 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "style": {
+        "noNonNullAssertion": "off",
+        "noParameterAssign": "off"
+      }
     }
   },
   "javascript": {

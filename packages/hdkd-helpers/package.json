@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsc --noEmit && tsup-node src/index.ts --clean --sourcemap --format esm,cjs --platform node --target esnext --dts",
     "test": "vitest",
-    "lint": "prettier --check \"*.{js,jsx,ts,mts,tsx,json,md}\" \"{src,test}/**/*.{js,jsx,ts,tsx,json,md}\""
+    "lint": "biome check && prettier --check \"*.md\""
   },
   "keywords": [
     "sr25519",
@@ -33,9 +33,7 @@
     "url": "https://github.com/polkadot-labs/hdkd.git"
   },
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "devDependencies": {
     "@polkadot-labs/schnorrkel-wasm": "workspace:*",
     "@total-typescript/tsconfig": "^1.0.4",
