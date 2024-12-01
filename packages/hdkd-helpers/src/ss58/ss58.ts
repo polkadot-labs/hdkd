@@ -1,6 +1,6 @@
 import { base58 } from "@scure/base"
+import { Hex } from ".."
 import { blake2b512, ensureBytes } from "../utils"
-import type { Hex } from ".."
 
 const SS58PRE = /* @__PURE__ */ new TextEncoder().encode("SS58PRE")
 const CHECKSUM_LENGTH = 2

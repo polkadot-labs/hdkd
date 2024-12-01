@@ -1,5 +1,5 @@
-import { ensureBytes } from "./utils"
 import { getPublicKey, sign, verify } from "micro-sr25519"
+import { ensureBytes } from "./utils"
 
 import type { Curve } from "./types"
 

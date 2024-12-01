@@ -1,7 +1,7 @@
 import { expect, test } from "vitest"
 
-import { ss58Decode, ss58Encode } from "./ss58"
 import { ensureBytes } from ".."
+import { ss58Decode, ss58Encode } from "./ss58"
 
 test.each([
   // ecdsa substrate //Alice

@@ -1,7 +1,7 @@
 import { ed25519 as ed25519_ } from "@noble/curves/ed25519"
 
-import type { Curve } from "./types"
 import { ensureBytes } from "."
+import { Curve } from "./types"
 
 export const ed25519: Curve = {
   getPublicKey(privateKey) {

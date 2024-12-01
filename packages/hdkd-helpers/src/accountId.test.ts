@@ -1,7 +1,7 @@
-import { test, expect } from "vitest"
+import { expect, test } from "vitest"
 
-import { accountId } from "./accountId"
 import { ensureBytes } from "."
+import { accountId } from "./accountId"
 
 test.each([
   // ecdsa //Alice

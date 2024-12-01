@@ -1,5 +1,5 @@
-import { $ } from "execa"
 import { DEV_PHRASE } from "@polkadot-labs/hdkd-helpers"
+import { $ } from "execa"
 import { generateVariants } from "./utils.js"
 
 const variants = [

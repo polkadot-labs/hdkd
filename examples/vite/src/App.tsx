@@ -1,8 +1,8 @@
 import { bytesToHex } from "@noble/hashes/utils"
 import {
-  sr25519CreateDerive,
-  ed25519CreateDerive,
   ecdsaCreateDerive,
+  ed25519CreateDerive,
+  sr25519CreateDerive,
 } from "@polkadot-labs/hdkd"
 import { DEV_MINI_SECRET } from "@polkadot-labs/hdkd-helpers"
 import { useMemo } from "react"
