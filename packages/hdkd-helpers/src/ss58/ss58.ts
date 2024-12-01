@@ -1,12 +1,12 @@
 import { base58 } from "@scure/base"
-import { Hex } from ".."
+import type { Hex } from ".."
 import { blake2b512, ensureBytes } from "../utils"
 
 const SS58PRE = /* @__PURE__ */ new TextEncoder().encode("SS58PRE")
 const CHECKSUM_LENGTH = 2
 
 const VALID_PAYLOAD_LENGTHS = [32, 33]
-export const ss58Encode = (payload: Hex, prefix: number = 42) => {
+export const ss58Encode = (payload: Hex, prefix = 42) => {
   payload = ensureBytes("payload", payload)
   if (!VALID_PAYLOAD_LENGTHS.includes(payload.length))
     throw new Error("Invalid payload")

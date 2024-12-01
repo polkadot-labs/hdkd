@@ -1,5 +1,5 @@
 import { HDKD, getPublicKey, secretFromSeed } from "micro-sr25519"
-import { DeriveKeyPairFn } from "./internal/types"
+import type { DeriveKeyPairFn } from "./internal/types"
 
 export const sr25519Derive: DeriveKeyPairFn = (seed, curve, derivations) => {
   const privateKey = derivations.reduce((secretKey, [type, chainCode]) => {

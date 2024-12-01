@@ -1,5 +1,5 @@
 import { createChainCode } from "./createChainCode"
-import { DeriveKeyPairFn } from "./internal/types"
+import type { DeriveKeyPairFn } from "./internal/types"
 import { parseDerivations } from "./parseDerivations"
 import type { Curve, DeriveFn, Hex } from "./types"
 import { ensureBytes } from "./utils"
