@@ -113,6 +113,9 @@ importers:
       '@substrate/ss58-registry':
         specifier: ^1.51.0
         version: 1.51.0
+      '@total-typescript/tsconfig':
+        specifier: ^1.0.4
+        version: 1.0.4
       execa:
         specifier: ^9.5.2
         version: 9.5.2
@@ -147,6 +150,9 @@ importers:
       '@polkadot-labs/schnorrkel-wasm':
         specifier: workspace:*
         version: link:../schnorrkel-wasm
+      '@total-typescript/tsconfig':
+        specifier: ^1.0.4
+        version: 1.0.4
       tsup:
         specifier: ^8.3.5
         version: 8.3.5(@swc/core@1.7.26)(postcss@8.4.49)(typescript@5.7.2)(yaml@2.6.1)
@@ -705,6 +711,9 @@ packages:
 
   '@swc/types@0.1.12':
     resolution: {integrity: sha512-wBJA+SdtkbFhHjTMYH+dEH1y4VpfGdAc2Kw/LK09i9bXd/K6j6PkDcFCEzb6iVfZMkPRrl/q0e3toqTAJdkIVA==}
+
+  '@total-typescript/tsconfig@1.0.4':
+    resolution: {integrity: sha512-fO4ctMPGz1kOFOQ4RCPBRBfMy3gDn+pegUfrGyUFRMv/Rd0ZM3/SHH3hFCYG4u6bPLG8OlmOGcBLDexvyr3A5w==}
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -2258,6 +2267,8 @@ snapshots:
   '@swc/types@0.1.12':
     dependencies:
       '@swc/counter': 0.1.3
+
+  '@total-typescript/tsconfig@1.0.4': {}
 
   '@types/estree@1.0.6': {}
 
