@@ -8,7 +8,7 @@ use schnorrkel::{
     ExpansionMode, Keypair, MiniSecretKey, PublicKey, SecretKey, Signature,
 };
 
-const CTX: &'static [u8] = b"substrate";
+const CTX: &[u8] = b"substrate";
 
 #[wasm_bindgen(start, skip_typescript)]
 fn init() {
@@ -59,14 +59,14 @@ pub fn sr25519_secret_from_seed(seed: &[u8]) -> Vec<u8> {
 
 fn create_cc(data: &[u8]) -> ChainCode {
     let mut cc = [0u8; CHAIN_CODE_LENGTH];
-    cc.copy_from_slice(&data);
+    cc.copy_from_slice(data);
     ChainCode(cc)
 }
 
 #[wasm_bindgen]
 pub fn sr25519_derive_seed_hard(seed: &[u8], cc: &[u8]) -> Vec<u8> {
     keypair_from_seed(seed)
-        .hard_derive_mini_secret_key(Some(create_cc(cc)), &[])
+        .hard_derive_mini_secret_key(Some(create_cc(cc)), [])
         .0
         .to_bytes()
         .to_vec()
@@ -76,7 +76,7 @@ pub fn sr25519_derive_seed_hard(seed: &[u8], cc: &[u8]) -> Vec<u8> {
 pub fn sr25519_derive_keypair_hard(keypair: &[u8], cc: &[u8]) -> Vec<u8> {
     Keypair::from_half_ed25519_bytes(keypair)
         .expect("Invalid keypair")
-        .hard_derive_mini_secret_key(Some(create_cc(cc)), &[])
+        .hard_derive_mini_secret_key(Some(create_cc(cc)), [])
         .0
         .expand_to_keypair(ExpansionMode::Ed25519)
         .to_half_ed25519_bytes()
@@ -87,7 +87,7 @@ pub fn sr25519_derive_keypair_hard(keypair: &[u8], cc: &[u8]) -> Vec<u8> {
 pub fn sr25519_derive_keypair_soft(keypair: &[u8], cc: &[u8]) -> Vec<u8> {
     Keypair::from_half_ed25519_bytes(keypair)
         .expect("Invalid keypair")
-        .derived_key_simple(create_cc(cc), &[])
+        .derived_key_simple(create_cc(cc), [])
         .0
         .to_half_ed25519_bytes()
         .to_vec()
@@ -97,7 +97,7 @@ pub fn sr25519_derive_keypair_soft(keypair: &[u8], cc: &[u8]) -> Vec<u8> {
 pub fn sr25519_derive_public_soft(pubkey: &[u8], cc: &[u8]) -> Vec<u8> {
     PublicKey::from_bytes(pubkey)
         .expect("Invalid pubkey")
-        .derived_key_simple(create_cc(cc), &[])
+        .derived_key_simple(create_cc(cc), [])
         .0
         .to_bytes()
         .to_vec()
