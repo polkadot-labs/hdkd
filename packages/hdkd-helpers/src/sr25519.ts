@@ -1,7 +1,7 @@
 import { ensureBytes } from "./utils"
 import { getPublicKey, sign, verify } from "micro-sr25519"
 
-import { Curve } from "./types"
+import type { Curve } from "./types"
 
 export const sr25519: Curve = {
   getPublicKey(privateKey) {

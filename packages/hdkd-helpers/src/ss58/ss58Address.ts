@@ -1,4 +1,4 @@
-import { Hex } from ".."
+import type { Hex } from ".."
 import { accountId } from "../accountId"
 
 import { ss58Encode } from "./ss58"

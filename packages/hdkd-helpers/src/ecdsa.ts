@@ -1,6 +1,6 @@
 import { secp256k1 } from "@noble/curves/secp256k1"
 
-import { Curve } from "./types"
+import type { Curve } from "./types"
 import { blake2b256, ensureBytes } from "./utils"
 
 export const ecdsa: Curve = {

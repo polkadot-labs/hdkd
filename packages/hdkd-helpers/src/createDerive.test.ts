@@ -1,12 +1,12 @@
 import { bytesToHex } from "@noble/hashes/utils"
 import { expect, test } from "vitest"
 
-import { Curve, Hex, ecdsa, ed25519 } from "."
+import { type Curve, type Hex, ecdsa, ed25519 } from "."
 import { DEV_PHRASE } from "./constants"
 import { createDerive } from "./createDerive"
 import { ecdsaDerive } from "./ecdsaDerive"
 import { ed25519Derive } from "./ed25519Derive"
-import { DeriveKeyPairFn } from "./internal/types"
+import type { DeriveKeyPairFn } from "./internal/types"
 import { parseSuri } from "./parseSuri"
 import { sr25519 } from "./sr25519"
 import { sr25519Derive } from "./sr25519Derive"
@@ -173,13 +173,13 @@ test.each([
   expectedPublicKey: Hex,
 ][])("%s", (_, suri, curve, deriveKeyPair, expectedPublicKey) => {
   const { phrase, paths, password } = parseSuri(suri)
-  const seed = mnemonicToMiniSecret(phrase, password)
+  const seed = mnemonicToMiniSecret(phrase!, password)
   const derive = createDerive({
     seed,
     curve,
     derive: deriveKeyPair,
   })
-  const keyPair = derive(paths)
+  const keyPair = derive(paths!)
 
   expect(bytesToHex(keyPair.publicKey)).toBe(expectedPublicKey)
 

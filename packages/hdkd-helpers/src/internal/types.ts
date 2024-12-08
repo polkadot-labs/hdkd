@@ -1,4 +1,4 @@
-import { Curve, KeyPair } from ".."
+import type { Curve, KeyPair } from ".."
 
 export type DeriveKeyPairFn = (
   seed: Uint8Array,

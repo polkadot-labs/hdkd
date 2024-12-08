@@ -13,7 +13,7 @@ import { ed25519 } from "../src/ed25519"
 import { parseDerivations } from "../src/parseDerivations"
 import { parseSuri } from "../src/parseSuri"
 import { sr25519 } from "../src/sr25519"
-import { Curve, Hex } from "../src/types"
+import type { Curve, Hex } from "../src/types"
 import { blake2b256, ensureBytes } from "../src/utils"
 
 // Test values from
@@ -98,7 +98,7 @@ test.each([
     expectedPublicKey,
   ) => {
     const suriParsed = parseSuri(suri)
-    const derivations = parseDerivations(suriParsed.paths)
+    const derivations = parseDerivations(suriParsed.paths!)
     const derivedMiniSecret = derivations.reduce(
       (miniSecret, [, hardDerivation]) => {
         const chainCode = createChainCode(hardDerivation)
@@ -106,7 +106,7 @@ test.each([
           ? hardDeriveSr25519(miniSecret, chainCode)
           : hardDerive(derivationPrefix, miniSecret, chainCode)
       },
-      ensureBytes("miniSecret", suriParsed.phrase, 32),
+      ensureBytes("miniSecret", suriParsed.phrase!, 32),
     )
 
     expect(bytesToHex(derivedMiniSecret)).toBe(expectedDerivedMiniSecret)
