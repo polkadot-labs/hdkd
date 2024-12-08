@@ -1,5 +1,5 @@
 import {
-  Curve,
+  type Curve,
   ecdsa,
   ed25519,
   ensureBytes,
@@ -10,7 +10,7 @@ import {
 import { expect, test } from "vitest"
 
 import {
-  CreateDeriveFn,
+  type CreateDeriveFn,
   ecdsaCreateDerive,
   ed25519CreateDerive,
   sr25519CreateDerive,
@@ -34,12 +34,12 @@ test.each(subkeyTestCases)(
   ({ input, subkey: { output } }) => {
     const { phrase, paths, password } = parseSuri(input.suri)
     const seed = mnemonicToMiniSecret(phrase, password)
-    const keypair = schemes[input.scheme](seed)(paths)
+    const keypair = schemes[input.scheme]!(seed)(paths)
 
-    const message = new TextEncoder().encode(input.message)
+    const message = new TextEncoder().encode(input.message)!
 
     expect(
-      curves[input.scheme].verify(output, message, keypair.publicKey),
+      curves[input.scheme]!.verify(output, message, keypair.publicKey),
     ).toBe(true)
 
     // TODO: when subkey is installed in CI, do keypair.sign() and verify with subkey

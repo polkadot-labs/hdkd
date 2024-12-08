@@ -1,5 +1,5 @@
 import {
-  KeyPair,
+  type KeyPair,
   accountId,
   ss58Address,
   ss58PublicKey,
