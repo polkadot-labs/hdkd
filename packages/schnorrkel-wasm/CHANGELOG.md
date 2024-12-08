@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.7](https://github.com/polkadot-labs/hdkd/compare/schnorrkel-wasm-v0.0.6...schnorrkel-wasm-v0.0.7) (2024-12-08)
+
+
+### Bug Fixes
+
+* **schnorrkel-wasm:** clippy warnings ([#411](https://github.com/polkadot-labs/hdkd/issues/411)) ([d6e7933](https://github.com/polkadot-labs/hdkd/commit/d6e793373252229ca2a9b78447e0e8a5b2f4dbd0))
+
 ## [0.0.6](https://github.com/polkadot-labs/hdkd/compare/schnorrkel-wasm-v0.0.5...schnorrkel-wasm-v0.0.6) (2024-11-30)
 
 
