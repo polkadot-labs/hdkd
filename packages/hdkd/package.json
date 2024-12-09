@@ -40,7 +40,7 @@
   "devDependencies": {
     "@noble/curves": "^1.7.0",
     "@substrate/ss58-registry": "^1.51.0",
-    "execa": "^9.5.1",
+    "execa": "^9.5.2",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2",
     "vite-plugin-wasm": "^3.3.0"
