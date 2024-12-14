@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.11](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.10...hdkd-helpers-v0.0.11) (2024-12-14)
+
+
+### Miscellaneous Chores
+
+* use @total-typescript/tsconfig ([#432](https://github.com/polkadot-labs/hdkd/issues/432)) ([713e6e7](https://github.com/polkadot-labs/hdkd/commit/713e6e73f8ac3950f6fa2fc4299ddf54fde252c5))
+
 ## [0.0.10](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.9...hdkd-helpers-v0.0.10) (2024-11-30)
 
 
