@@ -29,9 +29,9 @@ test.each(subkeyTestCases)(
   "withNetworkAccount for $input.scheme $input.network $input.suri",
   ({ input, subkey: { output } }) => {
     const { phrase, paths, password } = parseSuri(input.suri)
-    const seed = mnemonicToMiniSecret(phrase, password)
+    const seed = mnemonicToMiniSecret(phrase!, password)
     const keypair = withNetworkAccount(
-      schemes[input.scheme]!(seed)(paths),
+      schemes[input.scheme]!(seed)(paths!),
       prefixByNetwork[output.networkId],
     )
 
