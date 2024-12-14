@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       {keypairs.map(([signatureScheme, derivationPath, keypair]) => (
-        <article>
+        <article key={`${signatureScheme}_${derivationPath}`}>
           <header>
             {signatureScheme} for {derivationPath}
           </header>

@@ -6,7 +6,7 @@ import { DEV_MINI_SECRET } from "../src/constants"
 import { ecdsa } from "../src/ecdsa"
 import { ed25519 } from "../src/ed25519"
 import { sr25519 } from "../src/sr25519"
-import { Curve, Hex } from "../src/types"
+import type { Curve, Hex } from "../src/types"
 import { ensureBytes } from "../src/utils"
 
 // Test values from

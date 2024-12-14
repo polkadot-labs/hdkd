@@ -1,6 +1,6 @@
 import { base58 } from "@scure/base"
 import { blake2b512, ensureBytes } from "../utils"
-import { Hex } from ".."
+import type { Hex } from ".."
 
 const SS58PRE = /* @__PURE__ */ new TextEncoder().encode("SS58PRE")
 const CHECKSUM_LENGTH = 2
@@ -42,13 +42,13 @@ export const ss58Decode = (
   if (addressChecksum[0] !== checksum[0] || addressChecksum[1] !== checksum[1])
     throw new Error("Invalid checksum")
 
-  const prefixLength = address[0] & 0b0100_0000 ? 2 : 1
+  const prefixLength = address[0]! & 0b0100_0000 ? 2 : 1
   const prefix: number =
     prefixLength === 1
-      ? address[0]
-      : ((address[0] & 0b0011_1111) << 2) |
-        (address[1] >> 6) |
-        ((address[1] & 0b0011_1111) << 8)
+      ? address[0]!
+      : ((address[0]! & 0b0011_1111) << 2) |
+        (address[1]! >> 6) |
+        ((address[1]! & 0b0011_1111) << 8)
   const payload = address.slice(prefixLength, address.length - CHECKSUM_LENGTH)
   return [payload, prefix]
 }

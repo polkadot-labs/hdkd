@@ -19,7 +19,7 @@ const parseWordlist = (wordlistStr: string) => {
 }
 
 const deriveChecksumBits = (entropy: Uint8Array) =>
-  sha256(entropy)[0]
+  sha256(entropy)[0]!
     .toString(2)
     .padStart(8, "0")
     .slice(0, entropy.length / 4)

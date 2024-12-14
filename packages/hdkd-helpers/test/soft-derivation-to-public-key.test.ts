@@ -10,7 +10,7 @@ import { createChainCode } from "../src/createChainCode"
 import { parseDerivations } from "../src/parseDerivations"
 import { parseSuri } from "../src/parseSuri"
 import { sr25519 } from "../src/sr25519"
-import { Hex } from "../src/types"
+import type { Hex } from "../src/types"
 import { ensureBytes } from "../src/utils"
 
 // Test values from
@@ -35,10 +35,10 @@ test.each([
   (suri, expectedPublicKey) => {
     const suriParsed = parseSuri(suri)
     const privateKey = sr25519_secret_from_seed(
-      ensureBytes("miniSecret", suriParsed.phrase, 32),
+      ensureBytes("miniSecret", suriParsed.phrase!, 32),
     )
     const publicKey = sr25519.getPublicKey(privateKey)
-    const derivations = parseDerivations(parseSuri(suri).paths)
+    const derivations = parseDerivations(parseSuri(suri).paths!)
     const derivedPublicKey = derivations.reduce((publicKey, [, derivation]) => {
       const chainCode = createChainCode(derivation)
       return sr25519_derive_public_soft(publicKey, chainCode)

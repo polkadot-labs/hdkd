@@ -1,6 +1,6 @@
 import { ed25519 as ed25519_ } from "@noble/curves/ed25519"
 
-import { Curve } from "./types"
+import type { Curve } from "./types"
 import { ensureBytes } from "."
 
 export const ed25519: Curve = {
