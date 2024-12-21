@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "start:hdkd": "tsup-node src/hdkd.ts --watch --clean --format cjs --platform node --target esnext --onSuccess \"node --enable-source-maps dist/hdkd.cjs\"",
-    "build": "tsc --noEmit",
-    "lint": "prettier --check \"*.{js,jsx,ts,tsx,json,md}\" \"src/**/*.{js,jsx,ts,tsx,json,md}\""
+    "build": "tsc",
+    "lint": "biome check"
   },
   "keywords": [],
   "author": "",

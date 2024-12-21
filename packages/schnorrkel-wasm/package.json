@@ -20,13 +20,7 @@
   "scripts": {
     "build": "cd rust && wasm-pack build --release -t nodejs --out-dir ../dist/nodejs && cd .. && node scripts/patch.mjs"
   },
-  "keywords": [
-    "sr25519",
-    "schnorrkel",
-    "polkadot",
-    "substrate",
-    "wasm"
-  ],
+  "keywords": ["sr25519", "schnorrkel", "polkadot", "substrate", "wasm"],
   "author": "kratico (https://github.com/kratico)",
   "repository": {
     "type": "git",

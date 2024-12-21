@@ -1,10 +1,10 @@
 import { bytesToHex } from "@noble/hashes/utils"
 import { sr25519CreateDerive } from "@polkadot-labs/hdkd"
 import {
-  sr25519,
   DEV_PHRASE,
   entropyToMiniSecret,
   mnemonicToEntropy,
+  sr25519,
 } from "@polkadot-labs/hdkd-helpers"
 
 const entropy = mnemonicToEntropy(DEV_PHRASE)

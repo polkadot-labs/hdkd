@@ -50,7 +50,7 @@ export const mnemonicToEntropy = (
   const entropyBytes = bits
     .slice(0, dividerIndex)
     .match(/(.{1,8})/g)
-    ?.map((bin) => parseInt(bin, 2))
+    ?.map((bin) => Number.parseInt(bin, 2))
   if (
     !entropyBytes ||
     entropyBytes.length < 16 ||
@@ -83,12 +83,12 @@ export const entropyToMnemonic = (
 
   return (entropyBits + deriveChecksumBits(entropy))
     .match(/(.{1,11})/g)!
-    .map((binary) => wordlist[parseInt(binary, 2)])
+    .map((binary) => wordlist[Number.parseInt(binary, 2)])
     .join(" ")
 }
 
 export const generateMnemonic = (
-  strength: number = 128,
+  strength = 128,
   wordlist: string = BIP39_EN_WORDLIST,
 ): string => entropyToMnemonic(randomBytes(strength / 8), wordlist)
 

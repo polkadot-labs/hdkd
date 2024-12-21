@@ -1,8 +1,8 @@
-import { ensureBytes } from "./utils"
 import { createChainCode } from "./createChainCode"
-import { parseDerivations } from "./parseDerivations"
-import type { Curve, Hex, DeriveFn } from "./types"
 import type { DeriveKeyPairFn } from "./internal/types"
+import { parseDerivations } from "./parseDerivations"
+import type { Curve, DeriveFn, Hex } from "./types"
+import { ensureBytes } from "./utils"
 
 type CreateDeriveOptions = {
   seed: Hex

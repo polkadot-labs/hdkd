@@ -5,7 +5,7 @@ import {
   ss58PublicKey,
 } from "@polkadot-labs/hdkd-helpers"
 
-export const withNetworkAccount = (keyPair: KeyPair, prefix: number = 42) => ({
+export const withNetworkAccount = (keyPair: KeyPair, prefix = 42) => ({
   ...keyPair,
   accountId: accountId(keyPair.publicKey),
   ss58Address: ss58Address(keyPair.publicKey, prefix),

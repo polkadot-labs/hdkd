@@ -1,9 +1,9 @@
-import { blake2b } from "@noble/hashes/blake2b"
 import { ensureBytes as ensureBytes_ } from "@noble/curves/abstract/utils"
+import { blake2b } from "@noble/hashes/blake2b"
 import { Bytes, Tuple, str } from "scale-ts"
 
-import type { Hex } from "./types"
 import type { DeriveKeyPairFn } from "./internal/types"
+import type { Hex } from "./types"
 
 export const blake2b256 = (msg: Hex) => blake2b(msg, { dkLen: 32 })
 export const blake2b512 = (msg: Hex) => blake2b(msg, { dkLen: 64 })

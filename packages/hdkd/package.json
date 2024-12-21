@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsc --noEmit && tsup-node src/index.ts --clean --sourcemap --format esm,cjs --platform node --target esnext --dts",
     "test": "vitest",
-    "lint": "prettier --check \"*.{js,jsx,ts,tsx,json,md}\" \"{src,test}/**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "biome check && prettier --check \"*.md\"",
     "generate-subkey-test-cases": "node scripts/generate-subkey-inspect-test-cases.js > test/subkey-inspect-test-cases.json && node scripts/generate-subkey-sign-test-cases.js > test/subkey-sign-test-cases.json"
   },
   "keywords": [
@@ -34,9 +34,7 @@
     "url": "https://github.com/polkadot-labs/hdkd.git"
   },
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "devDependencies": {
     "@noble/curves": "^1.7.0",
     "@substrate/ss58-registry": "^1.51.0",

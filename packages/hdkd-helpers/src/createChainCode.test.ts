@@ -1,6 +1,6 @@
-import { expect, test, describe } from "vitest"
-import { createChainCode } from "./createChainCode"
 import { bytesToHex } from "@noble/hashes/utils"
+import { describe, expect, test } from "vitest"
+import { createChainCode } from "./createChainCode"
 
 describe("createChainCode", () => {
   test("string", () => {
