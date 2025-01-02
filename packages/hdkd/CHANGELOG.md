@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.11](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.10...hdkd-v0.0.11) (2025-01-02)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump execa from 9.5.1 to 9.5.2 ([#427](https://github.com/polkadot-labs/hdkd/issues/427)) ([0f793c5](https://github.com/polkadot-labs/hdkd/commit/0f793c5c739f904ddf57d6ea214e735bf9d28bba))
+* use @total-typescript/tsconfig ([#432](https://github.com/polkadot-labs/hdkd/issues/432)) ([713e6e7](https://github.com/polkadot-labs/hdkd/commit/713e6e73f8ac3950f6fa2fc4299ddf54fde252c5))
+* use biome for linting and formatting ([#439](https://github.com/polkadot-labs/hdkd/issues/439)) ([3f81aa1](https://github.com/polkadot-labs/hdkd/commit/3f81aa159f3429914c19edab3f266a00ca6f40a4))
+
 ## [0.0.10](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.9...hdkd-v0.0.10) (2024-11-30)
 
 
