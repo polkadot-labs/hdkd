@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.11](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.10...hdkd-helpers-v0.0.11) (2025-01-06)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump @noble/curves from 1.7.0 to 1.8.0 ([#449](https://github.com/polkadot-labs/hdkd/issues/449)) ([4b95352](https://github.com/polkadot-labs/hdkd/commit/4b95352349883cc028aa35cd183aaa012b5ca059))
+* **deps:** bump @noble/hashes from 1.6.1 to 1.7.0 ([#448](https://github.com/polkadot-labs/hdkd/issues/448)) ([6b59341](https://github.com/polkadot-labs/hdkd/commit/6b5934137685bda37be9e8eba818b7bc556c17a5))
+* use @total-typescript/tsconfig ([#432](https://github.com/polkadot-labs/hdkd/issues/432)) ([713e6e7](https://github.com/polkadot-labs/hdkd/commit/713e6e73f8ac3950f6fa2fc4299ddf54fde252c5))
+* use biome for linting and formatting ([#439](https://github.com/polkadot-labs/hdkd/issues/439)) ([3f81aa1](https://github.com/polkadot-labs/hdkd/commit/3f81aa159f3429914c19edab3f266a00ca6f40a4))
+
 ## [0.0.10](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.9...hdkd-helpers-v0.0.10) (2024-11-30)
 
 
