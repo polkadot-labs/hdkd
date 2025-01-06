@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@noble/curves": "^1.8.0",
-    "@noble/hashes": "^1.6.1",
+    "@noble/hashes": "^1.7.0",
     "@polkadot-labs/hdkd": "workspace:*",
     "@polkadot-labs/hdkd-helpers": "workspace:*",
     "bip39": "^3.1.0",
