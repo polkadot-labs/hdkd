@@ -33,8 +33,8 @@ importers:
         specifier: ^1.8.0
         version: 1.8.0
       '@noble/hashes':
-        specifier: ^1.6.1
-        version: 1.6.1
+        specifier: ^1.7.0
+        version: 1.7.0
       '@polkadot-labs/hdkd':
         specifier: workspace:*
         version: link:../../packages/hdkd
@@ -61,8 +61,8 @@ importers:
   examples/vite:
     dependencies:
       '@noble/hashes':
-        specifier: ^1.6.1
-        version: 1.6.1
+        specifier: ^1.7.0
+        version: 1.7.0
       '@polkadot-labs/hdkd':
         specifier: workspace:*
         version: link:../../packages/hdkd
@@ -144,8 +144,8 @@ importers:
         specifier: ^1.8.0
         version: 1.8.0
       '@noble/hashes':
-        specifier: ^1.6.1
-        version: 1.6.1
+        specifier: ^1.7.0
+        version: 1.7.0
       '@scure/base':
         specifier: ^1.2.1
         version: 1.2.1
@@ -2771,7 +2771,7 @@ snapshots:
 
   bip39@3.1.0:
     dependencies:
-      '@noble/hashes': 1.6.1
+      '@noble/hashes': 1.7.0
 
   brace-expansion@1.1.11:
     dependencies:
