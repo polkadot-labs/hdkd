@@ -19,7 +19,7 @@
   "devDependencies": {
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/react": "^19.0.5",
-    "@types/react-dom": "^19.0.2",
+    "@types/react-dom": "^19.0.3",
     "@typescript-eslint/eslint-plugin": "^8.19.1",
     "@typescript-eslint/parser": "^8.19.1",
     "@vitejs/plugin-react-swc": "^3.7.2",
