@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.7](https://github.com/polkadot-labs/hdkd/compare/schnorrkel-wasm-v0.0.6...schnorrkel-wasm-v0.0.7) (2025-01-31)
+
+
+### Bug Fixes
+
+* **schnorrkel-wasm:** clippy warnings ([#411](https://github.com/polkadot-labs/hdkd/issues/411)) ([d6e7933](https://github.com/polkadot-labs/hdkd/commit/d6e793373252229ca2a9b78447e0e8a5b2f4dbd0))
+
+
+### Miscellaneous Chores
+
+* use biome for linting and formatting ([#439](https://github.com/polkadot-labs/hdkd/issues/439)) ([3f81aa1](https://github.com/polkadot-labs/hdkd/commit/3f81aa159f3429914c19edab3f266a00ca6f40a4))
+
 ## [0.0.6](https://github.com/polkadot-labs/hdkd/compare/schnorrkel-wasm-v0.0.5...schnorrkel-wasm-v0.0.6) (2024-11-30)
 
 
