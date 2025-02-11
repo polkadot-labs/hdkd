@@ -1,6 +1,6 @@
 {
   "name": "@polkadot-labs/hdkd",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Hierarchical deterministic (HD) account derivation library compatible with the Polkadot and Substrate ecosystems, supporting the sr25519, ed25519, and ecdsa signature schemes.",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -34,7 +34,9 @@
     "url": "https://github.com/polkadot-labs/hdkd.git"
   },
   "license": "MIT",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@noble/curves": "^1.8.1",
     "@substrate/ss58-registry": "^1.51.0",
