@@ -83,8 +83,8 @@ importers:
         specifier: ^19.0.10
         version: 19.0.10
       '@types/react-dom':
-        specifier: ^19.0.3
-        version: 19.0.3(@types/react@19.0.10)
+        specifier: ^19.0.4
+        version: 19.0.4(@types/react@19.0.10)
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.24.1
         version: 8.24.1(@typescript-eslint/parser@8.24.1(eslint@8.57.0)(typescript@5.7.3))(eslint@8.57.0)(typescript@5.7.3)
@@ -766,8 +766,8 @@ packages:
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
-  '@types/react-dom@19.0.3':
-    resolution: {integrity: sha512-0Knk+HJiMP/qOZgMyNFamlIjw9OFCsyC2ZbigmEEyXXixgre6IQpm/4V+r3qH4GC1JPvRJKInw+on2rV6YZLeA==}
+  '@types/react-dom@19.0.4':
+    resolution: {integrity: sha512-4fSQ8vWFkg+TGhePfUzVmat3eC14TXYSsiiDSLI0dVLsrm9gZFABjPy/Qu6TKgl1tq1Bu1yDsuQgY3A3DOjCcg==}
     peerDependencies:
       '@types/react': ^19.0.0
 
@@ -2322,7 +2322,7 @@ snapshots:
 
   '@types/estree@1.0.6': {}
 
-  '@types/react-dom@19.0.3(@types/react@19.0.10)':
+  '@types/react-dom@19.0.4(@types/react@19.0.10)':
     dependencies:
       '@types/react': 19.0.10
 
