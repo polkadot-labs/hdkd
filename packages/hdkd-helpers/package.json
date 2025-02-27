@@ -33,9 +33,7 @@
     "url": "https://github.com/polkadot-labs/hdkd.git"
   },
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "devDependencies": {
     "@polkadot-labs/schnorrkel-wasm": "workspace:*",
     "@total-typescript/tsconfig": "^1.0.4",
