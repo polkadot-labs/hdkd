@@ -1,4 +1,4 @@
-const DERIVATION_RE = /(\/{1,2})(\w+)/g
+const DERIVATION_RE = /(\/{1,2})([^\/]+)/g
 
 export const parseDerivations = (derivationsStr: string) => {
   const derivations = [] as [type: "hard" | "soft", code: string][]
