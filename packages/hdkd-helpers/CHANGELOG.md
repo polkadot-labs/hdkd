@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.12](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.11...hdkd-helpers-v0.0.12) (2025-02-27)
+
+
+### Bug Fixes
+
+* derivation path allowed characters ([#517](https://github.com/polkadot-labs/hdkd/issues/517)) ([eb95a20](https://github.com/polkadot-labs/hdkd/commit/eb95a207af6b123b7bad9d29a9ebfd86cb7a8490))
+* formatting ([#484](https://github.com/polkadot-labs/hdkd/issues/484)) ([4cda637](https://github.com/polkadot-labs/hdkd/commit/4cda637b4021f36d3bb2485a48c8749814ab9181))
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump tsup from 8.3.6 to 8.4.0 ([#515](https://github.com/polkadot-labs/hdkd/issues/515)) ([8bbbac3](https://github.com/polkadot-labs/hdkd/commit/8bbbac3c02e1be4f18face917d4c70171025b4fd))
+
 ## [0.0.11](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.10...hdkd-helpers-v0.0.11) (2025-01-31)
 
 
