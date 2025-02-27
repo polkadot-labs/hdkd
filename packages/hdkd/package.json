@@ -34,9 +34,7 @@
     "url": "https://github.com/polkadot-labs/hdkd.git"
   },
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "devDependencies": {
     "@noble/curves": "^1.8.1",
     "@substrate/ss58-registry": "^1.51.0",
