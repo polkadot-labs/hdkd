@@ -16,7 +16,8 @@
       ".*ignore",
       "LICENSE",
       ".husky/**",
-      "packages/schnorrkel-wasm/rust/**"
+      "packages/schnorrkel-wasm/rust/**",
+      "packages/*/package.json"
     ]
   },
   "formatter": {
