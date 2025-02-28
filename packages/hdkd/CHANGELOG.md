@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.13](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.12...hdkd-v0.0.13) (2025-02-28)
+
+
+### Bug Fixes
+
+* package.json formatting ([#518](https://github.com/polkadot-labs/hdkd/issues/518)) ([8104b1d](https://github.com/polkadot-labs/hdkd/commit/8104b1d6af262c13a04643b5f4f991a8d7076a93))
+
 ## [0.0.12](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.11...hdkd-v0.0.12) (2025-02-27)
 
 
