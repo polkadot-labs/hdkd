@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.13](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.12...hdkd-helpers-v0.0.13) (2025-03-08)
+
+
+### Bug Fixes
+
+* package.json formatting ([#518](https://github.com/polkadot-labs/hdkd/issues/518)) ([8104b1d](https://github.com/polkadot-labs/hdkd/commit/8104b1d6af262c13a04643b5f4f991a8d7076a93))
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump typescript from 5.7.3 to 5.8.2 ([#521](https://github.com/polkadot-labs/hdkd/issues/521)) ([3aa1799](https://github.com/polkadot-labs/hdkd/commit/3aa1799568e85168bc065ed15f6b215b92f5eb3a))
+* **deps:** bump micro-sr25519 from 0.1.0 to 0.1.3 ([#527](https://github.com/polkadot-labs/hdkd/issues/527)) ([9e7278a](https://github.com/polkadot-labs/hdkd/commit/9e7278a75b381f9a3c819e5059126e6de40a626a))
+
 ## [0.0.12](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.11...hdkd-helpers-v0.0.12) (2025-02-27)
 
 

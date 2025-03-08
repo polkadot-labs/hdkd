@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.13](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.12...hdkd-v0.0.13) (2025-03-08)
+
+
+### Bug Fixes
+
+* package.json formatting ([#518](https://github.com/polkadot-labs/hdkd/issues/518)) ([8104b1d](https://github.com/polkadot-labs/hdkd/commit/8104b1d6af262c13a04643b5f4f991a8d7076a93))
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump typescript from 5.7.3 to 5.8.2 ([#521](https://github.com/polkadot-labs/hdkd/issues/521)) ([3aa1799](https://github.com/polkadot-labs/hdkd/commit/3aa1799568e85168bc065ed15f6b215b92f5eb3a))
+
 ## [0.0.12](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.11...hdkd-v0.0.12) (2025-02-27)
 
 
