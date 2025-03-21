@@ -20,7 +20,7 @@
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
-    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/eslint-plugin": "^8.27.0",
     "@typescript-eslint/parser": "^8.26.1",
     "@vitejs/plugin-react-swc": "^3.8.1",
     "eslint": "^8.57.0",
