@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.14](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.13...hdkd-helpers-v0.0.14) (2025-04-08)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump typescript from 5.8.2 to 5.8.3 ([#554](https://github.com/polkadot-labs/hdkd/issues/554)) ([8fe9504](https://github.com/polkadot-labs/hdkd/commit/8fe9504ba4e12ec91ae7bdd1b9116bb87c250ece))
+
 ## [0.0.13](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.12...hdkd-helpers-v0.0.13) (2025-03-08)
 
 
