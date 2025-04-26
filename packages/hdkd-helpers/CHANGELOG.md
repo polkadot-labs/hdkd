@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.14](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.13...hdkd-helpers-v0.0.14) (2025-04-26)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump typescript from 5.8.2 to 5.8.3 ([#554](https://github.com/polkadot-labs/hdkd/issues/554)) ([8fe9504](https://github.com/polkadot-labs/hdkd/commit/8fe9504ba4e12ec91ae7bdd1b9116bb87c250ece))
+* **deps:** bump @noble/curves from 1.8.1 to 1.8.2 ([#566](https://github.com/polkadot-labs/hdkd/issues/566)) ([c2d287d](https://github.com/polkadot-labs/hdkd/commit/c2d287deeb8fc570ff5af00a5305e39efb1e0aab))
+* **deps:** bump @noble/curves from 1.8.2 to 1.9.0 ([#581](https://github.com/polkadot-labs/hdkd/issues/581)) ([0d13ee0](https://github.com/polkadot-labs/hdkd/commit/0d13ee0158c11fc3e92d26225dbb47bb64578fe0))
+* **deps:** bump @noble/hashes from 1.7.1 to 1.7.2 ([#564](https://github.com/polkadot-labs/hdkd/issues/564)) ([4d743ee](https://github.com/polkadot-labs/hdkd/commit/4d743eeaa615a8dfed182121c62dc8e03762be20))
+* **deps:** bump @noble/hashes from 1.7.2 to 1.8.0 ([#575](https://github.com/polkadot-labs/hdkd/issues/575)) ([beec4c6](https://github.com/polkadot-labs/hdkd/commit/beec4c62931b9b7f8c8af1659a2aa7b5dd2be5c1))
+* **deps:** bump @scure/base from 1.2.4 to 1.2.5 ([#582](https://github.com/polkadot-labs/hdkd/issues/582)) ([f14f128](https://github.com/polkadot-labs/hdkd/commit/f14f128e3ae39726539c3fa902bed18a752d3bba))
+
 ## [0.0.13](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.12...hdkd-helpers-v0.0.13) (2025-03-08)
 
 
