@@ -40,7 +40,7 @@
   "devDependencies": {
     "@noble/curves": "^1.9.0",
     "@substrate/ss58-registry": "^1.51.0",
-    "execa": "^9.5.2",
+    "execa": "^9.5.3",
     "@total-typescript/tsconfig": "^1.0.4",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3",
