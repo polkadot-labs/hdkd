@@ -1,5 +1,5 @@
 import { ensureBytes as ensureBytes_ } from "@noble/curves/abstract/utils"
-import { blake2b } from "@noble/hashes/blake2b"
+import { blake2b } from "@noble/hashes/blake2"
 import { Bytes, Tuple, str } from "scale-ts"
 
 import type { DeriveKeyPairFn } from "./internal/types"
