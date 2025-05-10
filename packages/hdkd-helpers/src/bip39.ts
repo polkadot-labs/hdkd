@@ -2,7 +2,7 @@
 //
 // Adapted from https://github.com/bitcoinjs/bip39/blob/a7ecbfe2e60d0214ce17163d610cad9f7b23140c/ts_src/index.ts
 
-import { sha256 } from "@noble/hashes/sha256"
+import { sha256 } from "@noble/hashes/sha2"
 import { randomBytes } from "@noble/hashes/utils"
 
 import { BIP39_EN_WORDLIST } from "./bip39EnWordlist"
