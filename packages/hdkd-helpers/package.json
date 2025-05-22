@@ -39,7 +39,7 @@
   "devDependencies": {
     "@polkadot-labs/schnorrkel-wasm": "workspace:*",
     "@total-typescript/tsconfig": "^1.0.4",
-    "tsup": "^8.4.0",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3",
     "vite-plugin-wasm": "^3.3.0"
   },
