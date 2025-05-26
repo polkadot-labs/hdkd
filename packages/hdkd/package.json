@@ -1,6 +1,6 @@
 {
   "name": "@polkadot-labs/hdkd",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Hierarchical deterministic (HD) account derivation library compatible with the Polkadot and Substrate ecosystems, supporting the sr25519, ed25519, and ecdsa signature schemes.",
   "type": "module",
   "main": "./dist/index.cjs",

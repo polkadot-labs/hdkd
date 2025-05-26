@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.16](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.15...hdkd-v0.0.16) (2025-05-26)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump tsup from 8.4.0 to 8.5.0 ([#607](https://github.com/polkadot-labs/hdkd/issues/607)) ([2a4faa4](https://github.com/polkadot-labs/hdkd/commit/2a4faa4a1f30c11c046b34524e4d4ef2e4daef71))
+* **deps:** bump @noble/curves from 1.9.0 to 1.9.1 ([#606](https://github.com/polkadot-labs/hdkd/issues/606)) ([64d292e](https://github.com/polkadot-labs/hdkd/commit/64d292eca0ea3149fb79ef67e9ab2b0e7c07d9f6))
+
 ## [0.0.15](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.14...hdkd-v0.0.15) (2025-05-10)
 
 
