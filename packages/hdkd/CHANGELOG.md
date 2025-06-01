@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.17](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.16...hdkd-v0.0.17) (2025-06-01)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump execa from 9.5.3 to 9.6.0 ([#613](https://github.com/polkadot-labs/hdkd/issues/613)) ([e2db4df](https://github.com/polkadot-labs/hdkd/commit/e2db4df29f9572869f016639a4b64ad08371c5a8))
+
 ## [0.0.16](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.15...hdkd-v0.0.16) (2025-05-26)
 
 
