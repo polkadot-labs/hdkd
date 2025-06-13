@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.17](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.16...hdkd-v0.0.17) (2025-06-13)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump execa from 9.5.3 to 9.6.0 ([#613](https://github.com/polkadot-labs/hdkd/issues/613)) ([e2db4df](https://github.com/polkadot-labs/hdkd/commit/e2db4df29f9572869f016639a4b64ad08371c5a8))
+* **deps:** bump @noble/curves from 1.9.1 to 1.9.2 ([#628](https://github.com/polkadot-labs/hdkd/issues/628)) ([64b2b4f](https://github.com/polkadot-labs/hdkd/commit/64b2b4fb7747a64cec904ba39a9a5b4af7f3282e))
+
 ## [0.0.16](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.15...hdkd-v0.0.16) (2025-05-26)
 
 
