@@ -3,7 +3,7 @@
 `@polkadot-labs/hdkd-helpers` is a pure JavaScript library providing utility functions for three signature schemes: sr25519, ed25519, and ecdsa.
 This library is designed to assist with Hierarchical Deterministic Key Derivation (HDKD) in the Polkadot ecosystem.
 Additionally, it includes utilities for deriving HD accounts with hard and soft derivation, creating ss58 addresses, and deriving private keys through bip39.
-It is built on top of `@noble/hashes`, `@noble/curves`, and `micro-sr25519`.
+It is built on top of `@noble/hashes`, `@noble/curves`, and `@scure/sr25519`.
 
 ## Features
 
@@ -33,7 +33,7 @@ import {
   entropyToMiniSecret,
   mnemonicToEntropy,
 } from "@polkadot-labs/hdkd-helpers"
-import { secretFromSeed } from "micro-sr25519"
+import { secretFromSeed } from "@scure/sr25519"
 
 const entropy = mnemonicToEntropy(DEV_PHRASE)
 const miniSecret = entropyToMiniSecret(entropy)

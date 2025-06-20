@@ -1,4 +1,4 @@
-import { getPublicKey, sign, verify } from "micro-sr25519"
+import { getPublicKey, sign, verify } from "@scure/sr25519"
 import { ensureBytes } from "./utils"
 
 import type { Curve } from "./types"

@@ -7,7 +7,7 @@ These libraries provide robust support for various signature schemes, are optimi
 ## Libraries
 
 - `@polkadot-labs/hdkd` is a Hierarchical Deterministic (HD) account derivation library compatible with the Polkadot and Substrate ecosystems. It supports the sr25519, ed25519, and ecdsa signature schemes, providing a comprehensive solution for HD account derivation.
-- `@polkadot-labs/hdkd-helpers` is a pure JavaScript library providing utility functions for three signature schemes: sr25519, ed25519, and ecdsa. This library is designed to assist with Hierarchical Deterministic Key Derivation (HDKD) in the Polkadot ecosystem. It is built on top of `@noble/hashes`, `@noble/curves`, and `micro-sr25519`.
+- `@polkadot-labs/hdkd-helpers` is a pure JavaScript library providing utility functions for three signature schemes: sr25519, ed25519, and ecdsa. This library is designed to assist with Hierarchical Deterministic Key Derivation (HDKD) in the Polkadot ecosystem. It is built on top of `@noble/hashes`, `@noble/curves`, and `@scure/sr25519`.
 - `@polkadot-labs/schnorrkel-wasm` is a JavaScript WebAssembly (WASM) wrapper for the Schnorrkel crate. This package provides a convenient interface for using Schnorrkel's cryptographic functions in JavaScript applications.
 
 ## Usage
