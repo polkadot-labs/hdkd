@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.19](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.18...hdkd-v0.0.19) (2025-06-20)
+
+
+### Miscellaneous Chores
+
+* update hdkd dependency semver ([#645](https://github.com/polkadot-labs/hdkd/issues/645)) ([3a1f7a8](https://github.com/polkadot-labs/hdkd/commit/3a1f7a8d54d3ab858910a8b065493701fd979b47))
+
 ## [0.0.18](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.17...hdkd-v0.0.18) (2025-06-20)
 
 
