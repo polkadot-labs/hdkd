@@ -113,7 +113,7 @@ importers:
   packages/hdkd:
     dependencies:
       '@polkadot-labs/hdkd-helpers':
-        specifier: workspace:*
+        specifier: workspace:~
         version: link:../hdkd-helpers
     devDependencies:
       '@noble/curves':
