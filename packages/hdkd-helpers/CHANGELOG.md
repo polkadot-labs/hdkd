@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.18](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.17...hdkd-helpers-v0.0.18) (2025-06-20)
+
+
+### Features
+
+* use @scure/sr25519 ([#642](https://github.com/polkadot-labs/hdkd/issues/642)) ([e1b374c](https://github.com/polkadot-labs/hdkd/commit/e1b374c47840b0c7a40887bd300e65705fd2f858))
+
 ## [0.0.17](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.16...hdkd-helpers-v0.0.17) (2025-06-13)
 
 
