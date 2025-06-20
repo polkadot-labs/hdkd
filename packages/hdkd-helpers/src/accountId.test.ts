@@ -1,5 +1,4 @@
 import { expect, test } from "vitest"
-
 import { ensureBytes } from "."
 import { accountId } from "./accountId"
 

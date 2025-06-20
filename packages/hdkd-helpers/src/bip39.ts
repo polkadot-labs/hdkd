@@ -4,7 +4,6 @@
 
 import { sha256 } from "@noble/hashes/sha2"
 import { randomBytes } from "@noble/hashes/utils"
-
 import { BIP39_EN_WORDLIST } from "./bip39EnWordlist"
 
 const INVALID_MNEMONIC = "Invalid mnemonic"
@@ -98,7 +97,7 @@ export const validateMnemonic = (
 ): boolean => {
   try {
     mnemonicToEntropy(mnemonic, wordlist)
-  } catch (e) {
+  } catch (_) {
     return false
   }
   return true

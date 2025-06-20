@@ -1,6 +1,6 @@
 import {
-  type KeyPair,
   accountId,
+  type KeyPair,
   ss58Address,
   ss58PublicKey,
 } from "@polkadot-labs/hdkd-helpers"

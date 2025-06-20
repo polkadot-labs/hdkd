@@ -1,6 +1,5 @@
-import { expect, test } from "vitest"
-
 import { ed25519 as ed25519_ } from "@noble/curves/ed25519"
+import { expect, test } from "vitest"
 import { ed25519 } from "./ed25519"
 
 test("ed25519", () => {

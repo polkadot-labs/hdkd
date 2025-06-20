@@ -1,7 +1,6 @@
 import { bytesToHex } from "@noble/hashes/utils"
 import { expect, test } from "vitest"
-
-import { type Curve, type Hex, ecdsa, ed25519 } from "."
+import { type Curve, ecdsa, ed25519, type Hex } from "."
 import { DEV_PHRASE } from "./constants"
 import { createDerive } from "./createDerive"
 import { ecdsaDerive } from "./ecdsaDerive"

@@ -3,9 +3,8 @@ import {
   sr25519_derive_seed_hard,
   sr25519_secret_from_seed,
 } from "@polkadot-labs/schnorrkel-wasm"
-import { Bytes, Tuple, str } from "scale-ts"
+import { Bytes, str, Tuple } from "scale-ts"
 import { expect, test } from "vitest"
-
 import { DEV_MINI_SECRET } from "../src/constants"
 import { createChainCode } from "../src/createChainCode"
 import { ecdsa } from "../src/ecdsa"

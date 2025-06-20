@@ -1,4 +1,4 @@
-import { type Hex, blake2b256, ensureBytes } from "."
+import { blake2b256, ensureBytes, type Hex } from "."
 
 const VALID_PUBLICKEY_LENGTHS = [32, 33]
 export const accountId = (publicKey: Hex) => {

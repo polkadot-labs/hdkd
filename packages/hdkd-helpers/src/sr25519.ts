@@ -1,7 +1,6 @@
 import { getPublicKey, sign, verify } from "@scure/sr25519"
-import { ensureBytes } from "./utils"
-
 import type { Curve } from "./types"
+import { ensureBytes } from "./utils"
 
 export const sr25519: Curve = {
   getPublicKey(privateKey) {
