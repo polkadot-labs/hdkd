@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.19](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.18...hdkd-helpers-v0.0.19) (2025-06-20)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump @biomejs/biome from 1.9.4 to 2.0.0 ([#641](https://github.com/polkadot-labs/hdkd/issues/641)) ([06e9934](https://github.com/polkadot-labs/hdkd/commit/06e993414b1b6fe85f4db312a57e896c71c6ef52))
+
 ## [0.0.18](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.17...hdkd-helpers-v0.0.18) (2025-06-20)
 
 
