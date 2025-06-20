@@ -3,7 +3,6 @@ import {
   sr25519,
   sr25519Derive,
 } from "@polkadot-labs/hdkd-helpers"
-
 import type { CreateDeriveFn } from "./types"
 
 export const sr25519CreateDerive: CreateDeriveFn = (seed) =>

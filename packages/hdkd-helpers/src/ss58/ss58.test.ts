@@ -1,5 +1,4 @@
 import { expect, test } from "vitest"
-
 import { ensureBytes } from ".."
 import { ss58Decode, ss58Encode } from "./ss58"
 

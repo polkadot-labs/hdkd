@@ -4,7 +4,6 @@ import {
   sr25519_secret_from_seed,
 } from "@polkadot-labs/schnorrkel-wasm"
 import { expect, test } from "vitest"
-
 import { DEV_MINI_SECRET } from "../src/constants"
 import { createChainCode } from "../src/createChainCode"
 import { parseDerivations } from "../src/parseDerivations"

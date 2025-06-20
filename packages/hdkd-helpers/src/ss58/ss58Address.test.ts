@@ -1,5 +1,4 @@
 import { expect, test } from "vitest"
-
 import { ss58Address } from "./ss58Address"
 
 test.each([

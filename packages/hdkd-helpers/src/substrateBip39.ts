@@ -1,6 +1,5 @@
 import { pbkdf2, pbkdf2Async } from "@noble/hashes/pbkdf2"
 import { sha512 } from "@noble/hashes/sha2"
-
 import { mnemonicToEntropy } from "./bip39"
 import { BIP39_EN_WORDLIST } from "./bip39EnWordlist"
 

@@ -5,7 +5,6 @@ import {
 } from "@polkadot-labs/hdkd-helpers"
 import registry from "@substrate/ss58-registry"
 import { expect, test } from "vitest"
-
 import {
   type CreateDeriveFn,
   ecdsaCreateDerive,

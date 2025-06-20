@@ -8,7 +8,6 @@ import {
   sr25519,
 } from "@polkadot-labs/hdkd-helpers"
 import { expect, test } from "vitest"
-
 import {
   type CreateDeriveFn,
   ecdsaCreateDerive,

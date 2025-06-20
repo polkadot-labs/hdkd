@@ -1,5 +1,4 @@
 import { expect, test } from "vitest"
-
 import { sr25519 } from "./sr25519"
 
 test("sr25519", () => {

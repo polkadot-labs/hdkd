@@ -1,4 +1,4 @@
-import { HDKD, getPublicKey, secretFromSeed } from "@scure/sr25519"
+import { getPublicKey, HDKD, secretFromSeed } from "@scure/sr25519"
 import type { DeriveKeyPairFn } from "./internal/types"
 
 export const sr25519Derive: DeriveKeyPairFn = (seed, curve, derivations) => {
