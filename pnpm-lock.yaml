@@ -30,8 +30,8 @@ importers:
   examples/playground:
     dependencies:
       '@noble/curves':
-        specifier: ^1.9.3
-        version: 1.9.3
+        specifier: ^1.9.4
+        version: 1.9.4
       '@noble/hashes':
         specifier: ^1.8.0
         version: 1.8.0
@@ -117,8 +117,8 @@ importers:
         version: link:../hdkd-helpers
     devDependencies:
       '@noble/curves':
-        specifier: ^1.9.3
-        version: 1.9.3
+        specifier: ^1.9.4
+        version: 1.9.4
       '@substrate/ss58-registry':
         specifier: ^1.51.0
         version: 1.51.0
@@ -141,8 +141,8 @@ importers:
   packages/hdkd-helpers:
     dependencies:
       '@noble/curves':
-        specifier: ^1.9.3
-        version: 1.9.3
+        specifier: ^1.9.4
+        version: 1.9.4
       '@noble/hashes':
         specifier: ^1.8.0
         version: 1.8.0
@@ -446,8 +446,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@noble/curves@1.9.3':
-    resolution: {integrity: sha512-NiHFh8qtZRREtY0Bpup+xpmLnB0bn9UAtj8CARBc2x1zjpVLDC84u+Bvy2+uaSgA3AmMP9zsacMZT1echgVAdQ==}
+  '@noble/curves@1.9.4':
+    resolution: {integrity: sha512-2bKONnuM53lINoDrSmK8qP8W271ms7pygDhZt4SiLOoLwBtoHqeCFi6RG42V8zd3mLHuJFhU/Bmaqo4nX0/kBw==}
     engines: {node: ^14.21.3 || >=16}
 
   '@noble/hashes@1.8.0':
@@ -2183,7 +2183,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@noble/curves@1.9.3':
+  '@noble/curves@1.9.4':
     dependencies:
       '@noble/hashes': 1.8.0
 
@@ -2330,7 +2330,7 @@ snapshots:
 
   '@scure/sr25519@0.2.0':
     dependencies:
-      '@noble/curves': 1.9.3
+      '@noble/curves': 1.9.4
       '@noble/hashes': 1.8.0
 
   '@sec-ant/readable-stream@0.4.1': {}

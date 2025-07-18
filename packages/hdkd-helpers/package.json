@@ -44,7 +44,7 @@
     "vite-plugin-wasm": "^3.3.0"
   },
   "dependencies": {
-    "@noble/curves": "^1.9.3",
+    "@noble/curves": "^1.9.4",
     "@noble/hashes": "^1.8.0",
     "@scure/base": "^1.2.6",
     "@scure/sr25519": "^0.2.0",
