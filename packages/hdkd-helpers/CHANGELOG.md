@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.20](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.19...hdkd-helpers-v0.0.20) (2025-07-21)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump vite-plugin-wasm from 3.3.0 to 3.5.0 ([#666](https://github.com/polkadot-labs/hdkd/issues/666)) ([49afd32](https://github.com/polkadot-labs/hdkd/commit/49afd3267c655d7a360b20a6092cd572f67bb090))
+* **deps:** bump @noble/curves from 1.9.2 to 1.9.3 ([#671](https://github.com/polkadot-labs/hdkd/issues/671)) ([cca1635](https://github.com/polkadot-labs/hdkd/commit/cca1635135217031c9d5e549f788edb4787dc4f0))
+* **deps:** bump @noble/curves from 1.9.3 to 1.9.4 ([#675](https://github.com/polkadot-labs/hdkd/issues/675)) ([14b971b](https://github.com/polkadot-labs/hdkd/commit/14b971bfb33958f4cbb1319fa5b824579cdcb7ee))
+
 ## [0.0.19](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.18...hdkd-helpers-v0.0.19) (2025-06-20)
 
 
