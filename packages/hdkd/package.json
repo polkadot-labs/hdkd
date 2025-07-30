@@ -38,7 +38,7 @@
     "dist"
   ],
   "devDependencies": {
-    "@noble/curves": "^1.9.4",
+    "@noble/curves": "^1.9.5",
     "@substrate/ss58-registry": "^1.51.0",
     "execa": "^9.6.0",
     "@total-typescript/tsconfig": "^1.0.4",
