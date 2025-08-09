@@ -20,7 +20,7 @@
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
-    "@vitejs/plugin-react-swc": "^3.11.0",
+    "@vitejs/plugin-react-swc": "^4.0.0",
     "typescript": "^5.9.2",
     "vite": "^7.1.0"
   }
