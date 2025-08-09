@@ -11,7 +11,7 @@ export const ecdsa: Curve = {
       blake2b256(ensureBytes("message", message)),
       ensureBytes("privateKey", privateKey),
     )
-    const signedBytes = signature.toCompactRawBytes()
+    const signedBytes = signature.toBytes()
     const out = new Uint8Array(signedBytes.length + 1)
     out.set(signedBytes)
     out[signedBytes.length] = signature.recovery
@@ -19,9 +19,9 @@ export const ecdsa: Curve = {
   },
   verify(signature, message, publicKey) {
     return secp256k1.verify(
-      secp256k1.Signature.fromCompact(
+      secp256k1.Signature.fromBytes(
         ensureBytes("signature", signature).slice(0, 64),
-      ),
+      ).toBytes(),
       blake2b256(ensureBytes("message", message)),
       ensureBytes("publicKey", publicKey),
     )
