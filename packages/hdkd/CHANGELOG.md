@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.21](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.20...hdkd-v0.0.21) (2025-08-09)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump typescript from 5.8.3 to 5.9.2 ([#689](https://github.com/polkadot-labs/hdkd/issues/689)) ([09dbdaf](https://github.com/polkadot-labs/hdkd/commit/09dbdaf2b01daf7322541a1667715736495332e9))
+* **deps:** bump @noble/curves from 1.9.4 to 1.9.6 ([#688](https://github.com/polkadot-labs/hdkd/issues/688)) ([620571c](https://github.com/polkadot-labs/hdkd/commit/620571c2e930e4cd23c3d042c7bcbcfa5af43f36))
+
 ## [0.0.20](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.19...hdkd-v0.0.20) (2025-07-21)
 
 
