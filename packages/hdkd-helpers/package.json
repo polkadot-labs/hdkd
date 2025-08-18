@@ -1,6 +1,6 @@
 {
   "name": "@polkadot-labs/hdkd-helpers",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Composable utility functions to generate key pairs for the sr25519, ed25519, and ecdsa cryptographic schemes, along with utilities for hierarchical deterministic (HD) key derivation, tailored for use in the Polkadot and Substrate ecosystems.",
   "type": "module",
   "main": "./dist/index.cjs",
