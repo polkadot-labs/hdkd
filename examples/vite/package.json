@@ -19,7 +19,7 @@
   "devDependencies": {
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/react": "^19.1.11",
-    "@types/react-dom": "^19.1.7",
+    "@types/react-dom": "^19.1.8",
     "@vitejs/plugin-react-swc": "^4.0.1",
     "typescript": "^5.9.2",
     "vite": "^7.1.3"
