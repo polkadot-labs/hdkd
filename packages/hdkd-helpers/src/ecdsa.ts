@@ -7,23 +7,27 @@ export const ecdsa: Curve = {
     return secp256k1.getPublicKey(ensureBytes("privateKey", privateKey))
   },
   sign(message, privateKey) {
-    const signature = secp256k1.sign(
+    // See https://github.com/paritytech/substrate/blob/033d4e86cc7eff0066cd376b9375f815761d653c/primitives/core/src/ecdsa.rs#L326
+    const recoverableSignature = secp256k1.sign(
       blake2b256(ensureBytes("message", message)),
       ensureBytes("privateKey", privateKey),
+      { prehash: false, format: "recovered" },
     )
-    const signedBytes = signature.toBytes()
-    const out = new Uint8Array(signedBytes.length + 1)
-    out.set(signedBytes)
-    out[signedBytes.length] = signature.recovery
-    return out
+    const signature = new Uint8Array(recoverableSignature.length)
+    signature.set(recoverableSignature.subarray(1, recoverableSignature.length))
+    signature[recoverableSignature.length] = recoverableSignature[0]!
+    return signature
   },
   verify(signature, message, publicKey) {
+    signature = ensureBytes("signature", signature)
+    const recoverableSignature = new Uint8Array(signature.length)
+    recoverableSignature.set(signature.subarray(0, signature.length - 1), 1)
+    recoverableSignature[0] = signature[recoverableSignature.length]!
     return secp256k1.verify(
-      secp256k1.Signature.fromBytes(
-        ensureBytes("signature", signature).slice(0, 64),
-      ).toBytes(),
+      recoverableSignature,
       blake2b256(ensureBytes("message", message)),
       ensureBytes("publicKey", publicKey),
+      { prehash: false, format: "recovered" },
     )
   },
 }
