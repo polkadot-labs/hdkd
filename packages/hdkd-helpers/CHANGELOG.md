@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.23](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.22...hdkd-helpers-v0.0.23) (2025-08-30)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump @noble/hashes from 1.8.0 to 2.0.0 ([#711](https://github.com/polkadot-labs/hdkd/issues/711)) ([e626d5c](https://github.com/polkadot-labs/hdkd/commit/e626d5ccf426704dbd7986df512ca325cf724ea0))
+* **deps:** bump @scure/base from 1.2.6 to 2.0.0 ([#709](https://github.com/polkadot-labs/hdkd/issues/709)) ([1728afa](https://github.com/polkadot-labs/hdkd/commit/1728afa0519a333b59e382f31eaa51119379dde3))
+* **deps:** bump @scure/sr25519 from 0.2.0 to 0.3.0 ([#712](https://github.com/polkadot-labs/hdkd/issues/712)) ([0d67e99](https://github.com/polkadot-labs/hdkd/commit/0d67e99a3cc2d9d6e4cde1633f38a52903735944))
+
 ## [0.0.22](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.21...hdkd-helpers-v0.0.22) (2025-08-18)
 
 
