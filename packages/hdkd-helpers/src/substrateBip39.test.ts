@@ -1,4 +1,4 @@
-import { bytesToHex } from "@noble/hashes/utils"
+import { bytesToHex } from "@noble/hashes/utils.js"
 import { expect, test } from "vitest"
 import { DEV_MINI_SECRET, DEV_PHRASE } from "./constants"
 import {

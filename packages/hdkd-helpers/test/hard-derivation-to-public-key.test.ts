@@ -1,4 +1,4 @@
-import { bytesToHex } from "@noble/hashes/utils"
+import { bytesToHex } from "@noble/hashes/utils.js"
 import {
   sr25519_derive_seed_hard,
   sr25519_secret_from_seed,

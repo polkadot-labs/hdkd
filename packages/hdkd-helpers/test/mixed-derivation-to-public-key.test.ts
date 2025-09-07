@@ -1,4 +1,4 @@
-import { bytesToHex } from "@noble/hashes/utils"
+import { bytesToHex } from "@noble/hashes/utils.js"
 import {
   sr25519_derive_keypair_hard,
   sr25519_derive_keypair_soft,
