@@ -15,7 +15,7 @@ These libraries provide robust support for various signature schemes, are optimi
 Here is an example of how to use the library:
 
 ```ts
-import { bytesToHex } from "@noble/hashes/utils"
+import { bytesToHex } from "@noble/hashes/utils.js"
 import { sr25519CreateDerive } from "@polkadot-labs/hdkd"
 import {
   sr25519,

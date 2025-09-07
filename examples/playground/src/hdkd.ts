@@ -1,4 +1,4 @@
-import { bytesToHex } from "@noble/hashes/utils"
+import { bytesToHex } from "@noble/hashes/utils.js"
 import { sr25519CreateDerive } from "@polkadot-labs/hdkd"
 import {
   DEV_PHRASE,
