@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.24](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.23...hdkd-helpers-v0.0.24) (2025-09-07)
+
+
+### Bug Fixes
+
+* @noble/hashes import paths ([#721](https://github.com/polkadot-labs/hdkd/issues/721)) ([d5abb2d](https://github.com/polkadot-labs/hdkd/commit/d5abb2d43184390cabe7280b3a8ec60d62b46c4d))
+
 ## [0.0.23](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.22...hdkd-helpers-v0.0.23) (2025-08-30)
 
 
