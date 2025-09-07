@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.25](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.24...hdkd-helpers-v0.0.25) (2025-09-07)
+
+
+### Bug Fixes
+
+* @noble/curves import paths ([#724](https://github.com/polkadot-labs/hdkd/issues/724)) ([b614ebe](https://github.com/polkadot-labs/hdkd/commit/b614ebed4041901e7c319a18e070ffaf30cfd07d))
+
 ## [0.0.24](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.23...hdkd-helpers-v0.0.24) (2025-09-07)
 
 
