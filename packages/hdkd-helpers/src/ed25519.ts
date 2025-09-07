@@ -1,4 +1,4 @@
-import { ed25519 as ed25519_ } from "@noble/curves/ed25519"
+import { ed25519 as ed25519_ } from "@noble/curves/ed25519.js"
 import { ensureBytes } from "."
 import type { Curve } from "./types"
 
