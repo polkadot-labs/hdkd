@@ -1,4 +1,4 @@
-import { blake2b } from "@noble/hashes/blake2"
+import { blake2b } from "@noble/hashes/blake2.js"
 import { hexToBytes, isBytes } from "@noble/hashes/utils.js"
 import { Bytes, str, Tuple } from "scale-ts"
 import type { DeriveKeyPairFn } from "./internal/types"

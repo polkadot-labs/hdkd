@@ -1,4 +1,4 @@
-import { bytesToHex } from "@noble/hashes/utils"
+import { bytesToHex } from "@noble/hashes/utils.js"
 import { describe, expect, test } from "vitest"
 import { createChainCode } from "./createChainCode"
 
