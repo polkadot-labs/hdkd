@@ -1,4 +1,4 @@
-import { bytesToHex } from "@noble/curves/abstract/utils"
+import { bytesToHex } from "@noble/hashes/utils.js"
 import { DEV_PHRASE } from "@polkadot-labs/hdkd-helpers"
 import { $ } from "execa"
 import { generateVariants } from "./utils.js"
