@@ -33,8 +33,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       '@noble/hashes':
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^2.0.1
+        version: 2.0.1
       '@polkadot-labs/hdkd':
         specifier: workspace:*
         version: link:../../packages/hdkd
@@ -61,8 +61,8 @@ importers:
   examples/vite:
     dependencies:
       '@noble/hashes':
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^2.0.1
+        version: 2.0.1
       '@polkadot-labs/hdkd':
         specifier: workspace:*
         version: link:../../packages/hdkd
@@ -129,8 +129,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       '@noble/hashes':
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^2.0.1
+        version: 2.0.1
       '@scure/base':
         specifier: ^2.0.0
         version: 2.0.0
@@ -549,10 +549,6 @@ packages:
   '@noble/hashes@1.8.0':
     resolution: {integrity: sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==}
     engines: {node: ^14.21.3 || >=16}
-
-  '@noble/hashes@2.0.0':
-    resolution: {integrity: sha512-h8VUBlE8R42+XIDO229cgisD287im3kdY6nbNZJFjc6ZvKIXPYXe6Vc/t+kyjFdMFyt5JpapzTsEg8n63w5/lw==}
-    engines: {node: '>= 20.19.0'}
 
   '@noble/hashes@2.0.1':
     resolution: {integrity: sha512-XlOlEbQcE9fmuXxrVTXCTlG2nlRXa9Rj3rr5Ue/+tX+nmkgbX720YHh0VR3hBF9xDvwnb8D2shVGOwNx+ulArw==}
@@ -1915,8 +1911,6 @@ snapshots:
 
   '@noble/hashes@1.8.0': {}
 
-  '@noble/hashes@2.0.0': {}
-
   '@noble/hashes@2.0.1': {}
 
   '@pkgjs/parseargs@0.11.0':
@@ -2052,7 +2046,7 @@ snapshots:
   '@scure/sr25519@0.3.0':
     dependencies:
       '@noble/curves': 2.0.1
-      '@noble/hashes': 2.0.0
+      '@noble/hashes': 2.0.1
 
   '@sec-ant/readable-stream@0.4.1': {}
 

@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@noble/hashes": "^2.0.0",
+    "@noble/hashes": "^2.0.1",
     "@polkadot-labs/hdkd": "workspace:*",
     "@polkadot-labs/hdkd-helpers": "workspace:*",
     "react": "^19.1.1",
