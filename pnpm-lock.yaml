@@ -83,8 +83,8 @@ importers:
         specifier: ^19.2.5
         version: 19.2.5
       '@types/react-dom':
-        specifier: ^19.2.2
-        version: 19.2.2(@types/react@19.2.5)
+        specifier: ^19.2.3
+        version: 19.2.3(@types/react@19.2.5)
       '@vitejs/plugin-react-swc':
         specifier: ^4.2.2
         version: 4.2.2(vite@7.2.2(yaml@2.8.1))
@@ -779,8 +779,8 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
-  '@types/react-dom@19.2.2':
-    resolution: {integrity: sha512-9KQPoO6mZCi7jcIStSnlOWn2nEF3mNmyr3rIAsGnAbQKYbRLyqmeSc39EVgtxXVia+LMT8j3knZLAZAh+xLmrw==}
+  '@types/react-dom@19.2.3':
+    resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
     peerDependencies:
       '@types/react': ^19.2.0
 
@@ -1898,7 +1898,7 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
-  '@types/react-dom@19.2.2(@types/react@19.2.5)':
+  '@types/react-dom@19.2.3(@types/react@19.2.5)':
     dependencies:
       '@types/react': 19.2.5
 
