@@ -29,20 +29,20 @@ test.each([
     `${DEV_MINI_SECRET}/foo/bar`,
     "3abc3c000cbcdb69bf1bb3a0d62a006a0db63807dd4e74db502d84774cc68900",
   ],
-] as [suri: string, expectedPublicKey: Hex][])(
-  "sr25519.getPublicKey(...) from soft derivations",
-  (suri, expectedPublicKey) => {
-    const suriParsed = parseSuri(suri)
-    const privateKey = sr25519_secret_from_seed(
-      ensureBytes("miniSecret", suriParsed.phrase!, 32),
-    )
-    const publicKey = sr25519.getPublicKey(privateKey)
-    const derivations = parseDerivations(parseSuri(suri).paths!)
-    const derivedPublicKey = derivations.reduce((publicKey, [, derivation]) => {
-      const chainCode = createChainCode(derivation)
-      return sr25519_derive_public_soft(publicKey, chainCode)
-    }, publicKey)
+] as [
+  suri: string,
+  expectedPublicKey: Hex,
+][])("sr25519.getPublicKey(...) from soft derivations", (suri, expectedPublicKey) => {
+  const suriParsed = parseSuri(suri)
+  const privateKey = sr25519_secret_from_seed(
+    ensureBytes("miniSecret", suriParsed.phrase!, 32),
+  )
+  const publicKey = sr25519.getPublicKey(privateKey)
+  const derivations = parseDerivations(parseSuri(suri).paths!)
+  const derivedPublicKey = derivations.reduce((publicKey, [, derivation]) => {
+    const chainCode = createChainCode(derivation)
+    return sr25519_derive_public_soft(publicKey, chainCode)
+  }, publicKey)
 
-    expect(bytesToHex(derivedPublicKey)).toBe(expectedPublicKey)
-  },
-)
+  expect(bytesToHex(derivedPublicKey)).toBe(expectedPublicKey)
+})

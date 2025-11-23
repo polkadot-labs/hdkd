@@ -85,35 +85,24 @@ test.each([
   curve: Curve,
   expectedDerivedMiniSecret: Hex,
   expectedPublicKey: Hex,
-][])(
-  "%s.getPublicKey(...) from mini secret",
-  (
-    _,
-    suri,
-    derivationPrefix,
-    getPrivateKey,
-    curve,
-    expectedDerivedMiniSecret,
-    expectedPublicKey,
-  ) => {
-    const suriParsed = parseSuri(suri)
-    const derivations = parseDerivations(suriParsed.paths!)
-    const derivedMiniSecret = derivations.reduce(
-      (miniSecret, [, hardDerivation]) => {
-        const chainCode = createChainCode(hardDerivation)
-        return derivationPrefix === "sr25519"
-          ? hardDeriveSr25519(miniSecret, chainCode)
-          : hardDerive(derivationPrefix, miniSecret, chainCode)
-      },
-      ensureBytes("miniSecret", suriParsed.phrase!, 32),
-    )
+][])("%s.getPublicKey(...) from mini secret", (_, suri, derivationPrefix, getPrivateKey, curve, expectedDerivedMiniSecret, expectedPublicKey) => {
+  const suriParsed = parseSuri(suri)
+  const derivations = parseDerivations(suriParsed.paths!)
+  const derivedMiniSecret = derivations.reduce(
+    (miniSecret, [, hardDerivation]) => {
+      const chainCode = createChainCode(hardDerivation)
+      return derivationPrefix === "sr25519"
+        ? hardDeriveSr25519(miniSecret, chainCode)
+        : hardDerive(derivationPrefix, miniSecret, chainCode)
+    },
+    ensureBytes("miniSecret", suriParsed.phrase!, 32),
+  )
 
-    expect(bytesToHex(derivedMiniSecret)).toBe(expectedDerivedMiniSecret)
-    const privateKey = getPrivateKey(derivedMiniSecret)
-    const publicKey = curve.getPublicKey(privateKey)
-    expect(bytesToHex(publicKey)).toBe(expectedPublicKey)
-  },
-)
+  expect(bytesToHex(derivedMiniSecret)).toBe(expectedDerivedMiniSecret)
+  const privateKey = getPrivateKey(derivedMiniSecret)
+  const publicKey = curve.getPublicKey(privateKey)
+  expect(bytesToHex(publicKey)).toBe(expectedPublicKey)
+})
 
 const derivationCodec = Tuple(str, Bytes(32), Bytes(32))
 function hardDerive(

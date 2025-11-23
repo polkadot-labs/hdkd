@@ -28,24 +28,26 @@ const curves: Record<string, Curve> = {
   sr25519,
 }
 
-test.each(subkeyTestCases)(
-  "withNetworkAccount for $input.scheme $input.network $input.suri",
-  ({ input, subkey: { output } }) => {
-    const { phrase, paths, password } = parseSuri(input.suri)
-    const seed = mnemonicToMiniSecret(phrase!, password)
-    const keypair = schemes[input.scheme]!(seed)(paths!)
+test.each(
+  subkeyTestCases,
+)("withNetworkAccount for $input.scheme $input.network $input.suri", ({
+  input,
+  subkey: { output },
+}) => {
+  const { phrase, paths, password } = parseSuri(input.suri)
+  const seed = mnemonicToMiniSecret(phrase!, password)
+  const keypair = schemes[input.scheme]!(seed)(paths!)
 
-    const message = new TextEncoder().encode(input.message)!
+  const message = new TextEncoder().encode(input.message)!
 
-    expect(
-      curves[input.scheme]!.verify(output, message, keypair.publicKey),
-    ).toBe(true)
+  expect(curves[input.scheme]!.verify(output, message, keypair.publicKey)).toBe(
+    true,
+  )
 
-    // TODO: when subkey is installed in CI, do keypair.sign() and verify with subkey
-    // sr25519 signatures are not deterministic
-    if (input.scheme === "sr25519") return
+  // TODO: when subkey is installed in CI, do keypair.sign() and verify with subkey
+  // sr25519 signatures are not deterministic
+  if (input.scheme === "sr25519") return
 
-    const signature = keypair.sign(message)
-    expect(signature).toEqual(ensureBytes("output", output))
-  },
-)
+  const signature = keypair.sign(message)
+  expect(signature).toEqual(ensureBytes("output", output))
+})
