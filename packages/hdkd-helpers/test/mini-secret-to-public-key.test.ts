@@ -41,12 +41,9 @@ test.each([
   getPrivateKey: (hex: Hex) => Hex,
   curve: Curve,
   expectedPublicKey: Hex,
-][])(
-  "%s.getPublicKey(...) from mini secret",
-  (_, miniSecret, getPrivateKey, curve, expectedPublicKey) => {
-    const privateKey = getPrivateKey(miniSecret)
-    const publicKey = curve.getPublicKey(privateKey)
+][])("%s.getPublicKey(...) from mini secret", (_, miniSecret, getPrivateKey, curve, expectedPublicKey) => {
+  const privateKey = getPrivateKey(miniSecret)
+  const publicKey = curve.getPublicKey(privateKey)
 
-    expect(bytesToHex(publicKey)).toBe(expectedPublicKey)
-  },
-)
+  expect(bytesToHex(publicKey)).toBe(expectedPublicKey)
+})

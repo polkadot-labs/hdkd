@@ -29,23 +29,23 @@ test.each([
     `${DEV_MINI_SECRET}//Alice/foo//bar`,
     "964be39cf833c7575b3bd2c903c25e7da40db799457f58f04f0d050bfdd44568",
   ],
-] as [suri: string, expectedPublicKey: Hex][])(
-  "sr25519 public key from hard/soft/hard derivations",
-  (suri, expectedPublicKey) => {
-    const suriParsed = parseSuri(suri)
-    const derivations = parseDerivations(parseSuri(suri).paths!)
-    const keypair = sr25519_keypair_from_seed(
-      ensureBytes("miniSecret", suriParsed.phrase!, 32),
-    )
-    const derivedKeypair = derivations.reduce((keypair, [type, derivation]) => {
-      const chainCode = createChainCode(derivation)
-      const deriveFn =
-        type === "hard"
-          ? sr25519_derive_keypair_hard
-          : sr25519_derive_keypair_soft
-      return deriveFn(keypair, chainCode)
-    }, keypair)
-    const derivedPublicKey = derivedKeypair.slice(64)
-    expect(bytesToHex(derivedPublicKey)).toBe(expectedPublicKey)
-  },
-)
+] as [
+  suri: string,
+  expectedPublicKey: Hex,
+][])("sr25519 public key from hard/soft/hard derivations", (suri, expectedPublicKey) => {
+  const suriParsed = parseSuri(suri)
+  const derivations = parseDerivations(parseSuri(suri).paths!)
+  const keypair = sr25519_keypair_from_seed(
+    ensureBytes("miniSecret", suriParsed.phrase!, 32),
+  )
+  const derivedKeypair = derivations.reduce((keypair, [type, derivation]) => {
+    const chainCode = createChainCode(derivation)
+    const deriveFn =
+      type === "hard"
+        ? sr25519_derive_keypair_hard
+        : sr25519_derive_keypair_soft
+    return deriveFn(keypair, chainCode)
+  }, keypair)
+  const derivedPublicKey = derivedKeypair.slice(64)
+  expect(bytesToHex(derivedPublicKey)).toBe(expectedPublicKey)
+})
