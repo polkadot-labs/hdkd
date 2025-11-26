@@ -20,7 +20,7 @@
     "lint-staged": "^16.2.7",
     "prettier": "^3.6.2",
     "turbo": "^2.6.1",
-    "vitest": "^4.0.13"
+    "vitest": "^4.0.14"
   },
   "prettier": {
     "printWidth": 80,
