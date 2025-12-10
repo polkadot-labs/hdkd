@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.26](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.25...hdkd-v0.0.26) (2025-12-10)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump @biomejs/biome from 2.3.5 to 2.3.6 ([#791](https://github.com/polkadot-labs/hdkd/issues/791)) ([b302d98](https://github.com/polkadot-labs/hdkd/commit/b302d986056ba4540a18043544c2ffdc4a3c59fe))
+* **deps-dev:** bump execa from 9.6.0 to 9.6.1 ([#804](https://github.com/polkadot-labs/hdkd/issues/804)) ([796ebb2](https://github.com/polkadot-labs/hdkd/commit/796ebb2f0ad0ef6aff0178067dff8b36f9b9ea4c))
+* **deps-dev:** bump tsup from 8.5.0 to 8.5.1 ([#790](https://github.com/polkadot-labs/hdkd/issues/790)) ([48b69cb](https://github.com/polkadot-labs/hdkd/commit/48b69cb4cd0af106dc300e17ac5cf507f11ffed2))
+* **deps-dev:** bump typescript from 5.9.2 to 5.9.3 ([#743](https://github.com/polkadot-labs/hdkd/issues/743)) ([0cb35f9](https://github.com/polkadot-labs/hdkd/commit/0cb35f925c4b7f9d4ce9254de15981902ff8a478))
+
 ## [0.0.25](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.24...hdkd-v0.0.25) (2025-09-26)
 
 
