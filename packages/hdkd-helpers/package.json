@@ -47,7 +47,7 @@
     "@noble/curves": "^2.0.1",
     "@noble/hashes": "^2.0.1",
     "@scure/base": "^2.0.0",
-    "@scure/sr25519": "^0.3.0",
+    "@scure/sr25519": "^1.0.0",
     "scale-ts": "^1.6.1"
   }
 }
