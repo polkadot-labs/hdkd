@@ -11,6 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      id-token: write
+      contents: read
+
     steps:
       - uses: actions/checkout@v6
       - uses: actions/cache@v5
@@ -40,5 +44,3 @@ jobs:
       - run: pnpm turbo build test lint --cache-dir=.turbo
       - uses: ./.github/actions/publish
         if: github.ref == 'refs/heads/main'
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
