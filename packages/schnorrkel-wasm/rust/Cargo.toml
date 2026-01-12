@@ -13,7 +13,7 @@ default = ["console_error_panic_hook"]
 [dependencies]
 wasm-bindgen = "0.2.84"
 schnorrkel = { version = "0.11.3", features = ["preaudit_deprecated"] }
-getrandom = { version = "0.2.11", features = ["js"] }
+getrandom = { version = "0.3.4", features = ["js"] }
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
 # logging them with `console.error`. This is great for development, but requires
