@@ -13,12 +13,12 @@
     "@noble/hashes": "^2.0.1",
     "@polkadot-labs/hdkd": "workspace:*",
     "@polkadot-labs/hdkd-helpers": "workspace:*",
-    "react": "^19.2.3",
+    "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@total-typescript/tsconfig": "^1.0.4",
-    "@types/react": "^19.2.9",
+    "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react-swc": "^4.2.2",
     "typescript": "^5.9.3",
