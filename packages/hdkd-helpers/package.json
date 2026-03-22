@@ -41,7 +41,7 @@
     "@total-typescript/tsconfig": "^1.0.4",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
-    "vite-plugin-wasm": "^3.5.0"
+    "vite-plugin-wasm": "^3.6.0"
   },
   "dependencies": {
     "@noble/curves": "^2.0.1",
