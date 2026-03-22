@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.28](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.27...hdkd-helpers-v0.0.28) (2026-03-22)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump vite-plugin-wasm from 3.5.0 to 3.6.0 ([#876](https://github.com/polkadot-labs/hdkd/issues/876)) ([a146afe](https://github.com/polkadot-labs/hdkd/commit/a146afe9224c9d9259a1f814abadbce428ec0ac0))
+
 ## [0.0.27](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.26...hdkd-helpers-v0.0.27) (2025-12-10)
 
 
