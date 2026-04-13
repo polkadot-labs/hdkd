@@ -18,7 +18,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@noble/curves": "^2.0.1",
+    "@noble/curves": "^2.2.0",
     "@noble/hashes": "^2.0.1",
     "@polkadot-labs/hdkd": "workspace:*",
     "@polkadot-labs/hdkd-helpers": "workspace:*",
