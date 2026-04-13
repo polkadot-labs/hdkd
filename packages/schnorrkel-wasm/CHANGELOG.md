@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.8](https://github.com/polkadot-labs/hdkd/compare/schnorrkel-wasm-v0.0.7...schnorrkel-wasm-v0.0.8) (2026-04-13)
+
+
+### Bug Fixes
+
+* **schnorrkel-wasm:** esm build ([#905](https://github.com/polkadot-labs/hdkd/issues/905)) ([a3be5cd](https://github.com/polkadot-labs/hdkd/commit/a3be5cd86eb12d5dcc98f26eb0e1f9076c8d3bd6))
+
 ## [0.0.7](https://github.com/polkadot-labs/hdkd/compare/schnorrkel-wasm-v0.0.6...schnorrkel-wasm-v0.0.7) (2025-01-31)
 
 

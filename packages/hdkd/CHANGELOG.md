@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.28](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.27...hdkd-v0.0.28) (2026-04-13)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump @noble/curves from 2.0.1 to 2.2.0 ([#911](https://github.com/polkadot-labs/hdkd/issues/911)) ([28efef3](https://github.com/polkadot-labs/hdkd/commit/28efef3d2f5a6cca10011d7d8409ed3ff0f2fc85))
+
 ## [0.0.27](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.26...hdkd-v0.0.27) (2026-03-22)
 
 
