@@ -34,7 +34,26 @@ jobs:
           key: ${{ runner.os }}-cargo-${{ hashFiles('packages/schnorrkel-wasm/rust/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-
-      - run: which wasm-pack || cargo install wasm-pack
+      - name: Ensure wasm-pack version
+        run: |
+          set -e
+
+          REQUIRED_VERSION="0.14.0"
+
+          if command -v wasm-pack >/dev/null 2>&1; then
+            INSTALLED_VERSION=$(wasm-pack --version | awk '{print $2}')
+            if [ "$INSTALLED_VERSION" = "$REQUIRED_VERSION" ]; then
+              echo "wasm-pack $REQUIRED_VERSION already installed"
+              exit 0
+            else
+              echo "Found wasm-pack $INSTALLED_VERSION, but need $REQUIRED_VERSION"
+            fi
+          else
+            echo "wasm-pack not installed"
+          fi
+
+          echo "Installing wasm-pack $REQUIRED_VERSION..."
+          cargo install wasm-pack --version $REQUIRED_VERSION --force
       - uses: pnpm/action-setup@v5
       - uses: actions/setup-node@v6
         with:

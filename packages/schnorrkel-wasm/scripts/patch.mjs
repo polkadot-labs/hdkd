@@ -9,15 +9,10 @@ const name = cargoPackageName.replace(/-/g, "_")
 const content = await readFile(`./dist/nodejs/${name}.js`, "utf8")
 
 const patched = content
-  // use global TextDecoder TextEncoder
-  .replace("require(`util`)", "globalThis")
-  // attach to `imports` instead of module.exports
-  .replace("= module.exports", "= imports")
-  .replace(/\nmodule\.exports\.(.*?)\s+/g, "\nexport const $1 = imports.$1 ")
-  .replace(/$/, "export default imports")
+  .replace(/exports\.(\w+)\s*=\s*\1\s*;/g, "export { $1 };")
   // inline bytes Uint8Array
   .replace(
-    /\nconst path.*\nconst bytes.*\n/,
+    /\nconst wasmPath.*\nconst wasmBytes.*\n/,
     `
 var __toBinary = /* @__PURE__ */ (() => {
   var table = new Uint8Array(128);
@@ -36,7 +31,7 @@ var __toBinary = /* @__PURE__ */ (() => {
   };
 })();
 
-const bytes = __toBinary(${JSON.stringify(
+const wasmBytes = __toBinary(${JSON.stringify(
       await readFile(`./dist/nodejs/${name}_bg.wasm`, "base64"),
     )});
 `,
