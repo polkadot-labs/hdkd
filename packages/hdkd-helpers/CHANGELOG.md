@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.30](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.29...hdkd-helpers-v0.0.30) (2026-04-22)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump @scure/base from 2.0.0 to 2.2.0 ([#916](https://github.com/polkadot-labs/hdkd/issues/916)) ([0f92087](https://github.com/polkadot-labs/hdkd/commit/0f9208745b471069895ba865af4d1b75927e9593))
+
 ## [0.0.29](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.28...hdkd-helpers-v0.0.29) (2026-04-13)
 
 
