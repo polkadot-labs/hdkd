@@ -132,8 +132,8 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0
       '@scure/base':
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^2.2.0
+        version: 2.2.0
       '@scure/sr25519':
         specifier: ^1.0.0
         version: 1.0.0
@@ -790,8 +790,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@scure/base@2.0.0':
-    resolution: {integrity: sha512-3E1kpuZginKkek01ovG8krQ0Z44E3DHPjc5S2rjJw9lZn3KSQOs8S7wqikF/AH7iRanHypj85uGyxk0XAyC37w==}
+  '@scure/base@2.2.0':
+    resolution: {integrity: sha512-b8XEupJibegiXV+tDUseI8oLQc8ei3d/4Jkb2RpbHh3MfE054ov3uIz2dhFkB3FI8iwYkEh0gGCApkrYggkPNg==}
 
   '@scure/sr25519@1.0.0':
     resolution: {integrity: sha512-b+uhK5akMINXZP95F3gJGcb5CMKYxf+q55fwMl0GoBwZDbWolmGNi1FrBSwuaZX5AhqS2byHiAueZgtDNpot2A==}
@@ -2109,7 +2109,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.53.2':
     optional: true
 
-  '@scure/base@2.0.0': {}
+  '@scure/base@2.2.0': {}
 
   '@scure/sr25519@1.0.0':
     dependencies:
