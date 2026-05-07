@@ -70,11 +70,11 @@ importers:
         specifier: workspace:*
         version: link:../../packages/hdkd-helpers
       react:
-        specifier: ^19.2.5
-        version: 19.2.5
+        specifier: ^19.2.6
+        version: 19.2.6
       react-dom:
         specifier: ^19.2.6
-        version: 19.2.6(react@19.2.5)
+        version: 19.2.6(react@19.2.6)
     devDependencies:
       '@total-typescript/tsconfig':
         specifier: ^1.0.4
@@ -1425,8 +1425,8 @@ packages:
     peerDependencies:
       react: ^19.2.6
 
-  react@19.2.5:
-    resolution: {integrity: sha512-llUJLzz1zTUBrskt2pwZgLq59AemifIftw4aB7JxOqf1HY2FDaGDxgwpAPVzHU1kdWabH7FauP4i1oEeer2WCA==}
+  react@19.2.6:
+    resolution: {integrity: sha512-sfWGGfavi0xr8Pg0sVsyHMAOziVYKgPLNrS7ig+ivMNb3wbCBw3KxtflsGBAwD3gYQlE/AEZsTLgToRrSCjb0Q==}
     engines: {node: '>=0.10.0'}
 
   readdirp@4.1.2:
@@ -2686,12 +2686,12 @@ snapshots:
     dependencies:
       parse-ms: 4.0.0
 
-  react-dom@19.2.6(react@19.2.5):
+  react-dom@19.2.6(react@19.2.6):
     dependencies:
-      react: 19.2.5
+      react: 19.2.6
       scheduler: 0.27.0
 
-  react@19.2.5: {}
+  react@19.2.6: {}
 
   readdirp@4.1.2: {}
 
