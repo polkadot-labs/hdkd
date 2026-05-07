@@ -13,7 +13,7 @@
     "@noble/hashes": "^2.2.0",
     "@polkadot-labs/hdkd": "workspace:*",
     "@polkadot-labs/hdkd-helpers": "workspace:*",
-    "react": "^19.2.5",
+    "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
