@@ -41,6 +41,25 @@ const isValid = sr25519_verify(publicKey, message, signature)
 console.log("Is valid:", isValid)
 ```
 
+### Substrate 64-byte secrets
+
+`sr25519_pubkey` / `sr25519_sign` use `SecretKey::from_ed25519_bytes` (32-byte ed25519 secrets from seed derivation).
+
+For a **64-byte Substrate secret** (e.g. 32-byte private key + 32-byte nonce, as used by Substrate SDK slot accounts), use:
+
+```ts
+import {
+  sr25519_pubkey_from_secret_bytes,
+  sr25519_sign_from_secret_bytes,
+  sr25519_verify,
+} from "@polkadot-labs/schnorrkel-wasm"
+
+const secret = new Uint8Array(64) // slot / Substrate SecretKey bytes
+const publicKey = sr25519_pubkey_from_secret_bytes(secret)
+const signature = sr25519_sign_from_secret_bytes(publicKey, secret, message)
+const isValid = sr25519_verify(publicKey, message, signature)
+```
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](../../LICENSE) file for details.
