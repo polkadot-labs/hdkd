@@ -37,8 +37,27 @@ pub fn sr25519_pubkey(secret: &[u8]) -> Vec<u8> {
         .to_public()
         .to_bytes()
         .to_vec()
-    // let secret = SecretKey::from_bytes(secret).expect("Invalid secret");
-    // secret.to_public().to_bytes().to_vec()
+}
+
+fn secret_from_substrate_bytes(secret: &[u8]) -> SecretKey {
+    SecretKey::from_bytes(secret).expect("Invalid secret (expected 64-byte Substrate secret)")
+}
+
+/// Derive a public key from a 64-byte Substrate sr25519 secret (`SecretKey::from_bytes`).
+#[wasm_bindgen]
+pub fn sr25519_pubkey_from_secret_bytes(secret: &[u8]) -> Vec<u8> {
+    secret_from_substrate_bytes(secret)
+        .to_public()
+        .to_bytes()
+        .to_vec()
+}
+
+/// Sign with a 64-byte Substrate sr25519 secret (`SecretKey::from_bytes`).
+#[wasm_bindgen]
+pub fn sr25519_sign_from_secret_bytes(pubkey: &[u8], secret: &[u8], msg: &[u8]) -> Vec<u8> {
+    let pubkey = PublicKey::from_bytes(pubkey).expect("Invalid pubkey");
+    let secret = secret_from_substrate_bytes(secret);
+    secret.sign_simple(CTX, msg, &pubkey).to_bytes().to_vec()
 }
 
 #[wasm_bindgen]
