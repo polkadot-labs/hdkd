@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.9](https://github.com/polkadot-labs/hdkd/compare/schnorrkel-wasm-v0.0.8...schnorrkel-wasm-v0.0.9) (2026-06-07)
+
+
+### Features
+
+* **schnorrkel-wasm:** add Substrate SecretKey::from_bytes exports ([#945](https://github.com/polkadot-labs/hdkd/issues/945)) ([08c6494](https://github.com/polkadot-labs/hdkd/commit/08c6494cc16e3cca28534f8be0903cdeb0358b06))
+
 ## [0.0.8](https://github.com/polkadot-labs/hdkd/compare/schnorrkel-wasm-v0.0.7...schnorrkel-wasm-v0.0.8) (2026-04-13)
 
 
