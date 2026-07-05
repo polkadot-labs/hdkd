@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.31](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.30...hdkd-helpers-v0.0.31) (2026-07-05)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump typescript from 5.9.3 to 6.0.3 ([#914](https://github.com/polkadot-labs/hdkd/issues/914)) ([98ec67d](https://github.com/polkadot-labs/hdkd/commit/98ec67d7471ea16b45a7e54eb0644eda9a1664d0))
+* **deps:** bump @scure/sr25519 from 1.0.0 to 2.2.0 ([#920](https://github.com/polkadot-labs/hdkd/issues/920)) ([5f601e1](https://github.com/polkadot-labs/hdkd/commit/5f601e116985eb2865862fde90dc6eb99facc6ca))
+
 ## [0.0.30](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.29...hdkd-helpers-v0.0.30) (2026-04-22)
 
 
