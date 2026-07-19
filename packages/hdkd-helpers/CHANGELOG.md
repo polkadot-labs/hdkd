@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.32](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.31...hdkd-helpers-v0.0.32) (2026-07-19)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump @biomejs/biome from 2.5.3 to 2.5.4 ([#987](https://github.com/polkadot-labs/hdkd/issues/987)) ([02a3241](https://github.com/polkadot-labs/hdkd/commit/02a324127bf8e9bd5627afbe17bd81ea6664ce89))
+
 ## [0.0.31](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.30...hdkd-helpers-v0.0.31) (2026-07-05)
 
 
