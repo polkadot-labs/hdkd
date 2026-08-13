@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.30](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.29...hdkd-v0.0.30) (2026-08-13)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump @biomejs/biome from 2.5.3 to 2.5.4 ([#987](https://github.com/polkadot-labs/hdkd/issues/987)) ([02a3241](https://github.com/polkadot-labs/hdkd/commit/02a324127bf8e9bd5627afbe17bd81ea6664ce89))
+* **deps-dev:** bump execa from 10.0.0 to 10.0.1 ([#1008](https://github.com/polkadot-labs/hdkd/issues/1008)) ([c38a90f](https://github.com/polkadot-labs/hdkd/commit/c38a90fd70cd793d0327d6342fa9fbbc8ba157a2))
+* **deps-dev:** bump execa from 9.6.1 to 10.0.0 ([#992](https://github.com/polkadot-labs/hdkd/issues/992)) ([32c04ff](https://github.com/polkadot-labs/hdkd/commit/32c04ff0e1422f9f19dab6435a4ee66b5d59a1d5))
+
 ## [0.0.29](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.28...hdkd-v0.0.29) (2026-07-05)
 
 
