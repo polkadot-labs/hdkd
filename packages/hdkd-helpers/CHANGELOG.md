@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.32](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.31...hdkd-helpers-v0.0.32) (2026-08-13)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump @biomejs/biome from 2.5.3 to 2.5.4 ([#987](https://github.com/polkadot-labs/hdkd/issues/987)) ([02a3241](https://github.com/polkadot-labs/hdkd/commit/02a324127bf8e9bd5627afbe17bd81ea6664ce89))
+* **deps:** bump @noble/hashes from 2.2.0 to 2.3.0 ([#1013](https://github.com/polkadot-labs/hdkd/issues/1013)) ([a2a4ce1](https://github.com/polkadot-labs/hdkd/commit/a2a4ce13d6d8c96a4283c202c361d0322167bba4))
+* **deps:** bump @scure/base from 2.2.0 to 2.3.0 ([#1016](https://github.com/polkadot-labs/hdkd/issues/1016)) ([1246159](https://github.com/polkadot-labs/hdkd/commit/1246159807f892a32ac640cf6660d33fb852ccb3))
+* **deps:** bump @scure/sr25519 from 2.2.0 to 2.3.0 ([#1017](https://github.com/polkadot-labs/hdkd/issues/1017)) ([6268d99](https://github.com/polkadot-labs/hdkd/commit/6268d99514a4a4a35200bcfc23dd1f44ec40f620))
+
 ## [0.0.31](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.30...hdkd-helpers-v0.0.31) (2026-07-05)
 
 
