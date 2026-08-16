@@ -15,14 +15,14 @@ export const ecdsa: Curve = {
     )
     const signature = new Uint8Array(recoverableSignature.length)
     signature.set(recoverableSignature.subarray(1, recoverableSignature.length))
-    signature[recoverableSignature.length] = recoverableSignature[0]!
+    signature[recoverableSignature.length - 1] = recoverableSignature[0]!
     return signature
   },
   verify(signature, message, publicKey) {
     signature = ensureBytes("signature", signature)
     const recoverableSignature = new Uint8Array(signature.length)
     recoverableSignature.set(signature.subarray(0, signature.length - 1), 1)
-    recoverableSignature[0] = signature[recoverableSignature.length]!
+    recoverableSignature[0] = signature[recoverableSignature.length - 1]!
     return secp256k1.verify(
       recoverableSignature,
       blake2b256(ensureBytes("message", message)),
