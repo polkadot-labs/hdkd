@@ -1,5 +1,7 @@
 # Polkadot minimalistic HDKD libraries
 
+[![GitHub License](https://img.shields.io/github/license/polkadot-labs/hdkd)](https://github.com/polkadot-labs/hdkd/blob/main/LICENSE) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/polkadot-labs/hdkd/ci.yml)
+
 Welcome to the monorepo for Polkadot minimalistic Hierarchical Deterministic Key Derivation (HDKD) libraries.
 This repository contains a collection of libraries designed to facilitate Hierarchical Deterministic (HD) account derivation and cryptographic operations within the Polkadot and Substrate ecosystems.
 These libraries provide robust support for various signature schemes, are optimized for performance and ease of use, and are designed to be composable.

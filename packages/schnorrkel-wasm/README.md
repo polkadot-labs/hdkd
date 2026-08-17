@@ -1,5 +1,7 @@
 # @polkadot-labs/schnorrkel-wasm
 
+[![NPM Version](https://img.shields.io/npm/v/%40polkadot-labs%2Fschnorrkel-wasm)](https://www.npmjs.com/package/@polkadot-labs/schnorrkel-wasm) [![GitHub License](https://img.shields.io/github/license/polkadot-labs/hdkd)](https://github.com/polkadot-labs/hdkd/blob/main/LICENSE) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/polkadot-labs/hdkd/ci.yml)
+
 `@polkadot-labs/schnorrkel-wasm` is a JavaScript WebAssembly (WASM) wrapper for the `schnorrkel` Rust crate. This package provides a convenient interface for using Schnorrkel's cryptographic functions in JavaScript applications.
 
 ## Features
