@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.10](https://github.com/polkadot-labs/hdkd/compare/schnorrkel-wasm-v0.0.9...schnorrkel-wasm-v0.0.10) (2026-08-17)
+
+
+### Miscellaneous Chores
+
+* add badges to READMEs ([#1019](https://github.com/polkadot-labs/hdkd/issues/1019)) ([d0c329b](https://github.com/polkadot-labs/hdkd/commit/d0c329b98081a172ff821bdc3060321a7270269e))
+
 ## [0.0.9](https://github.com/polkadot-labs/hdkd/compare/schnorrkel-wasm-v0.0.8...schnorrkel-wasm-v0.0.9) (2026-06-07)
 
 
