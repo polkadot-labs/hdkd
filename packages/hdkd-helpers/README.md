@@ -1,5 +1,7 @@
 # @polkadot-labs/hdkd-helpers
 
+[![NPM Version](https://img.shields.io/npm/v/%40polkadot-labs%2Fhdkd-helpers)](https://www.npmjs.com/package/@polkadot-labs/hdkd-helpers) [![GitHub License](https://img.shields.io/github/license/polkadot-labs/hdkd)](https://github.com/polkadot-labs/hdkd/blob/main/LICENSE) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/polkadot-labs/hdkd/ci.yml)
+
 `@polkadot-labs/hdkd-helpers` is a pure JavaScript library providing utility functions for three signature schemes: sr25519, ed25519, and ecdsa.
 This library is designed to assist with Hierarchical Deterministic Key Derivation (HDKD) in the Polkadot ecosystem.
 Additionally, it includes utilities for deriving HD accounts with hard and soft derivation, creating ss58 addresses, and deriving private keys through bip39.

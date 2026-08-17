@@ -1,5 +1,7 @@
 # @polkadot-labs/hdkd
 
+[![NPM Version](https://img.shields.io/npm/v/%40polkadot-labs%2Fhdkd)](https://www.npmjs.com/package/@polkadot-labs/hdkd) [![GitHub License](https://img.shields.io/github/license/polkadot-labs/hdkd)](https://github.com/polkadot-labs/hdkd/blob/main/LICENSE) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/polkadot-labs/hdkd/ci.yml)
+
 `@polkadot-labs/hdkd` is a Hierarchical Deterministic (HD) account derivation library compatible with the Polkadot and Substrate ecosystems.
 It supports the sr25519, ed25519, and ecdsa signature schemes, providing a comprehensive solution for HD account derivation.
 It is built on top of `@polkadot-labs/hdkd-helpers`.
