@@ -1,5 +1,5 @@
 {
-  "packages/hdkd": "0.0.31",
-  "packages/hdkd-helpers": "0.0.33",
-  "packages/schnorrkel-wasm": "0.0.9"
+  "packages/hdkd": "0.0.32",
+  "packages/hdkd-helpers": "0.0.34",
+  "packages/schnorrkel-wasm": "0.0.10"
 }

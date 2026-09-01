@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.32](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.31...hdkd-v0.0.32) (2026-08-17)
+
+
+### Miscellaneous Chores
+
+* add badges to READMEs ([#1019](https://github.com/polkadot-labs/hdkd/issues/1019)) ([d0c329b](https://github.com/polkadot-labs/hdkd/commit/d0c329b98081a172ff821bdc3060321a7270269e))
+
 ## [0.0.31](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.30...hdkd-v0.0.31) (2026-08-16)
 
 
