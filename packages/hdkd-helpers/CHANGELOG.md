@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.34](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.33...hdkd-helpers-v0.0.34) (2026-09-06)
+
+
+### Miscellaneous Chores
+
+* add badges to READMEs ([#1019](https://github.com/polkadot-labs/hdkd/issues/1019)) ([d0c329b](https://github.com/polkadot-labs/hdkd/commit/d0c329b98081a172ff821bdc3060321a7270269e))
+* **deps:** bump @noble/curves from 2.3.0 to 2.4.0 ([#1031](https://github.com/polkadot-labs/hdkd/issues/1031)) ([6e60556](https://github.com/polkadot-labs/hdkd/commit/6e60556f7a53ade97897d46afccc77749f3771b0))
+* **deps:** bump @noble/hashes from 2.3.0 to 2.4.0 ([#1032](https://github.com/polkadot-labs/hdkd/issues/1032)) ([1c98a4b](https://github.com/polkadot-labs/hdkd/commit/1c98a4b4578d3e421eeba4f55557894a7d0dc8f1))
+* **deps:** bump @scure/base from 2.3.0 to 2.4.0 ([#1034](https://github.com/polkadot-labs/hdkd/issues/1034)) ([09137e9](https://github.com/polkadot-labs/hdkd/commit/09137e9943f6fbd19d42fdefcf01ea4ed7e6eac2))
+* **deps:** bump @scure/sr25519 from 2.3.0 to 2.4.0 ([#1035](https://github.com/polkadot-labs/hdkd/issues/1035)) ([3dd180a](https://github.com/polkadot-labs/hdkd/commit/3dd180ae9ab5a8931e5f9a7ba6e45befbf982235))
+
 ## [0.0.33](https://github.com/polkadot-labs/hdkd/compare/hdkd-helpers-v0.0.32...hdkd-helpers-v0.0.33) (2026-08-16)
 
 
