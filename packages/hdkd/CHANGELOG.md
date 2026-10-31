@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.33](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.32...hdkd-v0.0.33) (2026-10-31)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump execa from 10.0.1 to 10.1.0 ([#1063](https://github.com/polkadot-labs/hdkd/issues/1063)) ([affe44f](https://github.com/polkadot-labs/hdkd/commit/affe44f4a156449abca38d4fea3591921b182841))
+* **deps-dev:** bump execa from 10.1.0 to 10.1.1 ([#1073](https://github.com/polkadot-labs/hdkd/issues/1073)) ([3d59846](https://github.com/polkadot-labs/hdkd/commit/3d59846456c2c81988384073a5b1c0c54033c3cd))
+* **deps-dev:** bump execa from 10.1.1 to 10.2.0 ([#1075](https://github.com/polkadot-labs/hdkd/issues/1075)) ([c9691e4](https://github.com/polkadot-labs/hdkd/commit/c9691e471ec70cb6ca6461ca8776ea01042f2c60))
+* **deps-dev:** bump execa from 10.2.0 to 10.2.1 ([#1079](https://github.com/polkadot-labs/hdkd/issues/1079)) ([4de8c59](https://github.com/polkadot-labs/hdkd/commit/4de8c592fc22ec2f9309834a1e361191c8ed6435))
+
 ## [0.0.32](https://github.com/polkadot-labs/hdkd/compare/hdkd-v0.0.31...hdkd-v0.0.32) (2026-09-06)
 
 
