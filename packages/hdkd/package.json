@@ -42,7 +42,7 @@
     "@substrate/ss58-registry": "^1.51.0",
     "execa": "^10.2.1",
     "@total-typescript/tsconfig": "^1.0.4",
-    "tsup": "^8.5.1",
+    "tsup": "^9.0.0",
     "typescript": "^6.0.3",
     "vite-plugin-wasm": "^3.6.0"
   },
